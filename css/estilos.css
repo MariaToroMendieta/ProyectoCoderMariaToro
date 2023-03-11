@@ -1,0 +1,498 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    
+}
+.body{
+    background-color:#FFFDFD;
+} 
+/*Comienza la maquetación del header*/
+.header{
+    background-color: #FFFDFD;
+    padding: 10px;
+    text-align: left;
+    width: 100vw;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    
+    
+}
+header .contenedorLogo .logo{
+    width: 100px;
+    position: relative;
+    left: 86px;
+    
+
+}
+.navegacion{
+    background: #F1B8BF;
+    box-sizing: border-box;
+    position: sticky; 
+    top: 0px;
+    z-index: 10;
+    text-align: center;
+    
+}
+.listaNavegacion{
+    list-style: none;  
+}
+.listaItem {
+    display: inline-block;
+    width: 246px;
+    height: 40px;
+    line-height: 40px;
+}
+.linkNav {
+    color: #0F0F10;
+    text-decoration: none;
+    font-family: poppins;
+    font-size: 1.3rem;
+    
+}
+    
+/*Termina la maquetación del header*/
+/*Comienza la maquetación del main del Index*/
+.seccionBannerPrincipalIndex{
+    background-color: #E0F3F7;
+    width: 100vw;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+.tituloPrincipalIndex{
+    text-align: left;
+    color: #1B1B1C;
+    font-size: 2.5rem;
+    width: 445px;
+    height: 106px;
+    font-family: poppins;
+    position: relative;
+    top: 53px;
+    left: 86px;
+    
+}
+.subtituloPrincipalIndex{
+    text-align: left;
+    color: #0F0F10;
+    padding: 20px;
+    font-size: 2rem;
+    width: 403px;
+    height: 48px;
+    font-family: La Belle Aurore;
+    position: relative;
+    top: 50px;
+    left: 86px;
+    
+}
+.parrafoPrincipalIndex{
+    text-align: left;
+    padding: 10px;
+    color: #394149;
+    font-size: 1.1rem;
+    width: 511px;
+    height: 73px;
+    position:relative;
+    top: 100px;
+    left: 86px;
+  
+}
+.botonQuierosaberMas{
+    color:#FFFFFF;
+    background-color:#48BDD6;
+    border-bottom: #48BDD6;
+    border: #48BDD6;
+    width: 295px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.1rem;
+    position: relative;
+    top: 130px;
+    left: 86px;
+    bottom: 56px;
+    border-radius: 18px;
+}
+.imagenBannerIndex{
+    width: 550px;
+    display: inline-block;
+    position: absolute;
+    top: 53px;
+    left: 735px;
+    border-radius: 8px;
+}
+.seccionNuestraHistoriDeLaMarcaIndex{
+    box-sizing: border-box;
+    position: relative;
+}
+.tituloSeccionNuestraHistoriaIndex{
+    text-align: right;
+    color: #0F0F10;
+    padding: 20px;
+    font-family: poppins;
+    font-size: 2rem;
+    position: absolute;
+    top: 659px;
+    left: 730px;
+}
+.textoSeccionNuestraHistoriaIndex{
+    text-align: left;
+    color: #394149;
+    padding: 20px;
+    font-size: 1.1rem;
+    font-family: poppins;
+    width: 616px;
+    height: 148px;
+    position: absolute;
+    top: 730px;
+    left: 730px;
+}
+.navlinkNuestraHistoria{
+    text-align: left;
+    color: #F6929E;
+    padding: 20px;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 920px;
+    left: 730px;
+}
+.imagenHistoriaIndex{
+    width: 500px;
+    position: absolute;
+    top: 659px;
+    left: 86px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+}
+.seccionValoresDeMarca{
+    background-color: #E0F3F7;
+    box-sizing: border-box;
+    width: 100vw;
+    position: relative;
+    top: 600px;
+}
+
+.tituloValoresDeMarcaIndex{
+    text-align: center;
+    font-size: 2rem;
+    color: #0F0F10;
+    position: relative;
+    top: 40px;
+    
+}
+
+.ilustracionValorDeMarcaUno{
+    width: 100px;
+    position: absolute;
+    display: inline-block;
+    top: 135px;
+    left: 86px;
+}
+.subtituloValorDeMarcaUno{
+    text-align: left;
+    color: #F6929E;
+    display: inline-block;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 194px;
+    top: 135px;
+}
+.textoValorDeMarcaUno{
+    display: inline-block;
+    text-align: left;
+    color: #394149;
+    font-size: 1rem;
+    width: 294px;
+    height: 103px;
+    position: relative;
+    left: 194px;
+    top: 125px;
+}
+.ilustracionValorDeMarcaDos{
+    width: 100px;
+    position: absolute;
+    display: inline-block;
+    top: 135px;
+    left: 520px;
+}
+.subtituloValorDeMarcaDos{
+    text-align: left;
+    color: #F6929E;
+    display: inline-block;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 628px;
+    top: 135px;
+}
+.textoValorDeMarcaDos{
+    display: inline-block;
+    text-align: left;
+    color: #394149;
+    font-size: 1rem;
+    width: 294px;
+    height: 103px;
+    position: relative;
+    left: 628px;
+    top: 6px;
+}
+.ilustracionValorDeMarcaTres{
+    width: 100px;
+    position: absolute;
+    display: inline-block;
+    top: 135px;
+    left: 954px;
+}
+.subtituloValorDeMarcaTres{
+    text-align: left;
+    color: #F6929E;
+    display: inline-block;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 1062px;
+    top: 135px;
+}
+.textoValorDeMarcaTres{
+    display: inline-block;
+    text-align: left;
+    color: #394149;
+    font-size: 1rem;
+    width: 294px;
+    height: 103px;
+    position:absolute;
+    left: 1062px;
+    top: 183px;
+}
+
+.seccionProductosDestacados{
+    display: inline-block;
+    box-sizing: border-box;
+    height: 1051px;
+    position: relative;
+    top: 1526px;
+    bottom: 20px;
+}
+.tituloSeccionProductosDestacados{
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+    position: relative;
+    top: 600px;
+}
+.contenedorTarjetas{
+    width: 80%;
+    margin: 0 auto;
+
+}
+.tarjeta{
+    width: 30%;
+    height: 458px;
+    background-color: #F6929E;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #1B1B1C;
+    display: inline-block;
+    position: relative;
+    top: 600px;
+
+}
+.tarjeta img{
+    width: 100%;
+    height: 238px;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;   
+}
+.subtituloTarjeta{
+    text-align: left;
+    font-size: 1.2rem;
+    color: #1B1B1C;
+    padding: 12px;
+}
+.parrafoTarjeta{
+    text-align: left;
+    display: block;
+    width: 90%;
+    height: 119px;
+    font-size: 1rem;
+    color: #394149;
+    padding: 12px;
+}
+.seccionProductoDelMes{
+    background-color:#E0F3F7;
+    position: relative;
+    top: 600px;
+}
+.contenedorProductoDelMes{
+    position: relative;
+    top: 55px;
+    left: 86px;
+    display: inline-block;
+}
+.tituloSeccionProductoDelMes{
+    text-align: left;
+    font-size: 2rem;
+    color: #1B1B1C;
+    margin-left: 86px;
+    position: relative;
+    top: 30px;
+}
+.subtituloProductoDelMes{
+    text-align: left;
+    font-size: 1.4rem;
+    color: #F6929E ;
+    margin-left: 86px;
+    position: absolute;
+    top: 90px;
+}
+.parrafoProductoDelMes{
+    text-align: left;
+    font-size: 1.1rem;
+    color: #394149;
+    display: block;
+    width: 40%;
+    height: 144px;
+    margin-left: 86px;
+    position: absolute;
+    top: 150px;
+}
+.botonComprar{
+    color:#FFFFFF;
+    background-color:#48BDD6;
+    border-bottom: #48BDD6;
+    border: #48BDD6;
+    width: 295px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 280px;
+    left: 86px;
+    bottom: 56px;
+    border-radius: 18px;
+}
+.contenedorImagenProductoDelMes{
+    display: inline-block;
+}
+.imagenProductoDelMes{
+    width: 570px;
+    border-radius: 8px;
+    position: absolute;
+    right: 70px;
+    top:0;
+}
+
+.pieDePagina{
+    background-color: #F1B8BF;
+    position: relative;
+    top: 900px;
+}
+.contenedorInfoMarca{
+    position: relative;
+    top: 46px;
+}
+.subtituloInfoMarca{
+    text-align: left;
+    margin-left: 86px;
+    margin-top: 46px;
+    font-size: 1.3rem;
+    color: #1B1B1C;
+    position: relative;
+}
+.parrafoInfoMarca{
+    text-align: left;
+    margin-left: 86px;
+    font-size: 1rem;
+    color: #394149;
+    position: relative;
+}
+.contenedorPuntoDeVentaPrincipal{
+    position: relative;
+    top: 46px;
+}
+.subtituloPuntoDeVentaPrincipal{
+    text-align: left;
+    margin-left: 86px;
+    font-size: 1.2rem;
+    color: #1B1B1C;
+}
+.parrafoDireccionPrincipal{
+    text-align: left;
+    margin-left: 86px;
+    font-size: 1rem;
+    color: #394149;
+}
+.parrafoHorarioDeAtencion{
+    text-align: left;
+    margin-left: 86px;
+    font-size: 1rem;
+    color: #394149;
+}
+.contenedorPuntoDeVentaSede{
+    position: relative;
+    top: 50px;
+}
+.parrafoDireccionPuntoDeVentaSede{
+    text-align: left;
+    margin-left: 86px;
+    font-size: 1rem;
+    color: #394149;
+    position: relative;
+}
+.parrafoHorarioDeAtencionSede{
+    text-align: left;
+    margin-left: 86px;
+    font-size: 1rem;
+    color: #394149;
+    position: relative;
+}
+.contenedorTelefonosDeContacto{
+    position: absolute;
+    left:700px;
+    top: 46px;
+}
+.subtituloTelefonosDeContacto{
+    text-align: left;
+    width: 486px;
+    height: 30px;
+    font-size: 1.2rem;
+    color: #1B1B1C;
+    position: relative;
+    right: 100px;
+    top: 6px;   
+}
+.parrafoTelefonosDeContacto{
+    text-align: left;
+    font-size: 1rem;
+    color: #394149;
+    position: relative;
+    right: 100px;
+    top: 12px;
+}
+.contenedorRedesSociales{
+    position: absolute;
+    left:700px;
+    top: 80px; 
+}
+.subtituloRedesSociales{
+    text-align: left;
+    font-size: 1.2rem;
+    color:#1B1B1C;
+    position: relative;
+    right: 100px;
+    top: 42px;   
+}
+.linkRedSocial{
+    display: inline-block;
+    color: #1B1B1C;
+    position: relative;
+    right: 100px;
+    top: 42px;
+    width: 160px;
+    height: 41px;
+    line-height: 40px;
+
+}
+
