@@ -381,7 +381,7 @@ header .contenedorLogo .logo{
     border-radius: 8px;
     position: absolute;
     right: 70px;
-    top:0;
+    top: 30px;
 }
 
 .pieDePagina{
@@ -412,9 +412,17 @@ header .contenedorLogo .logo{
     position: relative;
     top: 46px;
 }
+.contenedorIconoTienda{
+    display: flex;
+    font-size: 1.2rem;
+    color: #1B1B1C;
+    position: relative;
+    top: 22px;
+    left: 86px;
+}
 .subtituloPuntoDeVentaPrincipal{
     text-align: left;
-    margin-left: 86px;
+    margin-left: 118px;
     font-size: 1.2rem;
     color: #1B1B1C;
 }
@@ -451,7 +459,16 @@ header .contenedorLogo .logo{
 .contenedorTelefonosDeContacto{
     position: absolute;
     left:700px;
-    top: 46px;
+    top: 30px;
+}
+.contenedorIconoTelefono{
+    display: flex;
+    font-size: 1.2rem;
+    color: #1B1B1C;
+    position: relative;
+    top: 28px;
+    right: 99px;
+  
 }
 .subtituloTelefonosDeContacto{
     text-align: left;
@@ -460,7 +477,7 @@ header .contenedorLogo .logo{
     font-size: 1.2rem;
     color: #1B1B1C;
     position: relative;
-    right: 100px;
+    right: 75px;
     top: 6px;   
 }
 .parrafoTelefonosDeContacto{
@@ -482,14 +499,20 @@ header .contenedorLogo .logo{
     color:#1B1B1C;
     position: relative;
     right: 100px;
-    top: 42px;   
+    top: 56px;   
+}
+.contenedorRedesSociales{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
 }
 .linkRedSocial{
     display: inline-block;
-    color: #1B1B1C;
+    color: #0F0F10;
+    font-size: 1.2rem;
     position: relative;
-    right: 100px;
-    top: 42px;
+    right: 225px;
+    top: 86px;
     width: 160px;
     height: 41px;
     line-height: 40px;
