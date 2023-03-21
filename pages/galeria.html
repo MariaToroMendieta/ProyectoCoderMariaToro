@@ -7,29 +7,32 @@
         <title>Galería de imagenes</title>
             <!--Favicon-->
             <link rel="shortcut icon" href="../Favicon.ico" type="image/x-icon">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
             <link rel="stylesheet" href="../css/estilos.css">
             <script src="https://kit.fontawesome.com/845496c33c.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="header">
-            <div  class="contenedorLogo">
-                <img class="logo" src="../assets/img/Logo.png" alt="logo de pastel de autor repostería">
-            </div>
-             <nav class="navegacion">
-                 <ul class="listaNavegacion">
-                     <li class="listaItem"><a class="linkNav" href="../index.html">Inicio</a></li>
-                     <li class="listaItem"><a class="linkNav" href="./nosotros.html">Nosotros</a></li>
-                     <li class="listaItem"><a class="linkNav" href="./nuestrosproductos.html">Nuestros productos</a></li>
-                     <li class="listaItem"><a class="linkNav" href="#">Galería</a></li>
-                     <li class="listaItem"><a class="linkNav" href="./contactanos.html">Contáctanos</a></li>
+        <header class="sticky-top">
+            <div class="container-fluid">
+             <a class="navbar-brand" href="#"> <img class="logo" src="../assets/img/Logo.png" alt="logo de pastel de autor repostería"></a> 
+             <button class="navbar-toggler" type="button"data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+            </div> 
+             <nav class="navbar slide navbar-expand-lg navbar-light colorNav">
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-around w-100">
+                     <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                     <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+                     <li class="nav-item"><a class="nav-link" href="./nuestrosproductos.html">Nuestros productos</a></li>
+                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Galería</a></li>
+                     <li class="nav-item"><a class="nav-link" href="./contactanos.html">Contáctanos</a></li>
                  </ul>
              </nav>
- 
          </header>
         <main>
             <!--este será el banner principal de la pantalla Galería-->
             <section>
-                <img src="../assets/img/Torta de zanahoria.jpg" width="900px" alt="producto destacado">
+                <img src="../assets/img/Torta de fruta.jpg" width="900px" alt="Torta de fruta y chocolate">
                 <h1>Galería</h1>
             </section>
             <section>
@@ -38,23 +41,26 @@
                     <h2>Catálogo de productos</h2>
                 </div>
                 <div>
-                    <img src="../assets/img/Cupcakes.jpg" width="400px" alt="imagen 1">
-                    <img src="../assets/img/Torta de fruta.jpg" width="400px" alt="imagen 2">
+                    <img src="../assets/img/Cupcakes.jpg" width="400px" alt="cupcake de frutos rojos">
+                    <img src="../assets/img/Torta de frutos rojos.jpg" width="400px" alt="torta de frutos rojos">
                 </div>
                 <div>
-                    <img src="../assets/img/Cheesecake de limón.jpg" width="400px" alt="imagen 3">
-                    <img src="../assets/img/Cupcake red velvet.jpg" width="400px" alt="imagen 4">
+                    <img src="../assets/img/Cheesecake de limón.jpg" width="400px" alt="cheesecake de limón">
+                    <img src="../assets/img/Cupcake red velvet.jpg" width="400px" alt="cupcake de redvelvet">
                 </div>
                 <div>
-                    <img src="../assets/img/Cupcake de chocolate.jpg" width="400px" alt="imagen 5">
-                    <img src="../assets/img/Tiramisu.jpg" width="400px" alt="imagen 6">
+                    <img src="../assets/img/Cupcake de chocolate.jpg" width="400px" alt="cupcake de chocolate">
+                    <img src="../assets/img/Tiramisu.jpg" width="400px" alt="Tiramisu">
                 </div>
+                <div class="contenedorBotonVerMasGaleria">
+                    <button class="botonVerMasGaleria">Ver más</button>
+                </div> 
             </section>
             <section>
                 <!--esta es la tercera sección de la pantalla que contiene un video-->
                 <div>
                     <h2>Receta recomendada:Cheesecake de frutos rojos</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, at, optio non voluptate omnis excepturi iste ut a ipsum ipsam cumque minima ab ullam facilis qui et sequi! Esse, expedita.</p>
+                    <p>Hoy compartimos contigo una deliciosa y fantástica receta del cheesecake de frutos rojos, sigue el paso a paso y obtendrás un delicioso postre para compartir con las personas que más quieres. Solo da clic en el vídeo e iniciaras una gran receta.</p>
                 </div>
                 <div>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/JkrYkFxL29A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -64,13 +70,19 @@
                 <!--esta será la cuarta sección que contiene una galeria de imagenes de los puntos de venta a modo de carrusel-->
                 <h2>Nuestros puntos de venta</h2>
                 <div>
-                    <img src="../assets/img/punto de venta 1.jpg" width="200px" alt="imagen 1">
-                    <img src="../assets/img/Punto de venta 2.jpg" width="200px" alt="imagen 2">
-                    <img src="../assets/img/punto de venta 3.jpg" width="200px" alt="imagen 3">
+                    <div><i class="fa-solid fa-circle-chevron-left"></i></div>
+                    <img src="../assets/img/punto de venta 1.jpg" width="400px" alt="imagen punto de venta postres">
+                    <img src="../assets/img/Punto de venta 2.jpg" width="400px" alt="imagen punto de venta café">
+                    <img src="../assets/img/pastelerialugar.jpg" width="400px" alt="imagen punto de venta postres vista lateral">
+                </div>
+                <div><i class="fa-solid fa-circle-chevron-right"></i></div>
+                <div>
+                    <img src="../assets/img/Indicador.png" width="71px" alt="indicador slide uno">
+                </div>
                 </div>
             </section>
       </main>
-      <footer class="pieDePagina">
+      <footer class="pieDePagina container-fluid bgRosaPastel p-5 mb-0 ">
         <div class="contenedorInfoMarca">
             <h3 class="subtituloInfoMarca">Pastel de autor-Repostería</h3>
             <p class="parrafoInfoMarca">Todos los derechos reservados</p>
@@ -93,12 +105,11 @@
         </div>
         <div class="contenedorRedesSociales">
             <h4 class="subtituloRedesSociales">Síguenos en:</h4>
-            <a class="linkRedSocial" href="" target="_blank">Instagram <i class="fa-brands fa-fade fa-instagram"></i></a>
-            <a class="linkRedSocial" href="" target="_blank">Whatsapp <i class="fa-brands fa-fade fa-whatsapp"></i></a>
-            <a class="linkRedSocial" href="" target="_blank">Facebook   <i class="fa-brands fa-fade fa-facebook"></i></a>
+            <a class="linkRedSocial" href="https://www.instagram.com/panaderia_buenas_migas/" target="_blank">Instagram <i class="fa-brands fa-fade fa-instagram"></i></a>
+            <a class="linkRedSocial" href="https://web.whatsapp.com/" target="_blank">Whatsapp <i class="fa-brands fa-fade fa-whatsapp"></i></a>
+            <a class="linkRedSocial" href="https://www.facebook.com/buenasmigas/" target="_blank">Facebook   <i class="fa-brands fa-fade fa-facebook"></i></a>
         </div>
-
-    </footer> 
-        
+   </footer> 
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>       
     </body>
 </html>

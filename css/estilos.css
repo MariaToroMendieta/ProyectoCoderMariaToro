@@ -10,97 +10,108 @@
 }
 .body{
     background-color:#FFFDFD;
+    width: 100%;
+    height: 100vh;
 } 
 /*Comienza la maquetación del header*/
-.header{
+.sticky-top{
     background-color: #FFFDFD;
     padding: 10px;
     text-align: left;
-    width: 100vw;
+    width: 100%;
     position: sticky;
     top: 0px;
-    z-index: 10;
-    
-    
+    z-index: 10;  
 }
-header .contenedorLogo .logo{
+header .container-fluid .logo{
     width: 100px;
     position: relative;
     left: 86px;
-    
-
 }
-.navegacion{
-    background: #F1B8BF;
-    box-sizing: border-box;
-    position: sticky; 
-    top: 0px;
-    z-index: 10;
-    text-align: center;
-    
+.colorNav{
+    background-color: #F1B8BF;
+    width: 100%;
 }
-.listaNavegacion{
+.navbar-nav{
     list-style: none;  
 }
-.listaItem {
-    display: inline-block;
-    width: 246px;
-    height: 40px;
-    line-height: 40px;
+.nav-item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    left: 86px;
 }
-.linkNav {
+.nav-link {
     color: #0F0F10;
     text-decoration: none;
     font-family: poppins;
     font-size: 1.3rem;
-    
+    font-weight: 600;
+    margin-left: 86px; 
 }
     
 /*Termina la maquetación del header*/
 /*Comienza la maquetación del main del Index*/
-.seccionBannerPrincipalIndex{
-    background-color: #E0F3F7;
-    width: 100vw;
-    box-sizing: border-box;
-    position: relative;
-    
+.fondo{
+    background: #E0F3F7;
+    background-image: url(../assets/img/círculos\ fondo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
 }
-.tituloPrincipalIndex{
+.contenedorBannerIndex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 70vh; 
+    width: 100vw;
+}
+.fondo{
+    background: #E0F3F7;
+    background-image: url(../assets/img/círculos\ fondo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+}
+.columna{
+    width: 50%;
+}
+.col-info{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    min-height: 100%;
+    padding: 1rem 6rem 1rem 4rem;
+}
+
+.titulo{
     text-align: left;
     color: #1B1B1C;
     font-size: 2.5rem;
-    width: 445px;
-    height: 106px;
+    font-weight: bold;
     font-family: poppins;
-    position: relative;
-    top: 53px;
-    left: 86px;
-    
 }
 .subtituloPrincipalIndex{
     text-align: left;
     color: #0F0F10;
-    padding: 20px;
     font-size: 2rem;
     width: 403px;
     height: 48px;
     font-family: La Belle Aurore;
-    position: relative;
-    top: 50px;
-    left: 86px;
     
 }
-.parrafoPrincipalIndex{
+.parrafoPrincipal{
     text-align: left;
-    padding: 10px;
     color: #394149;
     font-size: 1.1rem;
     width: 511px;
-    height: 73px;
-    position:relative;
-    top: 100px;
-    left: 86px;
-  
+    height: 73px;   
+}
+.parrafoPrincipal span{
+    color: #48BDD6;
 }
 .botonQuierosaberMas{
     color:#FFFFFF;
@@ -111,22 +122,35 @@ header .contenedorLogo .logo{
     height: 50px;
     text-align: center;
     font-size: 1.1rem;
-    position: relative;
-    top: 130px;
-    left: 86px;
     bottom: 56px;
     border-radius: 18px;
 }
+.col-img{
+    display: flex;
+    flex-direction:column;
+    align-items: baseline;
+    justify-content: center;
+
+}
 .imagenBannerIndex{
-    width: 550px;
-    display: inline-block;
-    position: absolute;
-    top: 53px;
-    left: 735px;
+    display: flex;
+    flex-wrap: wrap;
     border-radius: 8px;
+    width: 600px;
+    margin-left: 700px;
+}
+.alto{
+    height:70vh;
+}
+
+.columnaIzq{
+    height:100%;
+}
+.columnaDer{
+    height:100%;
 }
 .seccionNuestraHistoriDeLaMarcaIndex{
-    box-sizing: border-box;
+
     position: relative;
 }
 .tituloSeccionNuestraHistoriaIndex{
@@ -173,7 +197,7 @@ header .contenedorLogo .logo{
     box-sizing: border-box;
     width: 100vw;
     position: relative;
-    top: 600px;
+    top: 560px;
 }
 
 .tituloValoresDeMarcaIndex{
@@ -181,15 +205,14 @@ header .contenedorLogo .logo{
     font-size: 2rem;
     color: #0F0F10;
     position: relative;
-    top: 40px;
-    
+    top: 14px;   
 }
 
 .ilustracionValorDeMarcaUno{
-    width: 100px;
+    width: 90px;
     position: absolute;
     display: inline-block;
-    top: 135px;
+    top: 80px;
     left: 86px;
 }
 .subtituloValorDeMarcaUno{
@@ -199,7 +222,7 @@ header .contenedorLogo .logo{
     font-size: 1.2rem;
     position: absolute;
     left: 194px;
-    top: 135px;
+    top: 80px;
 }
 .textoValorDeMarcaUno{
     display: inline-block;
@@ -210,13 +233,13 @@ header .contenedorLogo .logo{
     height: 103px;
     position: relative;
     left: 194px;
-    top: 125px;
+    top: 70px;
 }
 .ilustracionValorDeMarcaDos{
-    width: 100px;
+    width: 90px;
     position: absolute;
     display: inline-block;
-    top: 135px;
+    top: 80px;
     left: 520px;
 }
 .subtituloValorDeMarcaDos{
@@ -226,7 +249,7 @@ header .contenedorLogo .logo{
     font-size: 1.2rem;
     position: absolute;
     left: 628px;
-    top: 135px;
+    top: 80px;
 }
 .textoValorDeMarcaDos{
     display: inline-block;
@@ -235,15 +258,15 @@ header .contenedorLogo .logo{
     font-size: 1rem;
     width: 294px;
     height: 103px;
-    position: relative;
+    position: absolute;
     left: 628px;
-    top: 6px;
+    top: 115px;
 }
 .ilustracionValorDeMarcaTres{
-    width: 100px;
+    width: 90px;
     position: absolute;
     display: inline-block;
-    top: 135px;
+    top: 80px;
     left: 954px;
 }
 .subtituloValorDeMarcaTres{
@@ -253,7 +276,7 @@ header .contenedorLogo .logo{
     font-size: 1.2rem;
     position: absolute;
     left: 1062px;
-    top: 135px;
+    top: 80px;
 }
 .textoValorDeMarcaTres{
     display: inline-block;
@@ -264,33 +287,43 @@ header .contenedorLogo .logo{
     height: 103px;
     position:absolute;
     left: 1062px;
-    top: 183px;
+    top: 115px;
 }
 
 .seccionProductosDestacados{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     height: 1051px;
     position: relative;
-    top: 1526px;
+    top: 1580px;
     bottom: 20px;
 }
 .tituloSeccionProductosDestacados{
+    position: relative;
     text-align: center;
     font-size: 2rem;
-    padding: 20px;
-    position: relative;
-    top: 600px;
+    padding: 15px;
+    top: 610px;
 }
 .contenedorTarjetas{
-    width: 80%;
+    width: 80vw;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
 }
 .tarjeta{
     width: 30%;
-    height: 458px;
+    height: 446px;
     background-color: #F6929E;
+    box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
+    -webkit-box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
+    -moz-box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
     margin: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px #1B1B1C;
@@ -309,7 +342,9 @@ header .contenedorLogo .logo{
     text-align: left;
     font-size: 1.2rem;
     color: #1B1B1C;
-    padding: 12px;
+    padding: 10px;
+    padding-left: 18px;
+    padding-bottom: 8px;
 }
 .parrafoTarjeta{
     text-align: left;
@@ -318,7 +353,9 @@ header .contenedorLogo .logo{
     height: 119px;
     font-size: 1rem;
     color: #394149;
-    padding: 12px;
+    padding: 8px;
+    padding-left: 18px;
+    padding-top: 6px;
 }
 .seccionProductoDelMes{
     background-color:#E0F3F7;
@@ -329,6 +366,7 @@ header .contenedorLogo .logo{
     position: relative;
     top: 55px;
     left: 86px;
+    bottom: 10px;
     display: inline-block;
 }
 .tituloSeccionProductoDelMes{
@@ -356,7 +394,7 @@ header .contenedorLogo .logo{
     height: 144px;
     margin-left: 86px;
     position: absolute;
-    top: 150px;
+    top: 136px;
 }
 .botonComprar{
     color:#FFFFFF;
@@ -368,7 +406,7 @@ header .contenedorLogo .logo{
     text-align: center;
     font-size: 1.1rem;
     position: absolute;
-    top: 280px;
+    top: 290px;
     left: 86px;
     bottom: 56px;
     border-radius: 18px;
@@ -377,11 +415,12 @@ header .contenedorLogo .logo{
     display: inline-block;
 }
 .imagenProductoDelMes{
-    width: 570px;
+    width: 550px;
     border-radius: 8px;
     position: absolute;
     right: 70px;
-    top: 30px;
+    top: 40px;
+    margin-bottom: 10px;
 }
 
 .pieDePagina{
@@ -391,12 +430,12 @@ header .contenedorLogo .logo{
 }
 .contenedorInfoMarca{
     position: relative;
-    top: 46px;
+    top: 5px;
 }
 .subtituloInfoMarca{
     text-align: left;
     margin-left: 86px;
-    margin-top: 46px;
+    margin-top: 15px;
     font-size: 1.3rem;
     color: #1B1B1C;
     position: relative;
@@ -410,7 +449,7 @@ header .contenedorLogo .logo{
 }
 .contenedorPuntoDeVentaPrincipal{
     position: relative;
-    top: 46px;
+    top: 15px;
 }
 .contenedorIconoTienda{
     display: flex;
@@ -440,7 +479,7 @@ header .contenedorLogo .logo{
 }
 .contenedorPuntoDeVentaSede{
     position: relative;
-    top: 50px;
+    top: 20px;
 }
 .parrafoDireccionPuntoDeVentaSede{
     text-align: left;
@@ -518,4 +557,121 @@ header .contenedorLogo .logo{
     line-height: 40px;
 
 }
+/*Inicia la maquetación del main pagina nosotros*/
+.columnaTexto{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    min-height: 100%;
+    padding: 1rem 6rem 1rem 4rem;
+}
+.img-fluid{
+    border-radius: 8px;
+    width: 50vw;
+    height: 60vh;
+}
+.contenedorNuestraHistoria{
+    display: flex;
+    height:80vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.columna { 
+    width: 50%; 
+}
+.col-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    min-height: 100%;
+    background:#F1B8BF;
+    padding: 1rem 12rem 1rem 4rem;
+}
+
+.col-info p { line-height: 1.5; }
+
+.col-img {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/img/ingredientesyutenciliospasteleros.jpg"); 
+}
+
+.subtitulo{
+    text-align: left;
+    width: 402px;
+    height: 139px;
+    font-size: 1.8rem;
+    color: #1B1B1C;
+    font-weight: 600;
+}
+.parrafoHistoria{
+    text-align: left;
+    color: #394149;
+    font-size: 1.1rem;
+    width: 403px;
+    height: 178px; 
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height:60vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.imgHover{
+    transition: all 2s;
+    z-index: -1;
+  }
+  .imgHover:hover{
+    filter: brightness(100%);
+    transform: scale(1.5);
+    z-index: 10;
+    overflow:hidden;
+    cursor:zoom-in;
+    align-self: center;
+  }
+  .imgHover:click{
+    filter: brightness(100%);
+    transform: scale(1.5);
+   
+    z-index: 10;
+    cursor:zoom-in;
+    align-self: center;
+  }
+  .imgHover:focus{
+    filter: brightness(100%);
+    transform: scale(1.5);
+    z-index: 10;
+    cursor:zoom-in;
+    align-self: center;
+  }
+  
+  /*inicia la maquetación del index de la pagina nuestros productos*/
+  .fondoBnNuestros{
+    background:#F1B8BF;
+    background-image: url(../assets/img/círculo\ azul\ mediano\ fondo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    height: 80vh;
+  }
+  .subtituloBanner{
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 2rem;
+    width: 307px;
+    height: 48px;
+    font-family: La Belle Aurore;
+    position: relative;
+    top: 80px;
+    left: 15px;
+    
+}
+  
+  
 
