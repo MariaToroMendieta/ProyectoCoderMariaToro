@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-    <>
+    <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,85 +31,117 @@
          </header>
         <main>
             <!--este será el banner principal de la pantalla Galería-->
-            <section>
-                <img src="../assets/img/Torta de fruta.jpg" width="900px" alt="Torta de fruta y chocolate">
-                <h1>Galería</h1>
+            <section class="bannerGaleria container-fluid">
+                <h1 class="tituloGaleria">Galería</h1>  
             </section>
+            <!-- Gallery -->
             <section>
-                <!--esta es la segunda sección de la pantalla que contiene imagenes de todos los productos de la marca-->
                 <div>
-                    <h2>Catálogo de productos</h2>
+                    <h2 class="tituloValores">Catálogo de productos</h2>
                 </div>
-                <div>
-                    <img src="../assets/img/Cupcakes.jpg" width="400px" alt="cupcake de frutos rojos">
-                    <img src="../assets/img/Torta de frutos rojos.jpg" width="400px" alt="torta de frutos rojos">
+                <div class="galeria row">
+                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <img  src="../assets/img/Cupcakes.jpg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Cupcake de frutos rojos"/>
+                
+                    <img  src="../assets/img/Torta de frutos rojos.jpg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Torta de frutos rojos"/>
+                    </div>
+                
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="../assets/img/Cheesecake de limón.jpg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Cheesecake de limón"/>
+                
+                    <img  src="../assets/img/Cupcake red velvet.jpg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Cupcake de redvelvet"/>
+                    </div>
+                
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img  src="../assets/img/Cupcake de chocolate.jpg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Cupcake de chocolate"/>
+                
+                    <img  src="../assets/img/Tiramisu.jpg"
+                        class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Tiramisu"/>
+                    </div>
                 </div>
-                <div>
-                    <img src="../assets/img/Cheesecake de limón.jpg" width="400px" alt="cheesecake de limón">
-                    <img src="../assets/img/Cupcake red velvet.jpg" width="400px" alt="cupcake de redvelvet">
-                </div>
-                <div>
-                    <img src="../assets/img/Cupcake de chocolate.jpg" width="400px" alt="cupcake de chocolate">
-                    <img src="../assets/img/Tiramisu.jpg" width="400px" alt="Tiramisu">
-                </div>
-                <div class="contenedorBotonVerMasGaleria">
-                    <button class="botonVerMasGaleria">Ver más</button>
-                </div> 
             </section>
-            <section>
+            
+            <section class="container-fluid">
                 <!--esta es la tercera sección de la pantalla que contiene un video-->
-                <div>
-                    <h2>Receta recomendada:Cheesecake de frutos rojos</h2>
-                    <p>Hoy compartimos contigo una deliciosa y fantástica receta del cheesecake de frutos rojos, sigue el paso a paso y obtendrás un delicioso postre para compartir con las personas que más quieres. Solo da clic en el vídeo e iniciaras una gran receta.</p>
-                </div>
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JkrYkFxL29A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div> 
+                <div class="row featurette">
+                    <div class="columnaTexto col-md-6">
+                        <h2 class="subtitulo featurette-heading fuenteNormal">Receta recomendada: <span>Cheesecake de frutos rojos</span>
+                            </h2>
+                        <p class="parrafo">Hoy compartimos contigo una deliciosa y fantástica receta del cheesecake de frutos rojos, sigue el paso a paso y obtendrás un delicioso postre para compartir con las personas que más quieres. Solo da clic en el vídeo e iniciaras una gran receta.</p>
+                    </div>
+                    <div class="video col-md-6">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JkrYkFxL29A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>      
             </section>
-            <section>
+            <section class="galeriaPVenta">
                 <!--esta será la cuarta sección que contiene una galeria de imagenes de los puntos de venta a modo de carrusel-->
-                <h2>Nuestros puntos de venta</h2>
-                <div>
-                    <div><i class="fa-solid fa-circle-chevron-left"></i></div>
-                    <img src="../assets/img/punto de venta 1.jpg" width="400px" alt="imagen punto de venta postres">
-                    <img src="../assets/img/Punto de venta 2.jpg" width="400px" alt="imagen punto de venta café">
-                    <img src="../assets/img/pastelerialugar.jpg" width="400px" alt="imagen punto de venta postres vista lateral">
-                </div>
-                <div><i class="fa-solid fa-circle-chevron-right"></i></div>
-                <div>
-                    <img src="../assets/img/Indicador.png" width="71px" alt="indicador slide uno">
-                </div>
-                </div>
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../assets/img/punto de venta 1.jpg" class="d-block w-100" alt="imagen punto de venta postres">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h2 class="subtituloCarrusel">Nuestros puntos de venta</h2>
+                          <p class="textoCarrusel">Sede de la castellana</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/img/Punto de venta 2.jpg" class="d-block w-100" alt="imagen punto de venta café">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h2 class="subtituloCarrusel">Nuestros puntos de venta</h2>
+                          <p class="textoCarrusel">Sede principal el chico</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/img/pastelerialugar.jpg" class="d-block w-100" alt="imagen punto de venta postres vista lateral">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h2 class="subtituloCarrusel">Nuestros puntos de venta</h2>
+                          <p class="textoCarrusel">Sede de la castellana</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </section>
       </main>
-      <footer class="pieDePagina container-fluid bgRosaPastel p-5 mb-0 ">
-        <div class="contenedorInfoMarca">
-            <h3 class="subtituloInfoMarca">Pastel de autor-Repostería</h3>
-            <p class="parrafoInfoMarca">Todos los derechos reservados</p>
-            <p class="parrafoInfoMarca">2023</p>
-        </div>
-        <div class="contenedorPuntoDeVentaPrincipal">
-            <div class="contenedorIconoTienda"><i class="fa-sharp fa-solid fa-shop"></i></div>
-            <h4 class="subtituloPuntoDeVentaPrincipal">Nuestros puntos de venta:</h4>
-            <p class="parrafoDireccionPrincipal">Principal Calle 90 # 15-63</p>
-            <p class="parrafoHorarioDeAtencion">Lunes-Sábado 8:00 a.m.-7:00 p.m.</p>
-        </div>
-        <div class="contenedorPuntoDeVentaSede">
-            <p class="parrafoDireccionPuntoDeVentaSede">Castellana Carrera 47 # 94A-70</p>
-            <p class="parrafoHorarioDeAtencionSede">Lunes-Miércoles 10:00 a.m.-7:00 p.m.</p>
-        </div>
-        <div class="contenedorTelefonosDeContacto">
-            <div class="contenedorIconoTelefono"><i class="fa-solid fa-phone"></i></div>
-            <h4 class="subtituloTelefonosDeContacto">Teléfonos de contacto:</h4>
-            <p class="parrafoTelefonosDeContacto">(601)2561423-6166645</p>
-        </div>
-        <div class="contenedorRedesSociales">
-            <h4 class="subtituloRedesSociales">Síguenos en:</h4>
-            <a class="linkRedSocial" href="https://www.instagram.com/panaderia_buenas_migas/" target="_blank">Instagram <i class="fa-brands fa-fade fa-instagram"></i></a>
-            <a class="linkRedSocial" href="https://web.whatsapp.com/" target="_blank">Whatsapp <i class="fa-brands fa-fade fa-whatsapp"></i></a>
-            <a class="linkRedSocial" href="https://www.facebook.com/buenasmigas/" target="_blank">Facebook   <i class="fa-brands fa-fade fa-facebook"></i></a>
-        </div>
-   </footer> 
+      <footer class="container-fluid">
+        <div class="row justify-content-around p-5 bgRosaPastel">
+          <div class="col-xs-12 col-md-6 col-lg-3">
+              <p class="h3">Pastel de autor-Repostería</p>
+              <p class="texto">Todos los derechos reservados</p>
+              <p>&copy; 2023</p>       
+          </div> 
+          <div class="col-xs-12 col-md-6 col-lg-3">
+              <p class="h4">Síguenos en:</p>
+              <p class="redesSociales"><a class="linkRedSocial" href="https://www.instagram.com/panaderia_buenas_migas/" target="_blank"><i class="fa-brands fa-fade fa-instagram"></i></a>
+                  <a class="linkRedSocial" href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-fade fa-whatsapp"></i></a>
+                  <a class="linkRedSocial" href="https://www.facebook.com/buenasmigas/" target="_blank"><i class="fa-brands fa-fade fa-facebook"></i></a></p>
+          </div>
+        </div>    
+      </footer>
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>       
     </body>
 </html>

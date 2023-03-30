@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-    <>
+    <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,79 +32,98 @@
          </header>
         <main>
              <!--este será el banner principal de la pantalla Galería-->
-             <section>
-                <img src="../assets/img/pastelerialugar.jpg" width="900px" alt="imagen del punto de venta principal">
-                <h1>Contáctanos</h1>
+             <section class="bannerContactanos container-fluid">
+                <h1 class="tituloGaleria">Contáctanos</h1>  
             </section>
-            <section>
+            <section class="container-fluid">
                 <!--esta es la segunda sección de la pantalla que contiene todos los datos de ubicaión del punto de venta principal-->
-                <div>
-                    <h2>Dónde estamos ubicados</h2>
-                    <h3>Punto de venta principal</h3>
-                    <p>Puedes encontrar todos nuestros productos para consumir o llevar en nuestro local principal.
-                    Estamos ubicados en el barrio Chico Navarra, en la calle 90 # 15-63 y nuestro horario de atención es de lunes-Sábado 8:00 a.m.-7:00 p.m.</p>
-                </div>
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.546719415556!2d-74.05597838595614!3d4.674586343186805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9af2cb52d4db%3A0xa4fa4eedbf0fad31!2sCl.%2090%20%2315-63%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1677361173034!5m2!1ses!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>      
+                <div class="ubicacion row featurette">
+                    <div class="columnaTextoUbica col-md-6">
+                        <h2 class="subtitulo">Dónde estamos ubicados: <span class="textoAzul">Punto de venta principal</span></h2>
+                        <p class="parrafo">Puedes encontrar todos nuestros productos para consumir o llevar en nuestro local principal y en nuestra sede de la castellana.</p>
+                        <i class="fa-solid fa-shop"></i><p>Estamos ubicados en el barrio Chico Navarra, en la calle 90 # 15-63.Nuestro horario de atención es de lunes-Sábado 8:00 a.m.-7:00 p.m.</p>
+                        <i class="fa-solid fa-phone"></i><p class="parrafo"> Telefonos de contácto: (+57) 6012589966-6012589967</p>
+                    </div>
+                    <div class="col-md-6">
+                        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.546719415556!2d-74.05597838595614!3d4.674586343186805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9af2cb52d4db%3A0xa4fa4eedbf0fad31!2sCl.%2090%20%2315-63%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1677361173034!5m2!1ses!2sco" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>      
+                </div>        
             </section>
-            <section>
+            <section class="formulario">
                 <!--esta es la tercera sección de la pantalla que corresponde al formulario de contacto-->
-                <h2>Formulario de contácto</h2>
-                <p>Vamos a enviarte información sobre promociones y nuestros productos destacados</p>
-                <div>
-                    <form action="">
-                        <div>
-                            <label for="">Nombre:</label>
-                            <input type="text" placeholder="Escribe tu nombre" required>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="well well-sm">
+                                <form class="form-horizontal" method="post">
+                                    <fieldset>
+                                        <legend class="text-center header">Formulario de contacto</legend>
+                                        <p class="parrafo">Vamos a enviarte información sobre promociones y nuestros productos destacados</p>
+                
+                                        <div class="form-group">
+                                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                            <div class="col-md-8">
+                                                <input id="fname" name="name" type="text" placeholder="Escribe tu nombre" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                            <div class="col-md-8">
+                                                <input id="lname" name="name" type="text" placeholder="Escribe tus apellidos" class="form-control">
+                                            </div>
+                                        </div>
+                
+                                        <div class="form-group">
+                                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                            <div class="col-md-8">
+                                                <input id="email" name="email" type="text" placeholder="Escribe tu  Email" class="form-control">
+                                            </div>
+                                        </div>
+                
+                                        <div class="form-group">
+                                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                            <div class="col-md-8">
+                                                <input id="phone" name="phone" type="text" placeholder="Escribe tu teléfono de contacto" class="form-control">
+                                            </div>
+                                        </div>
+                
+                                        <div class="form-group">
+                                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                            <div class="col-md-8">
+                                                <textarea class="form-control" id="message" name="message" placeholder="Escribe tus comentarios aquí y te responderemos lo antes posible." rows="7"></textarea>
+                                            </div>
+                                        </div>
+                
+                                        <div class="form-group">
+                                            <div class="col-md-12 text-center">
+                                                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                                <button type="reset" class="btn btn-primary btn-lg">Borrar</button>
+                                              
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
                         </div>
-                        <div>
-                            <label for="">Apellidos:</label>
-                            <input type="text" placeholder="Escribe tus apellidos" required>
-                        </div>
-                        <div>
-                            <label for="">Email:</label>
-                            <input type="email" placeholder="Escribe tu email" required>
-                        </div>
-                        <div>
-                            <textarea cols="30" rows="10" placeholder="Escribe tus comentarios..." required></textarea>
-                        </div>
-                        <div>
-                            <input type="submit" value="Enviar formulario">
-                            <input type="reset" value="Borrar formulario"> 
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </section>
         </main>
-        <footer class="pieDePagina container-fluid bgRosaPastel p-5 mb-0 ">
-            <div class="contenedorInfoMarca">
-                <h3 class="subtituloInfoMarca">Pastel de autor-Repostería</h3>
-                <p class="parrafoInfoMarca">Todos los derechos reservados</p>
-                <p class="parrafoInfoMarca">2023</p>
-            </div>
-            <div class="contenedorPuntoDeVentaPrincipal">
-                <div class="contenedorIconoTienda"><i class="fa-sharp fa-solid fa-shop"></i></div>
-                <h4 class="subtituloPuntoDeVentaPrincipal">Nuestros puntos de venta:</h4>
-                <p class="parrafoDireccionPrincipal">Principal Calle 90 # 15-63</p>
-                <p class="parrafoHorarioDeAtencion">Lunes-Sábado 8:00 a.m.-7:00 p.m.</p>
-            </div>
-            <div class="contenedorPuntoDeVentaSede">
-                <p class="parrafoDireccionPuntoDeVentaSede">Castellana Carrera 47 # 94A-70</p>
-                <p class="parrafoHorarioDeAtencionSede">Lunes-Miércoles 10:00 a.m.-7:00 p.m.</p>
-            </div>
-            <div class="contenedorTelefonosDeContacto">
-                <div class="contenedorIconoTelefono"><i class="fa-solid fa-phone"></i></div>
-                <h4 class="subtituloTelefonosDeContacto">Teléfonos de contacto:</h4>
-                <p class="parrafoTelefonosDeContacto">(601)2561423-6166645</p>
-            </div>
-            <div class="contenedorRedesSociales">
-                <h4 class="subtituloRedesSociales">Síguenos en:</h4>
-                <a class="linkRedSocial" href="https://www.instagram.com/panaderia_buenas_migas/" target="_blank">Instagram <i class="fa-brands fa-fade fa-instagram"></i></a>
-                <a class="linkRedSocial" href="https://web.whatsapp.com/" target="_blank">Whatsapp <i class="fa-brands fa-fade fa-whatsapp"></i></a>
-                <a class="linkRedSocial" href="https://www.facebook.com/buenasmigas/" target="_blank">Facebook   <i class="fa-brands fa-fade fa-facebook"></i></a>
-            </div>
-       </footer> 
+        <footer class="container-fluid">
+            <div class="row justify-content-around p-5 bgRosaPastel">
+              <div class="col-xs-12 col-md-6 col-lg-3">
+                  <p class="h3Footer">Pastel de autor-Repostería</p>
+                  <p class="texto">Todos los derechos reservados</p>
+                  <p>&copy; 2023</p>       
+              </div> 
+              <div class="col-xs-12 col-md-6 col-lg-3">
+                  <p class="h4Footer">Síguenos en:</p>
+                  <p class="redesSociales"><a class="linkRedSocial" href="https://www.instagram.com/panaderia_buenas_migas/" target="_blank"><i class="fa-brands fa-fade fa-instagram"></i></a>
+                      <a class="linkRedSocial" href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-fade fa-whatsapp"></i></a>
+                      <a class="linkRedSocial" href="https://www.facebook.com/buenasmigas/" target="_blank"><i class="fa-brands fa-fade fa-facebook"></i></a></p>
+              </div>
+            </div>    
+          </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
      </body>
 </html>
