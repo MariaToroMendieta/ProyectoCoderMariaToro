@@ -13,19 +13,24 @@
     width: 100%;
     height: 100vh;
 } 
+html,body{
+    width: 100% !important;
+    overflow-x: hidden;
+    
+ }
 /*Comienza la maquetación del header*/
 .sticky-top{
     background-color: #FFFDFD;
-    padding: 10px;
+    padding: 3px;
     text-align: left;
     width: 100%;
-    position: sticky;
+    position: sticky !important;
     top: 0px;
     z-index: 10;  
 }
 header .container-fluid .logo{
     width: 100px;
-    position: relative;
+    position: sticky;
     left: 86px;
 }
 .colorNav{
@@ -33,13 +38,14 @@ header .container-fluid .logo{
     width: 100%;
 }
 .navbar-nav{
-    list-style: none;  
+    list-style: none;
+    position: sticky;  
 }
 .nav-item {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    left: 86px;
+    
 }
 .nav-link {
     color: #0F0F10;
@@ -47,16 +53,12 @@ header .container-fluid .logo{
     font-family: poppins;
     font-size: 1.3rem;
     font-weight: 600;
-    margin-left: 86px; 
+    
 }
     
 /*Termina la maquetación del header*/
 /*Comienza la maquetación del main del Index*/
 
-html,body{
-    width: 100% !important;
-    overflow-x: hidden !important;
- }
 .fondoBannerIndex{
     background: #E0F3F7;
     background-image: url(../assets/img/círculos\ fondo.png);
@@ -64,7 +66,7 @@ html,body{
     background-repeat: no-repeat;
     background-position:right;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 0;
     
 }
 .contenedorBannerIndex{
@@ -123,8 +125,8 @@ html,body{
 }
 .img-fluid{
     border-radius: 8px;
-    width: 40%;
-    height: 60vh;
+    width: 35%;
+    height: 50vh;
     Display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -248,6 +250,7 @@ html,body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom:  20px;
 
 }
 .tarjeta{
@@ -293,7 +296,7 @@ html,body{
 }
 .contenedorProductoDelMes{
     display: flex;
-    left: 86px;
+    left: 80px;
     bottom: 10px;
 }
 .tituloSeccionProductoDelMes{
@@ -307,7 +310,7 @@ html,body{
     font-size: 1.4rem;
     color: #F6929E ;
     font-weight: 600;
-    margin-left: 86px;    
+    margin-left: 80px;    
 }
 .botonComprar{
     color:#FFFFFF;
@@ -319,18 +322,18 @@ html,body{
     text-align: center;
     font-size: 1.1rem;
     bottom: 30px;
-    left: 86px;
+    left: 80px;
     border-radius: 18px;
-    margin-top: 56px;
+    margin-top: 60px;
 }
 .contenedorImagenProductoDelMes{
     display: inline-block;
 }
 .imagenProductoDelMes{
-    width: 550px;
+    width: 300px;
     border-radius: 8px;
     position: absolute;
-    right: 70px;
+    right: 86px;
     top: 40px;
     margin-bottom: 5px;
 }
@@ -379,7 +382,7 @@ html,body{
     align-items: baseline;
     justify-content: center;
     min-height: 100%;
-    padding: 1rem 6rem 1rem 4rem;
+    padding: 1rem 4rem 1rem 4rem;
 }
 .img-fluid{
     border-radius: 8px;
@@ -503,7 +506,7 @@ html,body{
     background-position: right;
     width: 100%;
     height: 80vh;
-    margin-top: 10px;
+    margin-top: 5px;
   }
   .subtituloBanner{
     text-align: left;
@@ -765,14 +768,14 @@ html,body{
     flex-direction: row;
     flex-wrap: wrap;
     background-image: linear-gradient(to right top, #cbf2fa38, #aae1ee65, #88d1e28a, #61c0d6e7, #2ab0cb),url(../assets/img/pastelerialugar.jpg);
-    width: 90%;
+    width: 100%;
     height: 70vh;
     background-size: contain;
     background-repeat: no-repeat; 
     bottom: 10px; 
   }
   .ubicacion{
-    padding: 28px;
+    padding: 20px;
   }
   .columnaTextoUbica{
     display: flex;
@@ -794,13 +797,19 @@ html,body{
     padding-left: 30px;
   }
   .fa-solid{
-    color: #2ab0cb;
+    color: #F6929E;
     font-size: 1.3rem;
     padding-bottom: 5px;
   }
   .formulario{
-    width: 80%;
-    margin: 24px;
+    background-image: linear-gradient(to right top, #c5c5c538, #dce0e065, #e8ecec8a, #eef4f5a4, #ffffff8f),url(../assets/img/Cupcake\ red\ velvet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
   .text-center{
     font-size: 2rem;
@@ -825,8 +834,697 @@ html,body{
     color: #1B1B1C;
     font-weight: 600;
 }
-/*css maquetación responsive*/
- 
+/*css maquetación responsive Index tablet y celular pantalla grande*/
+@media screen and (max-width: 768px) {
+    .sticky-top{
+        width: 100%;
+        height:30vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+    .contenedorBannerIndex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 80vh; 
+        margin-bottom: 10px;
+    }
+    .fondoBannerIndex{
+        height: 80vh;   
+    }
+    .columnaTexto{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 80%;
+        padding: 0.2rem 0.5rem 1rem 2rem;
+    }
+    .titulo{
+        text-align: left;
+        font-size: 2rem;  
+    }
+    .subtituloPrincipalIndex{
+        text-align: left;
+        font-size: 1.6rem;
+        width: 285px;
+        height: 36px;
+        font-family: La Belle Aurore;
+        
+    }
+    .parrafoPrincipal{
+        text-align: left;
+        font-size: 1rem;
+        width: 360px;
+        height: 86px;   
+    }
+    .botonQuierosaberMas{
+        width: 280px;
+        height: 45px;
+        text-align: center;
+        font-size: 1rem;
+        bottom: 60px;
+        border-radius: 18px;
+    }
+    .img-fluid{
+        border-radius: 8px;
+        width: 100%;
+        height: 80%;
+        Display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: space-between;
+        
+    }
+    .lead{
+        padding: 10px;
+        font-size: 1rem;
+        width: 350px;
+        height: 205px;
+        
+    }
+    .tarjeta{
+        width: 45%;
+        
+    }
+    .contenedorProductoDelMes{
+        display: flex;
+        position: relative;
+        bottom: 10px;
+    }
+    .colProducto{
+        display: inline-block;
+        left: 15px;
+        right: 20px;
+    }
+    .tituloSeccionProductoDelMes{
+        text-align: left;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+    .subtituloProductoDelMes{
+        text-align: left;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-left: 3px;
+   
+    }
+    .botonComprar{
+        width: 280px;
+        height: 45px;
+        text-align: center;
+        font-size: 1rem;
+        bottom: 30px;
+        left: 50px;
+        border-radius: 18px;
+        margin-top: 80px;
+    }
+    .contenedorImagenProductoDelMes{
+        display: inline-block;
+    }
+    .imagenProductoDelMes{
+        width: 250px;
+        border-radius: 8px;
+        position: absolute;
+        padding-left: 3px;
+        right: 40px;
+        top: 40px;
+        margin-bottom: 5px;
+    }
+      
+}
+/* CSS media query celular Index*/
+@media screen and (max-width: 576px){
+    .contenedorBannerIndex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh; 
+        margin-bottom: 10px;
+    }
+    .fondoBannerIndex{
+        height: 80vh;  
+        margin-top: 10px; 
+    }
+    .columnaTexto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 80%;
+        
+    }
+    .titulo{
+        text-align: center;
+        font-size: 1.8rem;
+        padding-top: 10px;  
+    }
+    .subtituloPrincipalIndex{
+        text-align:center;
+        font-size: 1.4rem;
+        font-family: La Belle Aurore;
+        
+    }
+    .parrafoPrincipal{
+        text-align: center;
+        font-size: 0.9rem;
+        width: 360px;
+        height: 86px;   
+    }
+    .botonQuierosaberMas{
+        width: 280px;
+        height: 45px;
+        text-align: center;
+        font-size: 1rem;
+        bottom: 60px;
+        border-radius: 18px;
+    }
+    .img-fluid{
+        display: none;
+        
+    }
+    .tituloNuestraH{
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .lead{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+        font-size: 0.9rem;
+        width: 100%;  
+        height: 25vh;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    .navlinkNuestraHistoria{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+        text-align: center;
+        font-size: 1.1rem;
+        padding-top: 5px;
+    }
+    .bd-placeholder-img{
+        display: none;
+    }
+    .tarjeta{
+        width: 60%;  
+    }
+    .subtituloTarjeta{
+        text-align: left;
+        font-size: 1.1rem;
+        padding: 5px;
+        padding-left: 18px;
+        padding-bottom: 4px;
+    }
+    .parrafoTarjetas{
+        text-align: left;
+        display: block;
+        width: 90%;
+        font-size: 14px;
+        padding: 3px;
+        padding-left: 18px;
+        padding-top: 4px;
+    }
+    .contenedorProductoDelMes{
+        display: flex;
+        position: relative;
+        bottom: 10px;
+    }
+    .botonComprar{
+        width: 280px;
+        height: 45px;
+        text-align: center;
+        font-size: 1rem;
+        bottom: 30px;
+        left: 50px;
+        border-radius: 18px;
+        margin-top: 60px;
+    }
+}
+
+/*css maquetación responsive pantalla Nosotros tablet y celular pantalla grande*/
+@media screen and (max-width: 768px){
+    .contenedorNuestraHistoria{
+        display: flex;
+        height:70vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .columna { 
+        width: 50%; 
+    }
+    .col-info {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        min-height: 100%;
+        background:#F1B8BF;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    
+    .col-info p { line-height: 1; }
+    
+    .col-img {
+        background-position: center;
+        background-size: cover;
+        background-image: url("../assets/img/ingredientesyutenciliospasteleros.jpg"); 
+    }
+    
+    .subtitulo{
+        position: relative;
+        padding-top: 10px;
+        text-align: left;
+        width: 350px;
+        height: 139px;
+        font-size: 1.6rem;
+        color: #1B1B1C;
+        font-weight: 600;
+    }
+    .subtitulo span{
+        text-align: left;
+        width: 350px;
+        height: 139px;
+        font-size: 1.6rem;
+        color: #F6929E;
+        font-weight: 600;
+    }
+    .parrafoHistoria{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 30px;
+        text-align: left;
+        color: #394149;
+        font-size: 1rem;
+        width: 350px;
+        height: 178px; 
+    }
+    .container{
+        display: flex;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .imgHover{
+        padding-top: 8px;
+        border-radius: 8px;
+    }
+}
+/* CSS media query celular pantalla Nosotros*/
+@media screen and (max-width: 576px){
+    .subtitulo{
+        position: relative;
+        padding-top: 10px;
+        text-align: left;
+        width: 320px;
+        height: 160px;
+        font-size: 1.3rem;
+        color: #1B1B1C;
+        font-weight: 600;
+    }
+   
+    .parrafoHistoria{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        left: 5px;
+        text-align: left;
+        color: #394149;
+        font-size: 0.9rem;
+        width: 215px;
+        height: 260px; 
+    }
+}
+/*css maquetación responsive pantalla nuestros productos tablet y celular pantalla grande*/
+@media screen and (max-width: 768px){
+    .subtituloBanner{
+        display: none;
+    }
+    .tituloSeccionProductos{
+        text-align: center;
+        font-size: 1.8rem;
+        top: 15px;
+        position: relative;
+        margin-left: 50px;
+        bottom: 15px;
+        padding: 15px;
+        
+    }
+    .subtituloProductos{
+        text-align: left;
+        font-size: 1.3rem;
+        font-weight: 600;
+        font-style: italic;
+        position: relative;
+        padding: 15px;
+        top: 10px;
+        right: 600px;   
+    }
+    .card{
+        width: 80%;
+        height: 550px;
+        background-color:#E0F3F7;
+        box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
+        -webkit-box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
+        -moz-box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px #1B1B1C;
+        display: flex;
+        position: absolute;
+        top: 110px;
+        padding-bottom: 10px;
+    }
+    .card-title{
+        text-align:left;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #1B1B1C;
+        padding: 10px;
+        padding-bottom: 6px;
+    }
+    .card-text{
+        text-align:left;
+        display: block;
+        width: 90%;
+        font-size: 0.9rem;
+        color: #394149;
+        padding: 5px;
+        padding-top: 6px;
+    }
+    .botonTarjeta{
+        color:#FFFFFF;
+        background-color:#48BDD6;
+        border-bottom: #48BDD6;
+        border: #48BDD6;
+        width: 240px;
+        height: 40px;
+        text-align: center;
+        font-size: 1.1rem;
+        border-radius: 18px;
+        margin-top: 5px;
+        margin-left: 150px;   
+    }
+    .contenedorTarjetasNuestros{
+        width: 80vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .tarjetas{
+        width: 35%;
+        height: 410px;
+        margin: 8px;
+        
+    }
+    .tarjetas img{
+        width: 100%;
+        height: 220px;
+        border-radius: 8px 8px 0 0;
+        object-fit: cover;   
+    }
+    .subtituloTarjetas{
+        text-align: left;
+        font-size: 1rem;
+        padding: 5px;
+        padding-left: 18px;
+        padding-bottom: 5px;
+    }
+    .parrafoTarjetas{
+        text-align: left;
+        display: block;
+        width: 90%;
+        font-size: 0.9rem;
+        color: #394149;
+        padding: 5px;
+        padding-left: 18px;
+        padding-top: 6px;
+    }
+    .botonTarjetas{
+        color:#FFFFFF;
+        background-color:#48BDD6;
+        border-bottom: #48BDD6;
+        border: #48BDD6;
+        width: 200px;
+        height: 40px;
+        text-align: center;
+        font-size: 1.1rem;
+        border-radius: 18px;
+        margin-left: 10px;   
+    }
+    .seccionProductosDos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 1000px;
+        bottom: 20px;
+    }
+    .subtituloProductosDos{
+        text-align: left;
+        font-size: 1.1rem;
+        color: #1B1B1C;
+        font-weight: 600;
+        font-style: italic;
+        position: relative;
+        padding: 10px;
+        top: 70px;
+        right: 490px;   
+    }
+    
+    .botonTarjetaDos{
+        color:#FFFFFF;
+        background-color:#48BDD6;
+        border-bottom: #48BDD6;
+        border: #48BDD6;
+        width: 240px;
+        height: 40px;
+        text-align: center;
+        font-size: 1.1rem;
+        border-radius: 18px;
+        margin-left: 150px;   
+    }
+    .seccionProductosTres{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 2000px;
+        bottom: 20px;
+    }
+    .subtituloProductosTres{
+        text-align: left;
+        color: #1B1B1C;
+        font-size: 1.3rem;
+        font-weight: 600;
+        font-style: italic;
+        position: relative;
+        padding: 10px;
+        top: 60px;
+        right: 480px;   
+    }
+    .footer{
+        position: relative;
+        top: 3100px;
+    }
+}
+/* CSS media query celular pantalla Nuestros productos*/
+@media screen and (max-width: 576px){
+    .fondoBannerNuestros{
+        height: 70vh;
+        margin-top: 10px;
+    }
+    .tituloSeccionProductos{
+        text-align: center;
+        font-size: 1.6rem;
+        margin-top: 20px;
+        position: relative;
+        margin-left: 50px;
+        bottom: 10px;
+        padding: 15px;  
+    }
+    .botonTarjeta{
+        font-size: 1.1rem;
+        border-radius: 18px;
+        margin-top: 3px;
+        margin-left: 100px;   
+    }
+    .contenedorTarjetasNuestros{
+        width: 80vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .tarjetas{
+        width: 40%;
+        height: 420px;
+        margin: 6px;
+        
+    }
+    .parrafoTarjetas{
+        text-align: left;
+        display: block;
+        width: 90%;
+        font-size: 0.8rem;
+        color: #394149;
+        padding: 3px;
+        padding-left: 15px;
+        padding-top: 3px;
+    }
+    .botonTarjetas{
+        color:#FFFFFF;
+        background-color:#48BDD6;
+        border-bottom: #48BDD6;
+        border: #48BDD6;
+        width: 150px;
+        height: 40px;
+        text-align: center;
+        font-size: 1.1rem;
+        border-radius: 18px;
+        margin-left: 15px;   
+    }
+    .seccionProductosDos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 980px;
+        bottom: 20px;
+    }
+    .card{
+        width: 90%;
+        height: 570px;
+        margin-bottom: 10px;  
+    }
+    
+    .card-text{
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+    .text-mute{
+        padding: 5px;
+    }
+    .botonTarjetaDos{
+        color:#FFFFFF;
+        background-color:#48BDD6;
+        border-bottom: #48BDD6;
+        border: #48BDD6;
+        width: 210px;
+        height: 40px;
+        text-align: center;
+        font-size: 1.1rem;
+        border-radius: 18px;
+        margin-top: 10px;
+        margin-left: 100px;   
+    }
+    .footer{
+        position: relative;
+        top: 3050px;
+    }
+}
+/*css maquetación responsive pantalla galería tablet y celular pantalla grande*/
+@media screen and (max-width: 768px){
+    .tituloGaleria{
+        font-size: 2rem;
+        top: 120px;
+        left: 500px;
+      }
+      .tituloValores{
+        font-size: 1.6rem;
+      }
+      .parrafo{
+        font-size: 1rem;
+      }
+
+}
+/* CSS media query celular pantalla Galería*/
+@media screen and (max-width: 576px){
+    .bannerGaleria{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-image: linear-gradient(to right top, #f7d0d5a4, #f9bbc296, #faa5af7e, #fa8e9cb7, #f87788ce), url(../assets/img/pastel\ galeria.jpg);
+        background-position: center; 
+        bottom: 10px; 
+      }
+      .tituloGaleria{
+        font-size: 1.8rem;
+        top: 15px;
+        left: 20px;
+      }
+      .subtitulo{
+        font-size: 1.6rem;
+        text-align: center;
+      }
+      .subtitulo span{
+        font-size: 1.6rem;
+        text-align: center;
+      }
+      .parrafo{
+        font-size: 0.9rem;
+        text-align: center;
+      }
+}
+/*css maquetación responsive pantalla contáctanos tablet y celular pantalla grande*/
+@media screen and (max-width: 768px){
+    .columnaTextoUbica{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
+        min-height: 100%;
+        padding: 20px;
+    }
+    .textoAzul{
+            font-size: 1.6rem;
+          }
+      .mapa{
+        display: flex;
+        justify-content: center;
+        padding-left: 30px;
+      }
+    .fa-solid{
+        font-size: 1.1rem;
+    }
+}
+/* CSS media query celular pantalla Contáctanos*/
+@media screen and (max-width: 576px){
+    .bannerContactanos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-position: center; 
+        bottom: 10px; 
+      }
+      .columnaTextoUbica{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100%;
+        padding: 10px;
+    }
+
+}
+
+
+
 
 
  
