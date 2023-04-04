@@ -1,0 +1,51 @@
+
+/*Comienza la maquetación del header*/
+.header{
+    background-color: $color-fondo;
+    padding: 3px;
+    text-align: $justify-texto;
+    width: 100%;
+    position: sticky !important;
+    top: 0px;
+    z-index: 10;  
+}
+header .container-fluid .logo{
+    width: 100px;
+    position: sticky;
+    left: 86px;
+}
+.colorNav{
+    background-color:$color-primario;
+    width: 100%;
+}
+.navbar-nav{
+    list-style: none;
+    position: sticky;  
+}
+.nav-item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.nav-link {
+    color:$color-subtitulos;
+    text-decoration: none;
+    font-family: poppins;
+    font-size: $fuente-enlaces;
+    font-weight: 600;
+    
+}
+    
+/*Termina la maquetación del header Desktop*/
+/*css maquetación responsive Index tablet y celular pantalla grande*/
+@media screen and (max-width: 768px) {
+    .sticky-top{
+        width: 100%;
+        height:30vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+}

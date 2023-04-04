@@ -1,0 +1,113 @@
+ /*inicia la maquetación  de la pagina contáctanos*/
+ .bannerContactanos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right top, #cbf2fa38, #aae1ee65, #88d1e28a, #61c0d6e7, #2ab0cb),url(../assets/img/pastelerialugar.jpg);
+    width: 100%;
+    height: 70vh;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    bottom: 10px; 
+  }
+  .ubicacion{
+    padding: 20px;
+  }
+  .columnaTextoUbica{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    min-height: 100%;
+    padding: 1rem 2rem 1rem 4rem;
+}
+.textoAzul{
+        font-size: 1.8rem;
+        color: $color-terciario;
+        font-weight: 600; 
+        padding-top: 5px;
+      }
+  .mapa{
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+  }
+  .fa-solid{
+    color: $color-resaltar;
+    font-size: $fuente-enlaces;
+    padding-bottom: 5px;
+  }
+  .formulario{
+    background-image: linear-gradient(to right top, #c5c5c538, #dce0e065, #e8ecec8a, #eef4f5a4, #ffffff8f),url(../assets/img/Cupcake\ red\ velvet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .text-center{
+    font-size: $fuente-subtitulo;
+    color: $color-subtitulos;
+    font-weight: 600;
+    padding: 5px;
+  }
+  .bigicon{
+    color:$color-terciario;
+    font-size: 1.8rem;
+    padding: 2px;
+  }
+  .h3Footer{
+    text-align: $justify-texto;
+    font-size: $fuente-enlaces;
+    font-weight: 600;
+    color: $color-subtitulos;
+}
+.h4Footer{
+    text-align: $justify-texto;
+    font-size: $fuente-texto;
+    color: $color-subtitulos;
+    font-weight: 600;
+}
+/*css maquetación responsive pantalla contáctanos tablet y celular pantalla grande*/
+@media screen and (max-width: 768px){
+  .columnaTextoUbica{
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      justify-content: center;
+      min-height: 100%;
+      padding: 20px;
+  }
+  .textoAzul{
+          font-size: 1.6rem;
+        }
+    .mapa{
+      display: flex;
+      justify-content: center;
+      padding-left: 30px;
+    }
+  .fa-solid{
+      font-size: $fuente-texto;
+  }
+}
+/* CSS media query celular pantalla Contáctanos*/
+@media screen and (max-width: 576px){
+  .bannerContactanos{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      background-position: center; 
+      bottom: 10px; 
+    }
+    .columnaTextoUbica{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100%;
+      padding: 10px;
+  }
+
+}

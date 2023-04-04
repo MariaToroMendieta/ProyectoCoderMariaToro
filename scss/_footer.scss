@@ -1,0 +1,59 @@
+.bgRosaPastel{
+    background-color: $color-primario;
+    display: flex;
+}
+
+.h3{
+    text-align: $justify-texto;
+    font-size: $fuente-enlaces;
+    font-weight: 600;
+    color: $color-subtitulos;
+    width: 357px;
+}
+.h4{
+    text-align: $justify-texto;
+    font-size: $fuente-texto;
+    color: $color-subtitulos;
+    font-weight: 600;
+}
+.texto{
+    text-align: $justify-texto;
+    font-size: $fuente-textochico;
+    color:$color-textos;
+}
+
+.redesSociales{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.linkRedSocial{
+    display: inline-block;
+    color: $color-titulos;
+    font-size: 1.8rem;
+    padding-inline: 5px;
+    margin-right: 60px;   
+} 
+
+/*ajuste footer pantalla nuestros productos*/
+.footer{
+    position: relative;
+    top: 3260px;
+}
+/*css maquetación responsive pantalla nuestros productos tablet y celular pantalla grande*/
+@media screen and (max-width: 768px){
+   
+    .footer{
+        position: relative;
+        top: 3100px;
+    }
+}
+/* CSS media query celular pantalla Nuestros productos*/
+@media screen and (max-width: 576px){
+    
+    .footer{
+        position: relative;
+        top: 3050px;
+    }
+}
+ 

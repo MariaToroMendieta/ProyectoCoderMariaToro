@@ -1,0 +1,477 @@
+/*inicia la maquetación  de la pagina nuestros productos*/
+
+.fondoBnNuestros{
+    background:$color-primario;
+    background-image: url(../assets/img/círculo\ azul\ mediano\ fondo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    height: 80vh;
+    margin-top: 5px;
+  }
+  .subtituloBanner{
+    text-align: $justify-texto;
+    color: $color-blanco;
+    font-size: $fuente-subtitulo;
+    width: 307px;
+    height: 48px;
+    font-family: $tipografia-destacada;
+    position: relative;
+    top: 80px;
+    left: 30px;   
+}
+.seccionProductos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 40px;
+    bottom: 20px;
+}
+.tituloSeccionProductos{
+    text-align: $justify-textocenter;
+    font-size: $fuente-subtitulo;
+    font-weight: 600;
+    position: relative;
+    top: 27px;
+    bottom: 20px;
+    padding: 15px;
+    
+}
+.subtituloProductos{
+    text-align: $justify-texto;
+    font-size: $fuente-enlaces;
+    font-weight: 600;
+    font-style: italic;
+    position: relative;
+    padding: 15px;
+    top: 76px;
+    right: 600px;   
+}
+.card{
+    width: 80%;
+    height: 550px;
+    background-color:$color-secundario;
+    box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
+    -webkit-box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
+    -moz-box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px $color-subtitulos;
+    display: flex;
+    position: absolute;
+    top: 120px;
+    padding-bottom: 10px;
+}
+.card img{
+    width: 100%;
+    height: 300px;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+
+}
+.card-title{
+    text-align:$justify-texto;
+    font-size: $fuente-enlaces;
+    font-weight: 600;
+    color: $color-subtitulos;
+    padding: 10px;
+    padding-bottom: 8px;
+}
+.card-text{
+    text-align:$justify-texto;
+    display: block;
+    width: 90%;
+    font-size: $fuente-textochico;
+    color: $color-textos;
+    padding: 5px;
+    padding-top: 6px;
+}
+.botonTarjeta{
+    color:$color-blanco;
+    background-color:$color-terciario;
+    border-bottom: $color-terciario;
+    border: $color-terciario;
+    width: 240px;
+    height: 40px;
+    text-align: $justify-textocenter;
+    font-size: $fuente-texto;
+    border-radius: 18px;
+    margin-top: 10px;
+    margin-left: 10px;   
+}
+.contenedorTarjetasNuestros{
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.tarjetas{
+    width: 30%;
+    height: 450px;
+    background-color: $color-secundario;
+    box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
+    -webkit-box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
+    -moz-box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px $color-subtitulos;
+    display: inline-block;
+    position: relative;
+}
+.tarjetas img{
+    width: 100%;
+    height: 240px;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;   
+}
+.subtituloTarjetas{
+    text-align: $justify-texto;
+    font-size: 1.2rem;
+    color: $color-subtitulos;
+    padding: 10px;
+    padding-left: 18px;
+    padding-bottom: 8px;
+}
+.parrafoTarjetas{
+    text-align: $justify-texto;
+    display: block;
+    width: 90%;
+    font-size: $fuente-textochico;
+    color: $color-textos;
+    padding: 5px;
+    padding-left: 18px;
+    padding-top: 6px;
+}
+.botonTarjetas{
+    color:$color-blanco;
+    background-color:$color-terciario;
+    border-bottom: $color-terciario;
+    border: $color-terciario;
+    width: 220px;
+    height: 40px;
+    text-align: $justify-textocenter;
+    font-size: $fuente-texto;
+    border-radius: 18px;
+    margin-left: 50px;   
+}
+.seccionProductosDos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 1100px;
+    bottom: 20px;
+}
+.subtituloProductosDos{
+    text-align: $justify-texto;
+    font-size: $fuente-enlaces;
+    color: $color-subtitulos;
+    font-weight: 600;
+    font-style: italic;
+    position: relative;
+    padding: 10px;
+    top: 70px;
+    right: 490px;   
+}
+
+.botonTarjetaDos{
+    color:$color-blanco;
+    background-color:$color-terciario;
+    border-bottom: $color-terciario;
+    border: $color-terciario;
+    width: 240px;
+    height: 40px;
+    text-align: $justify-textocenter;
+    font-size: $fuente-texto;
+    border-radius: 18px;
+    margin-left: 10px;   
+}
+.seccionProductosTres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 2170px;
+    bottom: 20px;
+}
+.subtituloProductosTres{
+    text-align: $justify-texto;
+    color: $color-subtitulos;
+    font-size: $fuente-enlaces;
+    font-weight: 600;
+    font-style: italic;
+    position: relative;
+    padding: 10px;
+    top: 60px;
+    right: 480px;   
+}
+/*css maquetación responsive pantalla nuestros productos tablet y celular pantalla grande*/
+@media screen and (max-width: 768px) {
+    .subtituloBanner{
+        display: none;
+    }
+    .tituloSeccionProductos{
+        text-align: $justify-textocenter;
+        font-size: 1.8rem;
+        top: 15px;
+        position: relative;
+        margin-left: 50px;
+        bottom: 15px;
+        padding: 15px;
+        
+    }
+    .subtituloProductos{
+        text-align: $justify-texto;
+        font-size: $fuente-enlaces;
+        font-weight: 600;
+        font-style: italic;
+        position: relative;
+        padding: 15px;
+        top: 10px;
+        right: 600px;   
+    }
+    .card{
+        width: 80%;
+        height: 550px;
+        background-color:$color-secundario;
+        box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
+        -webkit-box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
+        -moz-box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px $color-subtitulos;
+        display: flex;
+        position: absolute;
+        top: 110px;
+        padding-bottom: 10px;
+    }
+    .card-title{
+        text-align:$justify-texto;
+        font-size: $fuente-texto;
+        font-weight: 600;
+        color: $color-subtitulos;
+        padding: 10px;
+        padding-bottom: 6px;
+    }
+    .card-text{
+        text-align:$justify-texto;
+        display: block;
+        width: 90%;
+        font-size: 0.9rem;
+        color: $color-textos;
+        padding: 5px;
+        padding-top: 6px;
+    }
+    .botonTarjeta{
+        color:$color-blanco;
+        background-color:$color-terciario;
+        border-bottom: $color-terciario;
+        border: $color-terciario;
+        width: 240px;
+        height: 40px;
+        text-align: $justify-textocenter;
+        font-size: $fuente-texto;
+        border-radius: 18px;
+        margin-top: 5px;
+        margin-left: 150px;   
+    }
+    .contenedorTarjetasNuestros{
+        width: 80vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .tarjetas{
+        width: 35%;
+        height: 410px;
+        margin: 8px;
+        
+    }
+    .tarjetas img{
+        width: 100%;
+        height: 220px;
+        border-radius: 8px 8px 0 0;
+        object-fit: cover;   
+    }
+    .subtituloTarjetas{
+        text-align: $justify-texto;
+        font-size: $fuente-textochico;
+        padding: 5px;
+        padding-left: 18px;
+        padding-bottom: 5px;
+    }
+    .parrafoTarjetas{
+        text-align: $justify-texto;
+        display: block;
+        width: 90%;
+        font-size: 0.9rem;
+        color: $color-textos;
+        padding: 5px;
+        padding-left: 18px;
+        padding-top: 6px;
+    }
+    .botonTarjetas{
+        color:$color-blanco;
+        background-color:$color-terciario;
+        border-bottom: $color-terciario;
+        border: $color-terciario;
+        width: 200px;
+        height: 40px;
+        text-align: $justify-textocenter;
+        font-size: $fuente-texto;
+        border-radius: 18px;
+        margin-left: 10px;   
+    }
+    .seccionProductosDos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 1000px;
+        bottom: 20px;
+    }
+    .subtituloProductosDos{
+        text-align: $justify-texto;
+        font-size: $fuente-texto;
+        color: $color-subtitulos;
+        font-weight: 600;
+        font-style: italic;
+        position: relative;
+        padding: 10px;
+        top: 70px;
+        right: 490px;   
+    }
+    
+    .botonTarjetaDos{
+        color:$color-blanco;
+        background-color:$color-terciario;
+        border-bottom: $color-terciario;
+        border: $color-terciario;
+        width: 240px;
+        height: 40px;
+        text-align: $justify-textocenter;
+        font-size: $fuente-texto;
+        border-radius: 18px;
+        margin-left: 150px;   
+    }
+    .seccionProductosTres{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 2000px;
+        bottom: 20px;
+    }
+    .subtituloProductosTres{
+        text-align: $justify-texto;
+        color: $color-subtitulos;
+        font-size: $fuente-enlaces;
+        font-weight: 600;
+        font-style: italic;
+        position: relative;
+        padding: 10px;
+        top: 60px;
+        right: 480px;   
+    }
+}
+/* CSS media query celular pantalla Nuestros productos*/
+@media screen and (max-width: 576px) {
+    .fondoBannerNuestros{
+        height: 70vh;
+        margin-top: 10px;
+    }
+    .tituloSeccionProductos{
+        text-align: $justify-textocenter;
+        font-size: 1.6rem;
+        margin-top: 20px;
+        position: relative;
+        margin-left: 50px;
+        bottom: 10px;
+        padding: 15px;  
+    }
+    .botonTarjeta{
+        font-size: $fuente-texto;
+        border-radius: 18px;
+        margin-top: 3px;
+        margin-left: 100px;   
+    }
+    .contenedorTarjetasNuestros{
+        width: 80vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .tarjetas{
+        width: 40%;
+        height: 420px;
+        margin: 6px;
+        
+    }
+    .parrafoTarjetas{
+        text-align: $justify-texto;
+        display: block;
+        width: 90%;
+        font-size: 0.8rem;
+        color: $color-textos;
+        padding: 3px;
+        padding-left: 15px;
+        padding-top: 3px;
+    }
+    .botonTarjetas{
+        color:$color-blanco;
+        background-color:$color-terciario;
+        border-bottom: $color-terciario;
+        border: $color-terciario;
+        width: 150px;
+        height: 40px;
+        text-align: $justify-textocenter;
+        font-size: $fuente-texto;
+        border-radius: 18px;
+        margin-left: 15px;   
+    }
+    .seccionProductosDos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 980px;
+        bottom: 20px;
+    }
+    .card{
+        width: 90%;
+        height: 570px;
+        margin-bottom: 10px;  
+    }
+    
+    .card-text{
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+    .text-mute{
+        padding: 5px;
+    }
+    .botonTarjetaDos{
+        color:$color-blanco;
+        background-color:$color-terciario;
+        border-bottom: $color-terciario;
+        border: $color-terciario;
+        width: 210px;
+        height: 40px;
+        text-align: center;
+        font-size: $fuente-texto;
+        border-radius: 18px;
+        margin-top: 10px;
+        margin-left: 100px;   
+    }
+}

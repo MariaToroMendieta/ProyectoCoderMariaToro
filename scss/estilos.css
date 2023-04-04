@@ -8,6 +8,32 @@
   font-family: "Poppins", sans-serif;
 }
 
+.row {
+  display: flex;
+  margin-top: 35px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.col-lg-4 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.img-fluid {
+  border-radius: 8px;
+  width: 60vw;
+  height: 60vh;
+}
+
 .body {
   background-color: #FFFDFD;
   width: 100%;
@@ -20,7 +46,7 @@ html, body {
 }
 
 /*Comienza la maquetación del header*/
-.sticky-top {
+.header {
   background-color: #FFFDFD;
   padding: 3px;
   text-align: left;
@@ -60,7 +86,17 @@ header .container-fluid .logo {
   font-weight: 600;
 }
 
-/*Termina la maquetación del header*/
+/*Termina la maquetación del header Desktop*/
+/*css maquetación responsive Index tablet y celular pantalla grande*/
+@media screen and (max-width: 768px) {
+  .sticky-top {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
 /*Comienza la maquetación del main del Index*/
 .fondoBannerIndex {
   background: #E0F3F7;
@@ -133,18 +169,13 @@ header .container-fluid .logo {
 
 .img-fluid {
   border-radius: 8px;
-  width: 35%;
-  height: 50vh;
+  width: 95%;
+  height: 60vh;
   Display: flex;
   flex-direction: column;
   align-items: baseline;
   justify-content: center;
   min-height: 100%;
-}
-
-.row {
-  display: flex;
-  margin-top: 35px;
 }
 
 .tituloNuestraH {
@@ -204,13 +235,6 @@ header .container-fluid .logo {
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
-}
-
-.col-lg-4 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
 .tituloValores {
@@ -355,7 +379,7 @@ header .container-fluid .logo {
 }
 
 .imagenProductoDelMes {
-  width: 300px;
+  width: 500px;
   border-radius: 8px;
   position: absolute;
   right: 86px;
@@ -363,45 +387,221 @@ header .container-fluid .logo {
   margin-bottom: 5px;
 }
 
-.bgRosaPastel {
-  background-color: #F1B8BF;
-  display: flex;
+/*css maquetación responsive Index tablet y celular pantalla grande*/
+@media screen and (max-width: 768px) {
+  .contenedorBannerIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 80vh;
+    margin-bottom: 10px;
+  }
+  .fondoBannerIndex {
+    height: 80vh;
+  }
+  .columnaTexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 80%;
+    padding: 0.2rem 0.5rem 1rem 2rem;
+  }
+  .titulo {
+    text-align: left;
+    font-size: 2rem;
+  }
+  .subtituloPrincipalIndex {
+    text-align: left;
+    font-size: 1.6rem;
+    width: 285px;
+    height: 36px;
+    font-family: La Belle Aurore;
+  }
+  .parrafoPrincipal {
+    text-align: left;
+    font-size: 1rem;
+    width: 360px;
+    height: 86px;
+  }
+  .botonQuierosaberMas {
+    width: 280px;
+    height: 45px;
+    text-align: center;
+    font-size: 1rem;
+    bottom: 60px;
+    border-radius: 18px;
+  }
+  .img-fluid {
+    border-radius: 8px;
+    width: 100%;
+    height: 80%;
+    Display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .lead {
+    padding: 10px;
+    font-size: 1rem;
+    width: 350px;
+    height: 205px;
+  }
+  .tarjeta {
+    width: 45%;
+  }
+  .contenedorProductoDelMes {
+    display: flex;
+    position: relative;
+    bottom: 10px;
+  }
+  .colProducto {
+    display: inline-block;
+    left: 15px;
+    right: 20px;
+  }
+  .tituloSeccionProductoDelMes {
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  .subtituloProductoDelMes {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 3px;
+  }
+  .botonComprar {
+    width: 280px;
+    height: 45px;
+    text-align: center;
+    font-size: 1rem;
+    bottom: 30px;
+    left: 50px;
+    border-radius: 18px;
+    margin-top: 80px;
+  }
+  .contenedorImagenProductoDelMes {
+    display: inline-block;
+  }
+  .imagenProductoDelMes {
+    width: 250px;
+    border-radius: 8px;
+    position: absolute;
+    padding-left: 3px;
+    right: 40px;
+    top: 40px;
+    margin-bottom: 5px;
+  }
 }
-
-.h3 {
-  text-align: left;
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #1B1B1C;
+/* CSS media query celular Index*/
+@media screen and (max-width: 576px) {
+  .contenedorBannerIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-bottom: 10px;
+  }
+  .fondoBannerIndex {
+    height: 80vh;
+    margin-top: 10px;
+  }
+  .columnaTexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80%;
+  }
+  .titulo {
+    text-align: center;
+    font-size: 1.8rem;
+    padding-top: 10px;
+  }
+  .subtituloPrincipalIndex {
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: La Belle Aurore;
+  }
+  .parrafoPrincipal {
+    text-align: center;
+    font-size: 0.9rem;
+    width: 360px;
+    height: 86px;
+  }
+  .botonQuierosaberMas {
+    width: 280px;
+    height: 45px;
+    text-align: center;
+    font-size: 1rem;
+    bottom: 60px;
+    border-radius: 18px;
+  }
+  .img-fluid {
+    display: none;
+  }
+  .tituloNuestraH {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .lead {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    font-size: 0.9rem;
+    width: 100%;
+    height: 25vh;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  .navlinkNuestraHistoria {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    font-size: 1.1rem;
+    padding-top: 5px;
+  }
+  .bd-placeholder-img {
+    display: none;
+  }
+  .tarjeta {
+    width: 60%;
+  }
+  .subtituloTarjeta {
+    text-align: left;
+    font-size: 1.1rem;
+    padding: 5px;
+    padding-left: 18px;
+    padding-bottom: 4px;
+  }
+  .parrafoTarjetas {
+    text-align: left;
+    display: block;
+    width: 90%;
+    font-size: 14px;
+    padding: 3px;
+    padding-left: 18px;
+    padding-top: 4px;
+  }
+  .contenedorProductoDelMes {
+    display: flex;
+    position: relative;
+    bottom: 10px;
+  }
+  .botonComprar {
+    width: 280px;
+    height: 45px;
+    text-align: center;
+    font-size: 1rem;
+    bottom: 30px;
+    left: 50px;
+    border-radius: 18px;
+    margin-top: 60px;
+  }
 }
-
-.h4 {
-  text-align: left;
-  font-size: 1.1rem;
-  color: #1B1B1C;
-  font-weight: 600;
-}
-
-.texto {
-  text-align: left;
-  font-size: 1rem;
-  color: #394149;
-}
-
-.redesSociales {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: baseline;
-}
-
-.linkRedSocial {
-  display: inline-block;
-  color: #0F0F10;
-  font-size: 1.8rem;
-  padding-inline: 5px;
-  margin-right: 60px;
-}
-
 /*Inicia la maquetación del main pagina nosotros*/
 .columnaTexto {
   display: flex;
@@ -409,13 +609,7 @@ header .container-fluid .logo {
   align-items: baseline;
   justify-content: center;
   min-height: 100%;
-  padding: 1rem 4rem 1rem 4rem;
-}
-
-.img-fluid {
-  border-radius: 8px;
-  width: 50vw;
-  height: 60vh;
+  padding: 1rem 1rem 1rem 4rem;
 }
 
 .contenedorNuestraHistoria {
@@ -437,7 +631,7 @@ header .container-fluid .logo {
   justify-content: center;
   min-height: 100%;
   background: #F1B8BF;
-  padding: 1rem 12rem 1rem 4rem;
+  padding: 1rem 4rem 1rem 4rem;
 }
 
 .col-info p {
@@ -474,14 +668,6 @@ header .container-fluid .logo {
   font-size: 1.1rem;
   width: 403px;
   height: 178px;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .imgHover {
@@ -537,6 +723,101 @@ header .container-fluid .logo {
   font-size: 1rem;
 }
 
+/*css maquetación responsive pantalla Nosotros tablet y celular pantalla grande*/
+@media screen and (max-width: 768px) {
+  .contenedorNuestraHistoria {
+    display: flex;
+    height: 70vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .columna {
+    width: 50%;
+  }
+  .col-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    background: #F1B8BF;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .col-info p {
+    line-height: 1;
+  }
+  .col-img {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/img/ingredientesyutenciliospasteleros.jpg");
+  }
+  .subtitulo {
+    position: relative;
+    padding-top: 10px;
+    text-align: left;
+    width: 350px;
+    height: 139px;
+    font-size: 1.6rem;
+    color: #1B1B1C;
+    font-weight: 600;
+  }
+  .subtitulo span {
+    text-align: left;
+    width: 350px;
+    height: 139px;
+    font-size: 1.6rem;
+    color: #F6929E;
+    font-weight: 600;
+  }
+  .parrafoHistoria {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 30px;
+    text-align: left;
+    color: #394149;
+    font-size: 1rem;
+    width: 350px;
+    height: 178px;
+  }
+  .container {
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .imgHover {
+    padding-top: 8px;
+    border-radius: 8px;
+  }
+}
+/* CSS media query celular pantalla Nosotros*/
+@media screen and (max-width: 576px) {
+  .subtitulo {
+    position: relative;
+    padding-top: 10px;
+    text-align: left;
+    width: 320px;
+    height: 160px;
+    font-size: 1.3rem;
+    color: #1B1B1C;
+    font-weight: 600;
+  }
+  .parrafoHistoria {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    left: 5px;
+    text-align: left;
+    color: #394149;
+    font-size: 0.9rem;
+    width: 215px;
+    height: 260px;
+  }
+}
 /*inicia la maquetación  de la pagina nuestros productos*/
 .fondoBnNuestros {
   background: #F1B8BF;
@@ -558,7 +839,7 @@ header .container-fluid .logo {
   font-family: La Belle Aurore;
   position: relative;
   top: 80px;
-  left: 15px;
+  left: 30px;
 }
 
 .seccionProductos {
@@ -768,468 +1049,6 @@ header .container-fluid .logo {
   right: 480px;
 }
 
-.footer {
-  position: relative;
-  top: 3280px;
-}
-
-/*inicia la maquetación  de la pagina galeria*/
-.bannerGaleria {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-image: linear-gradient(to right top, rgba(247, 208, 213, 0.6431372549), rgba(249, 187, 194, 0.5882352941), rgba(250, 165, 175, 0.4941176471), rgba(250, 142, 156, 0.7176470588), rgba(248, 119, 136, 0.8078431373)), url(../assets/img/pastel\ galeria.jpg);
-  width: 100%;
-  height: 70vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  bottom: 10px;
-}
-
-.tituloGaleria {
-  text-align: center;
-  color: #FFFFFF;
-  font-size: 2.5rem;
-  font-weight: bold;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 180px;
-  left: 900px;
-}
-
-.galeria {
-  margin: 16px;
-}
-
-.subtitulo {
-  text-align: left;
-  font-size: 2rem;
-  color: #1B1B1C;
-  font-weight: 600;
-}
-
-.parrafo {
-  text-align: left;
-  font-size: 1.1rem;
-  color: #394149;
-}
-
-.galeriaPVenta {
-  margin: 24px;
-}
-
-.subtituloCarrusel {
-  font-size: 2rem;
-  color: #1B1B1C;
-  font-weight: 600;
-}
-
-.textoCarrusel {
-  font-size: 1rem;
-  color: #1B1B1C;
-}
-
-/*inicia la maquetación  de la pagina contáctanos*/
-.bannerContactanos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-image: linear-gradient(to right top, rgba(203, 242, 250, 0.2196078431), rgba(170, 225, 238, 0.3960784314), rgba(136, 209, 226, 0.5411764706), rgba(97, 192, 214, 0.9058823529), #2ab0cb), url(../assets/img/pastelerialugar.jpg);
-  width: 100%;
-  height: 70vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  bottom: 10px;
-}
-
-.ubicacion {
-  padding: 20px;
-}
-
-.columnaTextoUbica {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  justify-content: center;
-  min-height: 100%;
-  padding: 1rem 2rem 1rem 4rem;
-}
-
-.textoAzul {
-  font-size: 1.8rem;
-  color: #2ab0cb;
-  font-weight: 600;
-  padding-top: 5px;
-}
-
-.mapa {
-  display: flex;
-  justify-content: center;
-  padding-left: 30px;
-}
-
-.fa-solid {
-  color: #F6929E;
-  font-size: 1.3rem;
-  padding-bottom: 5px;
-}
-
-.formulario {
-  background-image: linear-gradient(to right top, rgba(197, 197, 197, 0.2196078431), rgba(220, 224, 224, 0.3960784314), rgba(232, 236, 236, 0.5411764706), rgba(238, 244, 245, 0.6431372549), rgba(255, 255, 255, 0.5607843137)), url(../assets/img/Cupcake\ red\ velvet.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.text-center {
-  font-size: 2rem;
-  color: #1B1B1C;
-  font-weight: 600;
-  padding: 5px;
-}
-
-.bigicon {
-  color: #2ab0cb;
-  font-size: 1.8rem;
-  padding: 2px;
-}
-
-.h3Footer {
-  text-align: left;
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #1B1B1C;
-}
-
-.h4Footer {
-  text-align: left;
-  font-size: 1.1rem;
-  color: #1B1B1C;
-  font-weight: 600;
-}
-
-/*css maquetación responsive Index tablet y celular pantalla grande*/
-@media screen and (max-width: 768px) {
-  .sticky-top {
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .contenedorBannerIndex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 80vh;
-    margin-bottom: 10px;
-  }
-  .fondoBannerIndex {
-    height: 80vh;
-  }
-  .columnaTexto {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 80%;
-    padding: 0.2rem 0.5rem 1rem 2rem;
-  }
-  .titulo {
-    text-align: left;
-    font-size: 2rem;
-  }
-  .subtituloPrincipalIndex {
-    text-align: left;
-    font-size: 1.6rem;
-    width: 285px;
-    height: 36px;
-    font-family: La Belle Aurore;
-  }
-  .parrafoPrincipal {
-    text-align: left;
-    font-size: 1rem;
-    width: 360px;
-    height: 86px;
-  }
-  .botonQuierosaberMas {
-    width: 280px;
-    height: 45px;
-    text-align: center;
-    font-size: 1rem;
-    bottom: 60px;
-    border-radius: 18px;
-  }
-  .img-fluid {
-    border-radius: 8px;
-    width: 100%;
-    height: 80%;
-    Display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: space-between;
-  }
-  .lead {
-    padding: 10px;
-    font-size: 1rem;
-    width: 350px;
-    height: 205px;
-  }
-  .tarjeta {
-    width: 45%;
-  }
-  .contenedorProductoDelMes {
-    display: flex;
-    position: relative;
-    bottom: 10px;
-  }
-  .colProducto {
-    display: inline-block;
-    left: 15px;
-    right: 20px;
-  }
-  .tituloSeccionProductoDelMes {
-    text-align: left;
-    font-size: 1.6rem;
-    font-weight: 600;
-  }
-  .subtituloProductoDelMes {
-    text-align: left;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-left: 3px;
-  }
-  .botonComprar {
-    width: 280px;
-    height: 45px;
-    text-align: center;
-    font-size: 1rem;
-    bottom: 30px;
-    left: 50px;
-    border-radius: 18px;
-    margin-top: 80px;
-  }
-  .contenedorImagenProductoDelMes {
-    display: inline-block;
-  }
-  .imagenProductoDelMes {
-    width: 250px;
-    border-radius: 8px;
-    position: absolute;
-    padding-left: 3px;
-    right: 40px;
-    top: 40px;
-    margin-bottom: 5px;
-  }
-}
-/* CSS media query celular Index*/
-@media screen and (max-width: 576px) {
-  .contenedorBannerIndex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    margin-bottom: 10px;
-  }
-  .fondoBannerIndex {
-    height: 80vh;
-    margin-top: 10px;
-  }
-  .columnaTexto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 80%;
-  }
-  .titulo {
-    text-align: center;
-    font-size: 1.8rem;
-    padding-top: 10px;
-  }
-  .subtituloPrincipalIndex {
-    text-align: center;
-    font-size: 1.4rem;
-    font-family: La Belle Aurore;
-  }
-  .parrafoPrincipal {
-    text-align: center;
-    font-size: 0.9rem;
-    width: 360px;
-    height: 86px;
-  }
-  .botonQuierosaberMas {
-    width: 280px;
-    height: 45px;
-    text-align: center;
-    font-size: 1rem;
-    bottom: 60px;
-    border-radius: 18px;
-  }
-  .img-fluid {
-    display: none;
-  }
-  .tituloNuestraH {
-    text-align: center;
-    font-size: 1.4rem;
-  }
-  .lead {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    text-align: center;
-    font-size: 0.9rem;
-    width: 100%;
-    height: 25vh;
-    padding-top: 10px;
-    padding-bottom: 5px;
-  }
-  .navlinkNuestraHistoria {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    text-align: center;
-    text-align: center;
-    font-size: 1.1rem;
-    padding-top: 5px;
-  }
-  .bd-placeholder-img {
-    display: none;
-  }
-  .tarjeta {
-    width: 60%;
-  }
-  .subtituloTarjeta {
-    text-align: left;
-    font-size: 1.1rem;
-    padding: 5px;
-    padding-left: 18px;
-    padding-bottom: 4px;
-  }
-  .parrafoTarjetas {
-    text-align: left;
-    display: block;
-    width: 90%;
-    font-size: 14px;
-    padding: 3px;
-    padding-left: 18px;
-    padding-top: 4px;
-  }
-  .contenedorProductoDelMes {
-    display: flex;
-    position: relative;
-    bottom: 10px;
-  }
-  .botonComprar {
-    width: 280px;
-    height: 45px;
-    text-align: center;
-    font-size: 1rem;
-    bottom: 30px;
-    left: 50px;
-    border-radius: 18px;
-    margin-top: 60px;
-  }
-}
-/*css maquetación responsive pantalla Nosotros tablet y celular pantalla grande*/
-@media screen and (max-width: 768px) {
-  .contenedorNuestraHistoria {
-    display: flex;
-    height: 70vh;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .columna {
-    width: 50%;
-  }
-  .col-info {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    min-height: 100%;
-    background: #F1B8BF;
-    padding: 1rem 1rem 1rem 1rem;
-  }
-  .col-info p {
-    line-height: 1;
-  }
-  .col-img {
-    background-position: center;
-    background-size: cover;
-    background-image: url("../assets/img/ingredientesyutenciliospasteleros.jpg");
-  }
-  .subtitulo {
-    position: relative;
-    padding-top: 10px;
-    text-align: left;
-    width: 350px;
-    height: 139px;
-    font-size: 1.6rem;
-    color: #1B1B1C;
-    font-weight: 600;
-  }
-  .subtitulo span {
-    text-align: left;
-    width: 350px;
-    height: 139px;
-    font-size: 1.6rem;
-    color: #F6929E;
-    font-weight: 600;
-  }
-  .parrafoHistoria {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 30px;
-    text-align: left;
-    color: #394149;
-    font-size: 1rem;
-    width: 350px;
-    height: 178px;
-  }
-  .container {
-    display: flex;
-    margin-top: 8px;
-    margin-bottom: 8px;
-  }
-  .imgHover {
-    padding-top: 8px;
-    border-radius: 8px;
-  }
-}
-/* CSS media query celular pantalla Nosotros*/
-@media screen and (max-width: 576px) {
-  .subtitulo {
-    position: relative;
-    padding-top: 10px;
-    text-align: left;
-    width: 320px;
-    height: 160px;
-    font-size: 1.3rem;
-    color: #1B1B1C;
-    font-weight: 600;
-  }
-  .parrafoHistoria {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin-top: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-    left: 5px;
-    text-align: left;
-    color: #394149;
-    font-size: 0.9rem;
-    width: 215px;
-    height: 260px;
-  }
-}
 /*css maquetación responsive pantalla nuestros productos tablet y celular pantalla grande*/
 @media screen and (max-width: 768px) {
   .subtituloBanner {
@@ -1399,10 +1218,6 @@ header .container-fluid .logo {
     top: 60px;
     right: 480px;
   }
-  .footer {
-    position: relative;
-    top: 3100px;
-  }
 }
 /* CSS media query celular pantalla Nuestros productos*/
 @media screen and (max-width: 576px) {
@@ -1494,11 +1309,64 @@ header .container-fluid .logo {
     margin-top: 10px;
     margin-left: 100px;
   }
-  .footer {
-    position: relative;
-    top: 3050px;
-  }
 }
+/*inicia la maquetación  de la pagina galeria*/
+.bannerGaleria {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to right top, rgba(247, 208, 213, 0.6431372549), rgba(249, 187, 194, 0.5882352941), rgba(250, 165, 175, 0.4941176471), rgba(250, 142, 156, 0.7176470588), rgba(248, 119, 136, 0.8078431373)), url(../assets/img/pastel\ galeria.jpg);
+  width: 100%;
+  height: 70vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 10px;
+}
+
+.tituloGaleria {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 180px;
+  left: 900px;
+}
+
+.galeria {
+  margin: 16px;
+}
+
+.subtitulo {
+  text-align: left;
+  font-size: 2rem;
+  color: #1B1B1C;
+  font-weight: 600;
+}
+
+.parrafo {
+  text-align: left;
+  font-size: 1.1rem;
+  color: #394149;
+}
+
+.galeriaPVenta {
+  margin: 24px;
+}
+
+.subtituloCarrusel {
+  font-size: 2rem;
+  color: #1B1B1C;
+  font-weight: 600;
+}
+
+.textoCarrusel {
+  font-size: 1rem;
+  color: #1B1B1C;
+}
+
 /*css maquetación responsive pantalla galería tablet y celular pantalla grande*/
 @media screen and (max-width: 768px) {
   .tituloGaleria {
@@ -1541,6 +1409,88 @@ header .container-fluid .logo {
     text-align: center;
   }
 }
+/*inicia la maquetación  de la pagina contáctanos*/
+.bannerContactanos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to right top, rgba(203, 242, 250, 0.2196078431), rgba(170, 225, 238, 0.3960784314), rgba(136, 209, 226, 0.5411764706), rgba(97, 192, 214, 0.9058823529), #2ab0cb), url(../assets/img/pastelerialugar.jpg);
+  width: 100%;
+  height: 70vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 10px;
+}
+
+.ubicacion {
+  padding: 20px;
+}
+
+.columnaTextoUbica {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  min-height: 100%;
+  padding: 1rem 2rem 1rem 4rem;
+}
+
+.textoAzul {
+  font-size: 1.8rem;
+  color: #48BDD6;
+  font-weight: 600;
+  padding-top: 5px;
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+.fa-solid {
+  color: #F6929E;
+  font-size: 1.3rem;
+  padding-bottom: 5px;
+}
+
+.formulario {
+  background-image: linear-gradient(to right top, rgba(197, 197, 197, 0.2196078431), rgba(220, 224, 224, 0.3960784314), rgba(232, 236, 236, 0.5411764706), rgba(238, 244, 245, 0.6431372549), rgba(255, 255, 255, 0.5607843137)), url(../assets/img/Cupcake\ red\ velvet.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  font-size: 2rem;
+  color: #1B1B1C;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.bigicon {
+  color: #48BDD6;
+  font-size: 1.8rem;
+  padding: 2px;
+}
+
+.h3Footer {
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1B1B1C;
+}
+
+.h4Footer {
+  text-align: left;
+  font-size: 1.1rem;
+  color: #1B1B1C;
+  font-weight: 600;
+}
+
 /*css maquetación responsive pantalla contáctanos tablet y celular pantalla grande*/
 @media screen and (max-width: 768px) {
   .columnaTextoUbica {
@@ -1579,5 +1529,65 @@ header .container-fluid .logo {
     justify-content: center;
     min-height: 100%;
     padding: 10px;
+  }
+}
+.bgRosaPastel {
+  background-color: #F1B8BF;
+  display: flex;
+}
+
+.h3 {
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1B1B1C;
+  width: 357px;
+}
+
+.h4 {
+  text-align: left;
+  font-size: 1.1rem;
+  color: #1B1B1C;
+  font-weight: 600;
+}
+
+.texto {
+  text-align: left;
+  font-size: 1rem;
+  color: #394149;
+}
+
+.redesSociales {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.linkRedSocial {
+  display: inline-block;
+  color: #0F0F10;
+  font-size: 1.8rem;
+  padding-inline: 5px;
+  margin-right: 60px;
+}
+
+/*ajuste footer pantalla nuestros productos*/
+.footer {
+  position: relative;
+  top: 3260px;
+}
+
+/*css maquetación responsive pantalla nuestros productos tablet y celular pantalla grande*/
+@media screen and (max-width: 768px) {
+  .footer {
+    position: relative;
+    top: 3100px;
+  }
+}
+/* CSS media query celular pantalla Nuestros productos*/
+@media screen and (max-width: 576px) {
+  .footer {
+    position: relative;
+    top: 3050px;
   }
 }/*# sourceMappingURL=estilos.css.map */
