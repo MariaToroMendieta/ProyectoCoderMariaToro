@@ -13,7 +13,7 @@
   .subtituloBanner{
     text-align: $justify-texto;
     color: $color-blanco;
-    font-size: $fuente-subtitulo;
+    font-size: map-get($map-tfuentes, h2);
     width: 307px;
     height: 48px;
     font-family: $tipografia-destacada;
@@ -31,7 +31,7 @@
 }
 .tituloSeccionProductos{
     text-align: $justify-textocenter;
-    font-size: $fuente-subtitulo;
+    font-size: map-get($map-tfuentes, h2);
     font-weight: 600;
     position: relative;
     top: 27px;
@@ -41,7 +41,7 @@
 }
 .subtituloProductos{
     text-align: $justify-texto;
-    font-size: $fuente-enlaces;
+    font-size: map-get($map-tfuentes, h3);
     font-weight: 600;
     font-style: italic;
     position: relative;
@@ -73,7 +73,7 @@
 }
 .card-title{
     text-align:$justify-texto;
-    font-size: $fuente-enlaces;
+    font-size: map-get($map-tfuentes, h3);
     font-weight: 600;
     color: $color-subtitulos;
     padding: 10px;
@@ -96,7 +96,7 @@
     width: 240px;
     height: 40px;
     text-align: $justify-textocenter;
-    font-size: $fuente-texto;
+    font-size: map-get($map-tfuentes, text-cuerpo);
     border-radius: 18px;
     margin-top: 10px;
     margin-left: 10px;   
@@ -155,25 +155,17 @@
     width: 220px;
     height: 40px;
     text-align: $justify-textocenter;
-    font-size: $fuente-texto;
+    font-size: map-get($map-tfuentes, text-cuerpo);
     border-radius: 18px;
     margin-left: 50px;   
 }
 .seccionProductosDos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    @extend .seccionProductos;
     top: 1100px;
     bottom: 20px;
 }
 .subtituloProductosDos{
-    text-align: $justify-texto;
-    font-size: $fuente-enlaces;
-    color: $color-subtitulos;
-    font-weight: 600;
-    font-style: italic;
-    position: relative;
+    @extend .subtituloProductos;
     padding: 10px;
     top: 70px;
     right: 490px;   
@@ -187,25 +179,17 @@
     width: 240px;
     height: 40px;
     text-align: $justify-textocenter;
-    font-size: $fuente-texto;
+    font-size: map-get($map-tfuentes, text-cuerpo);
     border-radius: 18px;
     margin-left: 10px;   
 }
 .seccionProductosTres{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    @extend .seccionProductos;
     top: 2170px;
     bottom: 20px;
 }
 .subtituloProductosTres{
-    text-align: $justify-texto;
-    color: $color-subtitulos;
-    font-size: $fuente-enlaces;
-    font-weight: 600;
-    font-style: italic;
-    position: relative;
+    @extend .subtituloProductos;
     padding: 10px;
     top: 60px;
     right: 480px;   

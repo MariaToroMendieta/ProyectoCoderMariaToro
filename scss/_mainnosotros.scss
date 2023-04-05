@@ -92,16 +92,14 @@
   .fuenteDos{
     text-align: $justify-textocenter;
     color: $color-resaltar;
-    font-size: $fuente-enlaces;
+    font-size: map-get($map-tfuentes, h3);
     font-weight: 600;
     padding-top: 5px;
   }
   .fuenteDosAzul{
-    text-align: $justify-textocenter;
+    @extend .fuenteDos;
     color: $color-terciario;
-    font-size: $fuente-enlaces;
-    font-weight: 600;
-    padding-top: 5px;
+    
   }
   .textoEquipo{
     text-align: $justify-textocenter;

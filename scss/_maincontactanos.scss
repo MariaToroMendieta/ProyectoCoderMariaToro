@@ -34,7 +34,7 @@
   }
   .fa-solid{
     color: $color-resaltar;
-    font-size: $fuente-enlaces;
+    font-size: map-get($map-tfuentes, h3);
     padding-bottom: 5px;
   }
   .formulario{
@@ -48,7 +48,7 @@
 
   }
   .text-center{
-    font-size: $fuente-subtitulo;
+    font-size: map-get($map-tfuentes, h2);
     color: $color-subtitulos;
     font-weight: 600;
     padding: 5px;
@@ -60,13 +60,13 @@
   }
   .h3Footer{
     text-align: $justify-texto;
-    font-size: $fuente-enlaces;
+    font-size: map-get($map-tfuentes, h3);
     font-weight: 600;
     color: $color-subtitulos;
 }
 .h4Footer{
     text-align: $justify-texto;
-    font-size: $fuente-texto;
+    font-size: map-get($map-tfuentes, h4);
     color: $color-subtitulos;
     font-weight: 600;
 }

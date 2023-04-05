@@ -29,14 +29,14 @@
 .titulo{
     text-align: $justify-texto;
     color: $color-titulos;
-    font-size: $fuente-titulo;
+    font-size: map-get($map-tfuentes, h1);
     font-weight: bold;
     font-family: poppins;
 }
 .subtituloPrincipalIndex{
     text-align: $justify-texto;
     color: $color-subtitulos;
-    font-size: $fuente-subtitulo;
+    font-size: map-get($map-tfuentes, h2);
     width: 403px;
     height: 48px;
     font-family: $tipografia-destacada;
@@ -45,7 +45,7 @@
 .parrafoPrincipal{
     text-align: $justify-texto;
     color: $color-textos;
-    font-size: $fuente-texto;
+    font-size: map-get($map-tfuentes, text-cuerpo);
     width: 511px;
     height: 73px;   
 }
@@ -54,16 +54,26 @@
 }
 .botonQuierosaberMas{
     color:$color-blanco;
+    text-decoration: none;
+    text-align: $justify-textocenter;
+    font-size: map-get($map-tfuentes, text-cuerpo);
+    transition: .4s ease-in;
+    z-index: 1;
     background-color:$color-terciario;
-    border-bottom: $color-terciario;
+    background-position: center;
     border: $color-terciario;
     width: 295px;
-    height: 50px;
-    text-align: $justify-textocenter;
-    font-size: $fuente-texto;
-    bottom: 56px;
+    height: 45px;
     border-radius: 18px;
+    padding-top: 10px;
 }
+.botonQuierosaberMas:hover{
+    color: $color-blanco ;
+    font-weight: 600;
+    background: #18849A;
+    box-shadow: 0 0 5px #18B5D6, 0 0 25px #18B5D6, 0 0 50px #18B5D6, 0 0 200px #18B5D6;
+}
+
 .img-fluid{
     border-radius: 8px;
     width: 95%;
@@ -80,14 +90,14 @@
     color: $color-subtitulos;
     padding: 20px;
     font-family: poppins;
-    font-size: $fuente-subtitulo;
+    font-size: map-get($map-tfuentes, h2);
     font-weight: 600;
 }
 .lead{
     text-align: $justify-texto;
     color: $color-textos;
     padding: 20px;
-    font-size: $fuente-texto;
+    font-size: map-get($map-tfuentes, text-cuerpo);
     font-family: poppins;
     width: 616px;
     height: 148px;
@@ -98,7 +108,12 @@
     text-align: $justify-texto;
     color: $color-resaltar;
     padding: 20px;
-    font-size: $fuente-enlaces;
+    font-size: map-get($map-tfuentes, h3);
+}
+.navlinkNuestraHistoria:hover{
+    color: #EB5265;
+    font-weight: 600;
+    
 }
 .bd-placeholder-img{
     border-radius: 8px;
@@ -132,7 +147,7 @@
 }
 .tituloValores{
     text-align: $justify-textocenter;
-    font-size: $fuente-subtitulo;
+    font-size: map-get($map-tfuentes, h2);
     color: $color-titulos;
     font-weight: 600;
     padding: 12px;
@@ -167,7 +182,7 @@
 }
 .tituloSeccionProductosDestacados{
     text-align: $justify-textocenter;
-    font-size: $fuente-subtitulo;
+    font-size: map-get($map-tfuentes, h2);
     font-weight: 600;
     padding: 15px;
     
@@ -232,7 +247,7 @@
 .tituloSeccionProductoDelMes{
     color: $color-titulos;
     font-family: poppins;
-    font-size: $fuente-subtitulo;
+    font-size: map-get($map-tfuentes, h2);
     font-weight: 600;
 }
 .subtituloProductoDelMes{
@@ -244,17 +259,26 @@
 }
 .botonComprar{
     color:$color-blanco;
+    text-decoration: none;
     background-color:$color-terciario;
+    transition: .4s ease-in;
+    z-index: 1;
     border-bottom: $color-terciario;
     border: $color-terciario;
     width: 295px;
-    height: 50px;
+    height: 45px;
     text-align: $justify-textocenter;
-    font-size: $fuente-texto;
-    bottom: 30px;
+    font-size: map-get($map-tfuentes, text-cuerpo);
     left: 80px;
     border-radius: 18px;
     margin-top: 60px;
+    padding-top: 10px;
+}
+.botonComprar:hover{
+    color: $color-blanco ;
+    font-weight: 600;
+    background: #18849A;
+    box-shadow: 0 0 5px #18B5D6, 0 0 25px #18B5D6, 0 0 50px #18B5D6, 0 0 200px #18B5D6;
 }
 .contenedorImagenProductoDelMes{
     display: inline-block;

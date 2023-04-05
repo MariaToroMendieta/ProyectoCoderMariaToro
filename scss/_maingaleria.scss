@@ -13,7 +13,7 @@
   .tituloGaleria{
     text-align: $justify-textocenter;
     color: $color-blanco;
-    font-size: $fuente-titulo;
+    font-size: map-get($map-tfuentes, h1);
     font-weight: bold;
     align-items: center;
     justify-content: center;
@@ -26,21 +26,21 @@
   }
   .subtitulo{
     text-align:$justify-texto;
-    font-size: $fuente-subtitulo;
+    font-size: map-get($map-tfuentes, h2);
     color: $color-subtitulos;
     font-weight: 600;
    
   }
   .parrafo{
     text-align: $justify-texto;
-    font-size: $fuente-texto;
+    font-size: map-get($map-tfuentes, text-cuerpo);
     color: $color-textos;
   }
   .galeriaPVenta{
     margin: 24px;
   }
   .subtituloCarrusel{
-    font-size: $fuente-subtitulo;
+    font-size: map-get($map-tfuentes, h2);
     color: $color-subtitulos;
     font-weight: 600; 
   }

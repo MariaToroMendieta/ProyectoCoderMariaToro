@@ -1,26 +1,38 @@
+@keyframes float {
+    0%{
+        transform: translateY(0); /*The starting point of the animation is 0.*/
+    }
+    50%{
+        transform: translateY(-10px); /*The middle point of the animation is -15xp. This will move the element up.*/
+    }
+    100%{
+        transform: translateY(0); /*The last point of the animation is going back to the starting state of 0.*/
+    }
+}
+
 .bgRosaPastel{
     background-color: $color-primario;
     display: flex;
+    .h3{
+        text-align: $justify-texto;
+        font-size: $fuente-enlaces;
+        font-weight: 600;
+        color: $color-subtitulos;
+        width: 357px;
+    }
+    .texto{
+        text-align: $justify-texto;
+        font-size: $fuente-textochico;
+        color:$color-textos;
+    }
+    .h4{
+        text-align: $justify-texto;
+        font-size: $fuente-texto;
+        color: $color-subtitulos;
+        font-weight: 600;
+    }
 }
-
-.h3{
-    text-align: $justify-texto;
-    font-size: $fuente-enlaces;
-    font-weight: 600;
-    color: $color-subtitulos;
-    width: 357px;
-}
-.h4{
-    text-align: $justify-texto;
-    font-size: $fuente-texto;
-    color: $color-subtitulos;
-    font-weight: 600;
-}
-.texto{
-    text-align: $justify-texto;
-    font-size: $fuente-textochico;
-    color:$color-textos;
-}
+/* esta parte al anidar sobresale los estilos de boostrap, por eso la dejo sin anidar*/
 
 .redesSociales{
     display: flex;
@@ -29,16 +41,30 @@
 }
 .linkRedSocial{
     display: inline-block;
-    color: $color-titulos;
     font-size: 1.8rem;
     padding-inline: 5px;
-    margin-right: 60px;   
+    margin-right: 60px;
+    animation: float infinite 4s ease-in-out ;
 } 
+.fa-instagram{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fa-whatsapp{
+    color: #25d366;
+    animation-delay: 0.5s;
+}
+.linkRedSocial.fa-facebook{
+    color: #1877f2;
+    animation-delay: 1s;
+}
 
 /*ajuste footer pantalla nuestros productos*/
 .footer{
     position: relative;
-    top: 3260px;
+    top: 3240px;
 }
 /*css maquetación responsive pantalla nuestros productos tablet y celular pantalla grande*/
 @media screen and (max-width: 768px){
