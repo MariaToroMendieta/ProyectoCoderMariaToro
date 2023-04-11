@@ -35,94 +35,110 @@
         <main>
             <!--esta sección es el banner principal de la pagina Nuestros productos-->
             <section class="fondoBnNuestros">
-                <div class="row featurette">
+                <div class="container-fluid">
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a class="linkActivo" href="../index.html">Inicio</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Nuestros productos</li>
+                        </ol>
+                      </nav>
+                </div>
+                <div class="contenedorBannerIndex">
                     <div class="columnaTexto col-sm-12 col-md-6">
                         <h1 class="titulo featurette-heading fuenteNormal">Nuestros productos</h1>
                         <p class="parrafoPrincipal" >Nos destacamos por innovar en el mundo de la repostería elaboramos productos especiales con mucho amor, cada uno de los productos tiene un toque especial.</p>
                     </div>
-                    <div class="col-md-6">
-                        <h2 class="subtituloBanner">Torta de zanahoria</h2>
-                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto cover" src="../assets/img/Torta de zanahoria.jpg" alt="imagen torta de zanahoria">
+                    <div class="col-sm-12 col-md-6">
+                        <h2 class="subtituloBanner">Torta de fruta</h2>
+                        <img class="imgTorta"  src="../assets/img/Torta de fruta.jpg" alt="imagen torta de fruta">
                     </div>
                     </div>
             </section>
               <!--esta será la segunda sección de la pagina donde se destacan las tres categorias de productos disponibles a la venta-->
-            <section class="seccionProductos">
-                <h2 class="tituloSeccionProductos">Productos</h2>
-                <h3 class="subtituloProductos">Tortas</h3>
-                <div class="card mb-3">
-                    <img src="../assets/img/Torta de zanahoria.jpg" class="card-img-top" alt="torta de zanahoria">
-                    <div class="card-body">
-                      <h3 class="card-title">Torta de zanahoria</h3>
-                      <p class="card-text">La torta de zanahoria es una excelente opción si quieres variar los sabores de la torta tradicional de vainilla.</p>
-                      <p class="card-text"><small class="text-muted">Presentación de 12 y 24 porciones.
-                        Precio de venta: $36.000-$45.000</small></p>
-                        <div>
-                            <button class="botonTarjeta">Comprar</button>
-                        </div>
+            <section class="contenedorProducto"> 
+                    <div class="columnaTextoP col-sm-12 col-md-6 columna col-info">
+                        <h2 class="tituloSeccionProductos">Tortas</h2> 
+                        <p class="textoP">La torta de zanahoria es una excelente opción si quieres variar los sabores de la torta tradicional de vainilla.</p>
+                        <p class="textoP"><small class="text-muted">Presentación de 12 y 24 porciones.
+                          Precio de venta: $36.000-$45.000</small></p>
+                        <a class="botonComprarP" href="./error404.html">Comprar</a>
                     </div>
-                <div class="contenedorTarjetasNuestros">
-                    <div class="tarjetas col-md-6 col-sm-12">
-                        <img src="../assets/img/Torta de chocolate.jpg" alt="Torta de chocolate">
-                        <h4 class="subtituloTarjetas">Torta de chocolate</h4>
-                        <p class="parrafoTarjetas">Presentación de 12-24 porciones.
-                            Precio de venta: $35.000-$45.000</p>
-                        <button class="botonTarjetas">Comprar</button>
-                </div>
-                <div class="tarjetas col-md-6 col-sm-12">
-                    <img src="../assets/img/Torta de frutos rojos.jpg" alt="Torta de frutos rojos">
-                    <h4 class="subtituloTarjetas">Torta de frutos rojos</h4>
-                    <p class="parrafoTarjetas">Presentación de 12-24 porciones.
-                            Precio de venta: $36.000-$45.000</p>
-                    <button class="botonTarjetas">Comprar</button>
-                </div>
-                <div class="tarjetas col-md-6 col-sm-12">
+                    <div class="imgProduct col-sm-12 col-md-6 columna col-img">    
+                    </div>
+        </section>
+        <section class="contenedorTarjetasNuestros">
+            <div class="tarjetas col-md-6 col-sm-12">
+                <img src="../assets/img/Torta de chocolate.jpg" alt="Torta de chocolate">
+                <h4 class="subtituloTarjetas">Torta de chocolate</h4>
+                <p class="parrafoTarjetas">Presentación de 12-24 porciones.
+                    Precio de venta: $35.000-$45.000</p>
+                    <div class="contenedorBt container-fluid">
+                        <a class="botonComprarP" href="./error404.html">Comprar</a>
+                    </div>       
+            </div>
+            <div class="tarjetas col-md-6 col-sm-12">
+                <img src="../assets/img/Torta de frutos rojos.jpg" alt="Torta de frutos rojos">
+                <h4 class="subtituloTarjetas">Torta de frutos rojos</h4>
+                <p class="parrafoTarjetas">Presentación de 12-24 porciones.
+                        Precio de venta: $36.000-$45.000</p>
+                        <div class="contenedorBt container-fluid">
+                            <a class="botonComprarP" href="./error404.html">Comprar</a>
+                        </div>        
+            </div>
+            <div class="tarjetas col-md-6 col-sm-12">
                 <img src="../assets/img/torta tres lechesfinal.jpg" alt="Torta de tres leches">
                 <h4 class="subtituloTarjetas">Torta de tres leches</h4>
                 <p class="parrafoTarjetas">Presentación de 12-24 porciones.
                         Precio de venta: $35.000-$45.000</p>
-                <button class="botonTarjetas">Comprar</button>
+                        <div class="contenedorBt container-fluid">
+                            <a class="botonComprarP" href="./error404.html">Comprar</a>
+                        </div>          
              </div> 
-             </div>
         </section>
-        <section class="seccionProductosDos">
-            <h3 class="subtituloProductosDos">Postres</h3> 
-            <div class="card mb-3"> 
-                <img src="../assets/img/Cheesecake de limón.jpg" class="card-img-top" alt="cheesecake de limón">
-                <div class="card-body">
-                  <h3 class="card-title">Cheesecake de limón</h3>
-                  <p class="card-text">Una de nuestras mejores opciones en postres es nuestro cheesecake de limón, el cual tiene la magia del mundo cítrico.</p>
-                  <p class="card-text"><small class="text-muted">Presentación de 12 y 24 porciones.
+        <section class="contenedorProductoDos">
+            <div class="columnaTextoP col-sm-12 col-md-6 columna col-info">
+                <h2 class="tituloSeccionProductos">Postres</h2> 
+                <p class="textoP">El cheesecake de limón es una de nuestras mejores opciones en postres es nuestro cheesecake de limón, el cual tiene la magia del mundo cítrico.</p>
+                <p class="textoP"><small class="text-muted">Presentación de 12 y 24 porciones.
                     Precio de venta: $38.000-$48.000</small></p>
-                    <div>
-                        <button class="botonTarjetaDos">Comprar</button>
-                    </div>
-                </div>
-             <div class="contenedorTarjetasNuestros">
+                <a class="botonComprarP" href="./error404.html">Comprar</a>
+            </div>
+            <div class="imgProductDos col-sm-12 col-md-6 columna col-img">     
+            </div>
+
+        </section>
+           
+            
+       <section class="contenedorTarjetasNuestros">
                 <div class="tarjetas col-md-6 col-sm-12">
                     <img src="../assets/img/Flan de caramelo.jpg" alt="flan de caramelo">
                     <h4 class="subtituloTarjetas">Flan de caramelo</h4>
                     <p class="parrafoTarjetas">Presentación de 12 y 24 porciones.
                         Precio de venta: $36.000-$46.000</p>
-                    <button class="botonTarjetas">Comprar</button>
-             </div>
+                        <div class="contenedorBt container-fluid">
+                            <a class="botonComprarP" href="./error404.html">Comprar</a>
+                        </div>
+                </div>
                 <div class="tarjetas col-md-6 col-sm-12">
                 <img src="../assets/img/milhoja frutos.jpg" alt="Milhoja de frutos rojos">
                 <h4 class="subtituloTarjetas">Milhoja de frutos rojos</h4>
                 <p class="parrafoTarjetas">Presentación de 6 y 12 unidades
                     Precio de venta: $30.000-$60.000</p>
-                <button class="botonTarjetas">Comprar</button>
-             </div>
-            <div class="tarjetas col-md-6 col-sm-12">
-            <img src="../assets/img/Tiramisu.jpg" alt="Tiramisu">
-            <h4 class="subtituloTarjetas">Tiramisu</h4>
-            <p class="parrafoTarjetas">Presentación de 6 y 12 unidades
-                Precio de venta: $40.000-$70.000</p>
-            <button class="botonTarjetas">Comprar</button>
-             </div> 
-             </div>
+                    <div class="contenedorBt container-fluid">
+                        <a class="botonComprarP" href="./error404.html">Comprar</a>
+                    </div>
+                </div>
+                <div class="tarjetas col-md-6 col-sm-12">
+                <img src="../assets/img/Tiramisu.jpg" alt="Tiramisu">
+                <h4 class="subtituloTarjetas">Tiramisu</h4>
+                <p class="parrafoTarjetas">Presentación de 6 y 12 unidades
+                    Precio de venta: $40.000-$70.000</p>
+                    <div class="contenedorBt container-fluid">
+                        <a class="botonComprarP" href="./error404.html">Comprar</a>
+                    </div>
+                </div> 
         </section> 
-        <section class="seccionProductosTres">
+        <!--section class="seccionProductosTres">
             <h3 class="subtituloProductosTres">Cupcakes</h3> 
             <div class="card mb-3"> 
                 <img src="../assets/img/Cupcake red velvet.jpg" class="card-img-top" alt="cupcake de redvalvet">
@@ -158,9 +174,9 @@
                 <button class="botonTarjetas">Comprar</button>
                 </div> 
                 </div>
-        </section>      
+        </section-->      
     </main>
-        <footer class="footer container-fluid">
+        <footer class="container-fluid">
             <div class="row justify-content-around p-5 bgRosaPastel">
             <div class="col-xs-12 col-md-6 col-lg-3">
                 <p class="h3">Pastel de autor-Repostería</p>

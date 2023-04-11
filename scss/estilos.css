@@ -41,11 +41,6 @@
   height: 100vh;
 }
 
-html, body {
-  width: 100% !important;
-  overflow-x: hidden;
-}
-
 /*Comienza la maquetación del header*/
 .header {
   background-color: #FFFDFD;
@@ -61,9 +56,9 @@ html, body {
   width: 100%;
 }
 .header .navbar .container-fluid .logo {
-  width: 100px;
+  width: 90px;
   position: sticky;
-  left: 86px;
+  left: 80px;
 }
 .header .navbar .navbar-nav {
   list-style: none;
@@ -108,6 +103,17 @@ html, body {
     color: #0F0F10;
   }
 }
+.breadcrumb {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+.linkActivo {
+  color: #48BDD6;
+}
+
 /*Comienza la maquetación del main del Index*/
 .fondoBannerIndex {
   background: #E0F3F7;
@@ -133,7 +139,7 @@ html, body {
   align-items: baseline;
   justify-content: center;
   min-height: 100%;
-  padding: 1rem 1rem 1rem 4rem;
+  padding: 1rem 0.8rem 1rem 4rem;
 }
 
 .titulo {
@@ -157,8 +163,9 @@ html, body {
   text-align: left;
   color: #394149;
   font-size: 1.1rem;
-  width: 511px;
-  height: 73px;
+  width: 500px;
+  height: 80px;
+  padding-bottom: 20px;
 }
 
 .parrafoPrincipal span {
@@ -189,14 +196,19 @@ html, body {
 }
 
 .img-fluid {
-  border-radius: 8px;
-  width: 95%;
-  height: 60vh;
   Display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
   flex-direction: column;
-  align-items: baseline;
-  justify-content: center;
-  min-height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.contenedorNuestra {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .tituloNuestraH {
@@ -208,13 +220,15 @@ html, body {
 }
 
 .lead {
-  text-align: left;
+  display: flex;
+  justify-content: flex-end;
+  text-align: justify;
   color: #394149;
   padding: 20px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: poppins;
-  width: 616px;
-  height: 148px;
+  width: 480px;
+  height: 170px;
   margin-bottom: 40px;
 }
 
@@ -230,21 +244,16 @@ html, body {
   font-weight: 600;
 }
 
-.bd-placeholder-img {
-  border-radius: 8px;
-}
-
 .imgHistoria {
-  width: 50vw;
-  top: 60vh;
-  left: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  justify-content: center;
-  min-height: 100%;
-  padding: 1rem 1rem 1rem 4rem;
-  margin-bottom: 50px;
+  width: 45vw;
+  Display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 6px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .fondoValores {
@@ -252,7 +261,7 @@ html, body {
   background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 95%;
   margin-top: 10px;
 }
 
@@ -260,7 +269,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .tituloValores {
@@ -285,16 +294,14 @@ html, body {
   text-align: center;
   color: #394149;
   font-size: 1rem;
-  width: 300px;
-  height: 103px;
+  width: 280px;
+  height: 110px;
 }
 
 .seccionProductosDestacados {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
-  height: 1051px;
   position: relative;
   bottom: 20px;
 }
@@ -325,7 +332,7 @@ html, body {
   -webkit-box-shadow: 9px 9px 8px 0px rgba(145, 141, 141, 0.75);
   -moz-box-shadow: 9px 9px 8px 0px rgba(145, 141, 141, 0.75);
   margin: 10px;
-  border-radius: 8px;
+  border-radius: 4px;
   box-shadow: 0 0 10px #1B1B1C;
   display: inline-block;
   position: relative;
@@ -334,13 +341,43 @@ html, body {
 .tarjeta img {
   width: 100%;
   height: 238px;
-  border-radius: 8px 8px 0 0;
+  border-radius: 4px 4px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+.tarjeta img {
+  transition: all 2s;
+  z-index: -1;
+}
+
+.tarjeta img:hover {
+  filter: brightness(100%);
+  transform: scale(1.5);
+  z-index: 10;
+  overflow: hidden;
+  cursor: zoom-in;
+  align-self: center;
+}
+
+.tarjeta img:click {
+  filter: brightness(100%);
+  transform: scale(1.5);
+  z-index: 10;
+  cursor: zoom-in;
+  align-self: center;
+}
+
+.tarjeta img:focus {
+  filter: brightness(100%);
+  transform: scale(1.5);
+  z-index: 10;
+  cursor: zoom-in;
+  align-self: center;
+}
+
 .subtituloTarjeta {
-  text-align: left;
+  text-align: center;
   font-size: 1.2rem;
   color: #1B1B1C;
   padding: 10px;
@@ -349,10 +386,10 @@ html, body {
 }
 
 .parrafoTarjeta {
-  text-align: left;
+  text-align: center;
   display: block;
   width: 90%;
-  height: 119px;
+  height: 110px;
   font-size: 1rem;
   color: #394149;
   padding: 8px;
@@ -366,7 +403,6 @@ html, body {
 
 .contenedorProductoDelMes {
   display: flex;
-  left: 80px;
   bottom: 10px;
 }
 
@@ -382,10 +418,10 @@ html, body {
   font-size: 1.4rem;
   color: #F6929E;
   font-weight: 600;
-  margin-left: 80px;
+  margin-left: 60px;
 }
 
-.botonComprar {
+.botonComprar, .botonComprarP {
   color: #FFFFFF;
   text-decoration: none;
   background-color: #48BDD6;
@@ -397,13 +433,13 @@ html, body {
   height: 45px;
   text-align: center;
   font-size: 1.1rem;
-  left: 80px;
+  left: 60px;
   border-radius: 18px;
   margin-top: 60px;
   padding-top: 10px;
 }
 
-.botonComprar:hover {
+.botonComprar:hover, .botonComprarP:hover {
   color: #FFFFFF;
   font-weight: 600;
   background: #18849A;
@@ -412,14 +448,14 @@ html, body {
 
 .contenedorImagenProductoDelMes {
   display: inline-block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .imagenProductoDelMes {
-  width: 500px;
-  border-radius: 8px;
-  position: absolute;
-  right: 86px;
-  top: 40px;
+  width: 50vw;
+  display: flex;
+  justify-content: flex-end;
   margin-bottom: 5px;
 }
 
@@ -506,7 +542,7 @@ html, body {
     font-weight: 600;
     margin-left: 3px;
   }
-  .botonComprar {
+  .botonComprar, .botonComprarP {
     width: 280px;
     height: 45px;
     text-align: center;
@@ -627,7 +663,7 @@ html, body {
     position: relative;
     bottom: 10px;
   }
-  .botonComprar {
+  .botonComprar, .botonComprarP {
     width: 280px;
     height: 45px;
     text-align: center;
@@ -707,34 +743,10 @@ html, body {
 }
 
 .imgHover {
+  width: 60vh;
   transition: all 2s;
   z-index: -1;
-  border-radius: 8px;
-}
-
-.imgHover:hover {
-  filter: brightness(100%);
-  transform: scale(1.5);
-  z-index: 10;
-  overflow: hidden;
-  cursor: zoom-in;
-  align-self: center;
-}
-
-.imgHover:click {
-  filter: brightness(100%);
-  transform: scale(1.5);
-  z-index: 10;
-  cursor: zoom-in;
-  align-self: center;
-}
-
-.imgHover:focus {
-  filter: brightness(100%);
-  transform: scale(1.5);
-  z-index: 10;
-  cursor: zoom-in;
-  align-self: center;
+  border-radius: 4px;
 }
 
 .fuenteDos, .fuenteDosAzul {
@@ -742,7 +754,7 @@ html, body {
   color: #F6929E;
   font-size: 1.3rem;
   font-weight: 600;
-  padding-top: 5px;
+  padding-top: 8px;
 }
 
 .fuenteDosAzul {
@@ -751,6 +763,7 @@ html, body {
 
 .textoEquipo {
   text-align: center;
+  padding: 3px;
   color: #394149;
   font-size: 1rem;
 }
@@ -859,7 +872,7 @@ html, body {
   background-position: right;
   width: 100%;
   height: 80vh;
-  margin-top: 5px;
+  margin-top: 3px;
 }
 
 .subtituloBanner {
@@ -874,91 +887,72 @@ html, body {
   left: 30px;
 }
 
-.seccionProductos, .seccionProductosTres, .seccionProductosDos {
-  display: flex;
-  justify-content: center;
+.imgTorta {
+  width: 40vw;
+  Display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+  justify-content: flex-end;
   align-items: center;
-  position: relative;
-  top: 40px;
-  bottom: 20px;
+  border-radius: 6px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.contenedorProducto {
+  display: flex;
+  height: 60vh;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.columna {
+  width: 50%;
+}
+
+.columnaTextoP {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  min-height: 100%;
+  background: #E0F3F7;
+  padding: 1rem 0.8rem 1rem 4rem;
 }
 
 .tituloSeccionProductos {
   text-align: center;
   font-size: 2rem;
-  font-weight: 600;
-  position: relative;
-  top: 27px;
-  bottom: 20px;
-  padding: 15px;
-}
-
-.subtituloProductos, .subtituloProductosTres, .subtituloProductosDos {
-  text-align: left;
-  font-size: 1.3rem;
+  color: #48BDD6;
   font-weight: 600;
   font-style: italic;
-  position: relative;
-  padding: 15px;
-  top: 76px;
-  right: 600px;
-}
-
-.card {
-  width: 80%;
-  height: 550px;
-  background-color: #E0F3F7;
-  box-shadow: 9px 9px 8px 0px rgba(145, 141, 141, 0.75);
-  -webkit-box-shadow: 9px 9px 8px 0px rgba(145, 141, 141, 0.75);
-  -moz-box-shadow: 9px 9px 8px 0px rgba(145, 141, 141, 0.75);
-  margin: 10px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px #1B1B1C;
   display: flex;
-  position: absolute;
-  top: 120px;
-  padding-bottom: 10px;
-}
-
-.card img {
-  width: 100%;
-  height: 300px;
-  border-radius: 8px 8px 0 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.card-title {
-  text-align: left;
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #1B1B1C;
+  justify-content: center;
   padding: 10px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
-.card-text {
+.textoP {
   text-align: left;
   display: block;
-  width: 90%;
-  font-size: 1rem;
+  width: 80%;
+  font-size: 1.1rem;
   color: #394149;
   padding: 5px;
-  padding-top: 6px;
+  padding-top: 10px;
 }
 
-.botonTarjeta {
-  color: #FFFFFF;
-  background-color: #48BDD6;
-  border-bottom: #48BDD6;
-  border: #48BDD6;
-  width: 240px;
-  height: 40px;
-  text-align: center;
-  font-size: 1.1rem;
+.botonComprarP {
+  left: 60px;
   border-radius: 18px;
   margin-top: 10px;
-  margin-left: 10px;
+  padding-top: 10px;
+}
+
+.imgProduct {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../assets/img/Torta de zanahoria.jpg");
 }
 
 .contenedorTarjetasNuestros {
@@ -973,13 +967,13 @@ html, body {
 
 .tarjetas {
   width: 30%;
-  height: 450px;
+  height: 440px;
   background-color: #E0F3F7;
   box-shadow: 9px 9px 8px 0px rgba(145, 141, 141, 0.75);
   -webkit-box-shadow: 9px 9px 8px 0px rgba(145, 141, 141, 0.75);
   -moz-box-shadow: 9px 9px 8px 0px rgba(145, 141, 141, 0.75);
   margin: 20px;
-  border-radius: 8px;
+  border-radius: 6px;
   box-shadow: 0 0 10px #1B1B1C;
   display: inline-block;
   position: relative;
@@ -988,13 +982,43 @@ html, body {
 .tarjetas img {
   width: 100%;
   height: 240px;
-  border-radius: 8px 8px 0 0;
+  border-radius: 6px 6px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+.tarjetas img {
+  transition: all 2s;
+  z-index: -1;
+}
+
+.tarjetas img:hover {
+  filter: brightness(100%);
+  transform: scale(1.5);
+  z-index: 10;
+  overflow: hidden;
+  cursor: zoom-in;
+  align-self: center;
+}
+
+.tarjetas img:click {
+  filter: brightness(100%);
+  transform: scale(1.5);
+  z-index: 10;
+  cursor: zoom-in;
+  align-self: center;
+}
+
+.tarjetas img:focus {
+  filter: brightness(100%);
+  transform: scale(1.5);
+  z-index: 10;
+  cursor: zoom-in;
+  align-self: center;
+}
+
 .subtituloTarjetas {
-  text-align: left;
+  text-align: center;
   font-size: 1.2rem;
   color: #1B1B1C;
   padding: 10px;
@@ -1003,7 +1027,7 @@ html, body {
 }
 
 .parrafoTarjetas {
-  text-align: left;
+  text-align: center;
   display: block;
   width: 90%;
   font-size: 1rem;
@@ -1013,41 +1037,21 @@ html, body {
   padding-top: 6px;
 }
 
-.botonTarjetas {
-  color: #FFFFFF;
-  background-color: #48BDD6;
-  border-bottom: #48BDD6;
-  border: #48BDD6;
-  width: 220px;
-  height: 40px;
-  text-align: center;
-  font-size: 1.1rem;
-  border-radius: 18px;
-  margin-left: 50px;
+.contenedorBt {
+  display: flex;
+  justify-content: center;
 }
 
-.seccionProductosDos {
-  top: 1100px;
-  bottom: 20px;
+.contenedorProductoDos {
+  display: flex;
+  flex-direction: row;
+  height: 70vh;
 }
 
-.subtituloProductosDos {
-  padding: 10px;
-  top: 70px;
-  right: 490px;
-}
-
-.botonTarjetaDos {
-  color: #FFFFFF;
-  background-color: #48BDD6;
-  border-bottom: #48BDD6;
-  border: #48BDD6;
-  width: 240px;
-  height: 40px;
-  text-align: center;
-  font-size: 1.1rem;
-  border-radius: 18px;
-  margin-left: 10px;
+.imgProductDos {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../assets/img/Cheesecake de limón.jpg");
 }
 
 .seccionProductosTres {
@@ -1075,7 +1079,7 @@ html, body {
     bottom: 15px;
     padding: 15px;
   }
-  .subtituloProductos, .subtituloProductosDos, .subtituloProductosTres {
+  .subtituloProductos {
     text-align: left;
     font-size: 1.3rem;
     font-weight: 600;
@@ -1343,8 +1347,8 @@ html, body {
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 180px;
-  left: 900px;
+  top: 20px;
+  left: 850px;
 }
 
 .galeria {
@@ -1609,12 +1613,11 @@ html, body {
   animation-delay: 1s;
 }
 
-/*ajuste footer pantalla nuestros productos*/
-.footer {
-  position: relative;
-  top: 3240px;
-}
-
+/*ajuste footer pantalla nuestros productos
+.footer{
+    position: relative;
+    top: 3240px;
+}*/
 /*css maquetación responsive pantalla nuestros productos tablet y celular pantalla grande*/
 @media screen and (max-width: 768px) {
   .footer {

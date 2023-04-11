@@ -13,6 +13,7 @@
 .bgRosaPastel{
     background-color: $color-primario;
     display: flex;
+    
     .h3{
         text-align: $justify-texto;
         font-size: $fuente-enlaces;
@@ -61,11 +62,11 @@
     animation-delay: 1s;
 }
 
-/*ajuste footer pantalla nuestros productos*/
+/*ajuste footer pantalla nuestros productos
 .footer{
     position: relative;
     top: 3240px;
-}
+}*/
 /*css maquetación responsive pantalla nuestros productos tablet y celular pantalla grande*/
 @media screen and (max-width: 768px){
    
