@@ -10,6 +10,11 @@
     height: 80vh;
     margin-top: 3px;
   }
+  .tituloN{
+    @extend .titulo;
+    padding: 10px;
+    margin-top: 3px;
+  }
   .subtituloBanner{
     text-align: $justify-texto;
     color: $color-blanco;
@@ -19,10 +24,11 @@
     font-family: $tipografia-destacada;
     position: relative;
     top: 80px;
-    left: 30px;   
+    left: 40px;   
 }
 .imgTorta{
-    width: 40vw;
+    width: 90%;
+    height: 60vh;
     Display: flex;
     object-fit: cover;
     justify-content: flex-end;
@@ -169,18 +175,13 @@
     background-size: cover;
     background-image: url("../assets/img/Cheesecake\ de\ limón.jpg"); 
 }
+.imgProductTres{
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/img/Cupcake\ red\ velvet.jpg"); 
 
-.seccionProductosTres{
-    
-    top: 2170px;
-    bottom: 20px;
 }
-.subtituloProductosTres{
-    
-    padding: 10px;
-    top: 60px;
-    right: 480px;   
-}
+
 /*css maquetación responsive pantalla nuestros productos tablet y celular pantalla grande*/
 @media screen and (max-width: 768px) {
     .subtituloBanner{
@@ -206,21 +207,7 @@
         top: 10px;
         right: 600px;   
     }
-    .card{
-        width: 80%;
-        height: 550px;
-        background-color:$color-secundario;
-        box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
-        -webkit-box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
-        -moz-box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
-        margin: 10px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px $color-subtitulos;
-        display: flex;
-        position: absolute;
-        top: 110px;
-        padding-bottom: 10px;
-    }
+   
     .card-title{
         text-align:$justify-texto;
         font-size: $fuente-texto;
@@ -418,11 +405,6 @@
         position: relative;
         top: 980px;
         bottom: 20px;
-    }
-    .card{
-        width: 90%;
-        height: 570px;
-        margin-bottom: 10px;  
     }
     
     .card-text{

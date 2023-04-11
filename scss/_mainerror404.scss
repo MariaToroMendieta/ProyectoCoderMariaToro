@@ -1,0 +1,51 @@
+.contenedorError{
+    @extend .contenedorProducto;
+    height: 80vh;
+    background-color: $color-resaltar;
+    margin-top: 5px;
+}
+.columnaTextoE{
+    @extend .columnaTextoP;
+    background:$color-resaltar;
+    padding: 1rem 0.5rem 1rem 2rem;
+}
+.tituloError{
+    text-align: $justify-texto;
+    width: 90%;
+    font-size: map-get($map-tfuentes, h1);
+    color: $color-titulos;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    padding-bottom: 3px;   
+}
+.textoE{
+    text-align:justify;
+    display: block;
+    width: 90%;
+    font-size: $fuente-texto;
+    color: $color-textos;
+    padding: 3px;
+}
+.textoE span{
+    text-align:justify;
+    display: block;
+    width: 90%;
+    font-size: $fuente-texto;
+    color: $color-subtitulos;
+    font-weight: 600;
+}
+.botonIndex{
+    @extend.botonComprarP;
+    text-align: $justify-textocenter;
+    border-radius: 18px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.imgError{
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/img/imagen\ pastel\ derramado.jpg"); 
+}

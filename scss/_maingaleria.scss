@@ -24,6 +24,7 @@
   .galeria{
     margin: 16px;
   }
+  
   .subtitulo{
     text-align:$justify-texto;
     font-size: map-get($map-tfuentes, h2);
@@ -36,17 +37,23 @@
     font-size: map-get($map-tfuentes, text-cuerpo);
     color: $color-textos;
   }
-  .galeriaPVenta{
-    margin: 24px;
+  .video{
+    margin-bottom: 20px;
   }
+  .galeriaPVenta{
+    width: 60%;
+    position: relative;
+    margin: auto;
+  }
+
   .subtituloCarrusel{
-    font-size: map-get($map-tfuentes, h2);
-    color: $color-subtitulos;
+    font-size: map-get($map-tfuentes, h3);
+    color: $color-blanco;
     font-weight: 600; 
   }
   .textoCarrusel{
-    font-size: $fuente-textochico;
-    color: $color-subtitulos;
+    font-size: $fuente-texto;
+    color: $color-blanco;
   }
   /*css maquetación responsive pantalla galería tablet y celular pantalla grande*/
 @media screen and (max-width: 768px){

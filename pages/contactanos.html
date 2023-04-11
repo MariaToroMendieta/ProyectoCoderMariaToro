@@ -57,7 +57,7 @@
                         <i class="fa-solid fa-phone"></i><p class="parrafo"> Telefonos de contácto: (+57) 6012589966-6012589967</p>
                     </div>
                     <div class=" col-sm-12 col-md-6">
-                        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.546719415556!2d-74.05597838595614!3d4.674586343186805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9af2cb52d4db%3A0xa4fa4eedbf0fad31!2sCl.%2090%20%2315-63%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1677361173034!5m2!1ses!2sco" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.546719415556!2d-74.05597838595614!3d4.674586343186805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9af2cb52d4db%3A0xa4fa4eedbf0fad31!2sCl.%2090%20%2315-63%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1677361173034!5m2!1ses!2sco" width="600" height="450" style="border: radius 6px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>      
                 </div>        
             </section>
@@ -67,49 +67,54 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="well well-sm">
-                                <form class="form-horizontal" method="post">
+                                <form class="form-horizontal">
                                     <fieldset>
-                                        <legend class="text-center header">Formulario de contacto</legend>
+                                        <legend class="text-center">Formulario de contacto</legend>
                                         <p class="parrafo">Vamos a enviarte información sobre promociones y nuestros productos destacados</p>
-                
                                         <div class="form-group">
                                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                                             <div class="col-md-10">
-                                                <input id="fname" name="name" type="text" placeholder="Escribe tu nombre" class="form-control">
+                                                <label for="nombre">Nombre:</label>
+                                                <input type="text" class="form-control" placeholder="Escribe tu nombre" required>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                                             <div class="col-md-10">
-                                                <input id="lname" name="name" type="text" placeholder="Escribe tus apellidos" class="form-control">
+                                                <label for="apellidos">Apellidos:</label>
+                                                <input type="text" class="form-control" placeholder="Escribe tus apellidos" required>
                                             </div>
                                         </div>
                 
                                         <div class="form-group">
                                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
                                             <div class="col-md-10">
-                                                <input id="email" name="email" type="text" placeholder="Escribe tu  Email" class="form-control">
+                                                <label for="email">Email:</label>
+                                                <input  type="email"class="form-control" placeholder="Escribe tu Email" required>
                                             </div>
                                         </div>
                 
                                         <div class="form-group">
                                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
                                             <div class="col-md-10">
-                                                <input id="phone" name="phone" type="text" placeholder="Escribe tu teléfono de contacto" class="form-control">
+                                                <label for="teléfono">Teléfono:</label>
+                                                <input type="text" class="form-control" placeholder="Escribe tu teléfono de contacto">
                                             </div>
                                         </div>
                 
                                         <div class="form-group">
                                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
                                             <div class="col-md-10">
+                                                <label for="mensaje">Mensaje:</label>
                                                 <textarea class="form-control" id="message" name="message" placeholder="Escribe tus comentarios aquí y te responderemos lo antes posible." rows="7"></textarea>
                                             </div>
                                         </div>
                 
                                         <div class="form-group">
-                                            <div class="col-md-12 text-center">
-                                                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-                                                <button type="reset" class="btn btn-primary btn-lg">Borrar</button>
+                                            <div class="col-md-12">
+                                                <input type="submit" value="Enviar formulario" class="btn"> 
+                                                <input type="reset" value="Limpiar formulario" class="btn">
+                                                
                                               
                                             </div>
                                         </div>
@@ -124,12 +129,12 @@
         <footer class="container-fluid">
             <div class="row justify-content-around p-5 bgRosaPastel">
               <div class="col-xs-12 col-md-6 col-lg-3">
-                  <p class="h3Footer">Pastel de autor-Repostería</p>
+                  <p class="h3">Pastel de autor-Repostería</p>
                   <p class="texto">Todos los derechos reservados</p>
                   <p>&copy; 2023</p>       
               </div> 
               <div class="col-xs-12 col-md-6 col-lg-3">
-                  <p class="h4Footer">Síguenos en:</p>
+                  <p class="h4">Síguenos en:</p>
                   <p class="redesSociales"><a class="linkRedSocial" href="https://www.instagram.com/panaderia_buenas_migas/" target="_blank"><i class="fa-brands  fa-instagram"></i></a>
                       <a class="linkRedSocial" href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands  fa-whatsapp"></i></a>
                       <a class="linkRedSocial" href="https://www.facebook.com/buenasmigas/" target="_blank"><i class="fa-brands  fa-facebook"></i></a></p>

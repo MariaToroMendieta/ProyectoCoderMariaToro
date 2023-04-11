@@ -47,9 +47,10 @@
   padding: 3px;
   text-align: left;
   width: 100%;
+  height: 20vh;
   position: sticky !important;
   top: 0px;
-  z-index: 10;
+  z-index: 15;
 }
 .header .navbar {
   background-color: #F1B8BF;
@@ -78,6 +79,7 @@
 }
 .header .navbar .navbar-nav .nav-item .nav-link:hover {
   color: #0F0F10;
+  box-shadow: 9px 9px 8px 0px rgba(145, 141, 141, 0.75);
 }
 
 /*Termina la maquetación del header Desktop*/
@@ -142,7 +144,7 @@
   padding: 1rem 0.8rem 1rem 4rem;
 }
 
-.titulo {
+.titulo, .tituloN {
   text-align: left;
   color: #0F0F10;
   font-size: 2.5rem;
@@ -421,7 +423,7 @@
   margin-left: 60px;
 }
 
-.botonComprar, .botonComprarP {
+.botonComprar, .botonComprarP, .botonIndex {
   color: #FFFFFF;
   text-decoration: none;
   background-color: #48BDD6;
@@ -439,7 +441,7 @@
   padding-top: 10px;
 }
 
-.botonComprar:hover, .botonComprarP:hover {
+.botonComprar:hover, .botonComprarP:hover, .botonIndex:hover {
   color: #FFFFFF;
   font-weight: 600;
   background: #18849A;
@@ -478,7 +480,7 @@
     min-height: 80%;
     padding: 0.2rem 0.5rem 1rem 2rem;
   }
-  .titulo {
+  .titulo, .tituloN {
     text-align: left;
     font-size: 2rem;
   }
@@ -521,6 +523,10 @@
   .tarjeta {
     width: 45%;
   }
+  .subtituloTarjeta {
+    text-align: center;
+    font-size: 1.1rem;
+  }
   .contenedorProductoDelMes {
     display: flex;
     position: relative;
@@ -542,7 +548,7 @@
     font-weight: 600;
     margin-left: 3px;
   }
-  .botonComprar, .botonComprarP {
+  .botonComprar, .botonComprarP, .botonIndex {
     width: 280px;
     height: 45px;
     text-align: center;
@@ -586,7 +592,9 @@
     align-items: center;
     min-height: 80%;
   }
-  .titulo {
+  .titulo, .tituloN {
+    display: flex;
+    justify-content: center;
     text-align: center;
     font-size: 1.8rem;
     padding-top: 10px;
@@ -613,6 +621,11 @@
   .img-fluid {
     display: none;
   }
+  .contenedorNuestra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .tituloNuestraH {
     text-align: center;
     font-size: 1.4rem;
@@ -636,7 +649,7 @@
     font-size: 1.1rem;
     padding-top: 5px;
   }
-  .bd-placeholder-img {
+  .imgHistoria {
     display: none;
   }
   .tarjeta {
@@ -645,7 +658,7 @@
   .subtituloTarjeta {
     text-align: left;
     font-size: 1.1rem;
-    padding: 5px;
+    padding: 3px;
     padding-left: 18px;
     padding-bottom: 4px;
   }
@@ -658,18 +671,13 @@
     padding-left: 18px;
     padding-top: 4px;
   }
-  .contenedorProductoDelMes {
-    display: flex;
-    position: relative;
-    bottom: 10px;
-  }
-  .botonComprar, .botonComprarP {
+  .botonComprar, .botonComprarP, .botonIndex {
     width: 280px;
     height: 45px;
     text-align: center;
     font-size: 1rem;
     bottom: 30px;
-    left: 50px;
+    left: 90px;
     border-radius: 18px;
     margin-top: 60px;
   }
@@ -838,29 +846,42 @@
 }
 /* CSS media query celular pantalla Nosotros*/
 @media screen and (max-width: 576px) {
+  .columna {
+    width: 100%;
+    background: #F1B8BF;
+  }
+  .col-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    background: #F1B8BF;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .col-info p {
+    line-height: 1;
+  }
+  .col-img {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/img/ingredientesyutenciliospasteleros.jpg");
+  }
   .subtitulo {
-    position: relative;
-    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
     text-align: left;
-    width: 320px;
-    height: 160px;
+    width: 250px;
+    height: 200px;
     font-size: 1.3rem;
     color: #1B1B1C;
     font-weight: 600;
   }
   .parrafoHistoria {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin-top: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-    left: 5px;
-    text-align: left;
-    color: #394149;
-    font-size: 0.9rem;
-    width: 215px;
-    height: 260px;
+    display: none;
   }
 }
 /*inicia la maquetación  de la pagina nuestros productos*/
@@ -875,6 +896,11 @@
   margin-top: 3px;
 }
 
+.tituloN {
+  padding: 10px;
+  margin-top: 3px;
+}
+
 .subtituloBanner {
   text-align: left;
   color: #FFFFFF;
@@ -884,11 +910,12 @@
   font-family: La Belle Aurore;
   position: relative;
   top: 80px;
-  left: 30px;
+  left: 40px;
 }
 
 .imgTorta {
-  width: 40vw;
+  width: 90%;
+  height: 60vh;
   Display: flex;
   -o-object-fit: cover;
      object-fit: cover;
@@ -899,7 +926,7 @@
   margin-bottom: 20px;
 }
 
-.contenedorProducto {
+.contenedorProducto, .contenedorError {
   display: flex;
   height: 60vh;
   margin-top: 20px;
@@ -910,7 +937,7 @@
   width: 50%;
 }
 
-.columnaTextoP {
+.columnaTextoP, .columnaTextoE {
   display: flex;
   flex-direction: column;
   align-items: baseline;
@@ -942,7 +969,7 @@
   padding-top: 10px;
 }
 
-.botonComprarP {
+.botonComprarP, .botonIndex {
   left: 60px;
   border-radius: 18px;
   margin-top: 10px;
@@ -1054,15 +1081,10 @@
   background-image: url("../assets/img/Cheesecake de limón.jpg");
 }
 
-.seccionProductosTres {
-  top: 2170px;
-  bottom: 20px;
-}
-
-.subtituloProductosTres {
-  padding: 10px;
-  top: 60px;
-  right: 480px;
+.imgProductTres {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../assets/img/Cupcake red velvet.jpg");
 }
 
 /*css maquetación responsive pantalla nuestros productos tablet y celular pantalla grande*/
@@ -1088,21 +1110,6 @@
     padding: 15px;
     top: 10px;
     right: 600px;
-  }
-  .card {
-    width: 80%;
-    height: 550px;
-    background-color: #E0F3F7;
-    box-shadow: 9px 9px 8px 0px rgba(145, 141, 141, 0.75);
-    -webkit-box-shadow: 9px 9px 8px 0px rgba(145, 141, 141, 0.75);
-    -moz-box-shadow: 9px 9px 8px 0px rgba(145, 141, 141, 0.75);
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px #1B1B1C;
-    display: flex;
-    position: absolute;
-    top: 110px;
-    padding-bottom: 10px;
   }
   .card-title {
     text-align: left;
@@ -1300,11 +1307,6 @@
     top: 980px;
     bottom: 20px;
   }
-  .card {
-    width: 90%;
-    height: 570px;
-    margin-bottom: 10px;
-  }
   .card-text {
     font-size: 0.9rem;
     padding: 5px;
@@ -1368,19 +1370,25 @@
   color: #394149;
 }
 
+.video {
+  margin-bottom: 20px;
+}
+
 .galeriaPVenta {
-  margin: 24px;
+  width: 60%;
+  position: relative;
+  margin: auto;
 }
 
 .subtituloCarrusel {
-  font-size: 2rem;
-  color: #1B1B1C;
+  font-size: 1.3rem;
+  color: #FFFFFF;
   font-weight: 600;
 }
 
 .textoCarrusel {
-  font-size: 1rem;
-  color: #1B1B1C;
+  font-size: 1.1rem;
+  color: #FFFFFF;
 }
 
 /*css maquetación responsive pantalla galería tablet y celular pantalla grande*/
@@ -1493,18 +1501,29 @@
   padding: 2px;
 }
 
-.h3Footer {
-  text-align: left;
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #1B1B1C;
+.btn {
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #48BDD6;
+  transition: 0.4s ease-in;
+  z-index: 1;
+  border-bottom: #48BDD6;
+  border: #48BDD6;
+  width: 280px;
+  height: 45px;
+  text-align: center;
+  font-size: 1.1rem;
+  left: 60px;
+  border-radius: 18px;
+  margin-top: 10px;
+  padding: 10px;
 }
 
-.h4Footer {
-  text-align: left;
-  font-size: 1.1rem;
-  color: #1B1B1C;
+.btn:hover {
+  color: #FFFFFF;
   font-weight: 600;
+  background: #18849A;
+  box-shadow: 0 0 5px #18B5D6, 0 0 25px #18B5D6, 0 0 50px #18B5D6, 0 0 200px #18B5D6;
 }
 
 /*css maquetación responsive pantalla contáctanos tablet y celular pantalla grande*/
@@ -1547,6 +1566,60 @@
     padding: 10px;
   }
 }
+.contenedorError {
+  height: 80vh;
+  background-color: #F6929E;
+  margin-top: 5px;
+}
+
+.columnaTextoE {
+  background: #F6929E;
+  padding: 1rem 0.5rem 1rem 2rem;
+}
+
+.tituloError {
+  text-align: left;
+  width: 90%;
+  font-size: 2.5rem;
+  color: #0F0F10;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  padding-bottom: 3px;
+}
+
+.textoE {
+  text-align: justify;
+  display: block;
+  width: 90%;
+  font-size: 1.1rem;
+  color: #394149;
+  padding: 3px;
+}
+
+.textoE span {
+  text-align: justify;
+  display: block;
+  width: 90%;
+  font-size: 1.1rem;
+  color: #1B1B1C;
+  font-weight: 600;
+}
+
+.botonIndex {
+  text-align: center;
+  border-radius: 18px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.imgError {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../assets/img/imagen pastel derramado.jpg");
+}
+
 @keyframes float {
   0% {
     transform: translateY(0); /*The starting point of the animation is 0.*/
@@ -1611,24 +1684,4 @@
 .linkRedSocial.fa-facebook {
   color: #1877f2;
   animation-delay: 1s;
-}
-
-/*ajuste footer pantalla nuestros productos
-.footer{
-    position: relative;
-    top: 3240px;
-}*/
-/*css maquetación responsive pantalla nuestros productos tablet y celular pantalla grande*/
-@media screen and (max-width: 768px) {
-  .footer {
-    position: relative;
-    top: 3100px;
-  }
-}
-/* CSS media query celular pantalla Nuestros productos*/
-@media screen and (max-width: 576px) {
-  .footer {
-    position: relative;
-    top: 3050px;
-  }
 }/*# sourceMappingURL=estilos.css.map */

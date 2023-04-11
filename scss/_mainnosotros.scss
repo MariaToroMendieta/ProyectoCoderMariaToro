@@ -157,30 +157,44 @@
 }
 /* CSS media query celular pantalla Nosotros*/
 @media screen and (max-width: 576px){
+    .columna { 
+        width: 100%;
+        background:$color-primario; 
+    }
+    .col-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 100%;
+        background:$color-primario;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    
+    .col-info p { line-height: 1; }
+    
+    .col-img {
+        background-position: center;
+        background-size: cover;
+        background-image: url("../assets/img/ingredientesyutenciliospasteleros.jpg");
+    }
+    
   .subtitulo{
-      position: relative;
-      padding-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 5px;
       text-align: $justify-texto;
-      width: 320px;
-      height: 160px;
+      width: 250px;
+      height: 200px;
       font-size: $fuente-enlaces;
       color: $color-subtitulos;
       font-weight: 600;
   }
  
   .parrafoHistoria{
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      margin-top: 10px;
-      margin-left: 5px;
-      margin-right: 5px;
-      left: 5px;
-      text-align: $justify-texto;
-      color: $color-textos;
-      font-size: 0.9rem;
-      width: 215px;
-      height: 260px; 
+      display: none; 
   }
 }
   

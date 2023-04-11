@@ -58,18 +58,30 @@
     font-size: 1.8rem;
     padding: 2px;
   }
-  .h3Footer{
-    text-align: $justify-texto;
-    font-size: map-get($map-tfuentes, h3);
+ .btn{
+    color:$color-blanco;
+    text-decoration: none;
+    background-color:$color-terciario;
+    transition: .4s ease-in;
+    z-index: 1;
+    border-bottom: $color-terciario;
+    border: $color-terciario;
+    width: 280px;
+    height: 45px;
+    text-align: $justify-textocenter;
+    font-size: map-get($map-tfuentes, text-cuerpo);
+    left: 60px;
+    border-radius: 18px;
+    margin-top: 10px;
+    padding: 10px;
+ }
+ .btn:hover{
+  color: $color-blanco ;
     font-weight: 600;
-    color: $color-subtitulos;
-}
-.h4Footer{
-    text-align: $justify-texto;
-    font-size: map-get($map-tfuentes, h4);
-    color: $color-subtitulos;
-    font-weight: 600;
-}
+    background: #18849A;
+    box-shadow: 0 0 5px #18B5D6, 0 0 25px #18B5D6, 0 0 50px #18B5D6, 0 0 200px #18B5D6;
+ }
+
 /*css maquetación responsive pantalla contáctanos tablet y celular pantalla grande*/
 @media screen and (max-width: 768px){
   .columnaTextoUbica{

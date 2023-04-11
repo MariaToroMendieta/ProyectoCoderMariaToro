@@ -62,25 +62,4 @@
     animation-delay: 1s;
 }
 
-/*ajuste footer pantalla nuestros productos
-.footer{
-    position: relative;
-    top: 3240px;
-}*/
-/*css maquetación responsive pantalla nuestros productos tablet y celular pantalla grande*/
-@media screen and (max-width: 768px){
-   
-    .footer{
-        position: relative;
-        top: 3100px;
-    }
-}
-/* CSS media query celular pantalla Nuestros productos*/
-@media screen and (max-width: 576px){
-    
-    .footer{
-        position: relative;
-        top: 3050px;
-    }
-}
  
