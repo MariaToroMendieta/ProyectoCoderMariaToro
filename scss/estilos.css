@@ -380,6 +380,7 @@
 
 .subtituloTarjeta {
   text-align: center;
+  font-weight: 600;
   font-size: 1.2rem;
   color: #1B1B1C;
   padding: 10px;
@@ -494,7 +495,7 @@
   .parrafoPrincipal {
     text-align: left;
     font-size: 1rem;
-    width: 360px;
+    width: 350px;
     height: 86px;
   }
   .botonQuierosaberMas {
@@ -506,7 +507,7 @@
     border-radius: 18px;
   }
   .img-fluid {
-    border-radius: 8px;
+    border-radius: 6px;
     width: 100%;
     height: 80%;
     Display: flex;
@@ -526,6 +527,7 @@
   .subtituloTarjeta {
     text-align: center;
     font-size: 1.1rem;
+    font-weight: 600;
   }
   .contenedorProductoDelMes {
     display: flex;
@@ -562,11 +564,11 @@
     display: inline-block;
   }
   .imagenProductoDelMes {
-    width: 250px;
-    border-radius: 8px;
-    position: absolute;
+    width: 80%;
+    border-radius: 6px;
+    position: relative;
     padding-left: 3px;
-    right: 40px;
+    right: 8px;
     top: 40px;
     margin-bottom: 5px;
   }
@@ -578,44 +580,49 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 50vh;
     margin-bottom: 10px;
   }
   .fondoBannerIndex {
-    height: 80vh;
-    margin-top: 10px;
+    height: 60vh;
+    margin-top: 0;
   }
   .columnaTexto {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: auto 0;
     min-height: 80%;
   }
   .titulo, .tituloN {
     display: flex;
-    justify-content: center;
+    margin: auto;
     text-align: center;
     font-size: 1.8rem;
-    padding-top: 10px;
+    padding-top: 8px;
+    padding: 3px;
   }
   .subtituloPrincipalIndex {
+    display: flex;
+    margin: auto;
+    padding: 3px;
     text-align: center;
     font-size: 1.4rem;
     font-family: La Belle Aurore;
   }
   .parrafoPrincipal {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
     text-align: center;
     font-size: 0.9rem;
-    width: 360px;
-    height: 86px;
   }
   .botonQuierosaberMas {
+    position: relative;
+    top: 8px;
+    left: 80px;
     width: 280px;
     height: 45px;
     text-align: center;
     font-size: 1rem;
-    bottom: 60px;
     border-radius: 18px;
   }
   .img-fluid {
@@ -652,18 +659,24 @@
   .imgHistoria {
     display: none;
   }
+  .tituloValores {
+    font-size: 1.3rem;
+  }
+  .tituloSeccionProductosDestacados {
+    font-size: 1.3rem;
+  }
   .tarjeta {
     width: 60%;
   }
   .subtituloTarjeta {
-    text-align: left;
+    text-align: center;
     font-size: 1.1rem;
     padding: 3px;
-    padding-left: 18px;
+    font-weight: 600;
     padding-bottom: 4px;
   }
   .parrafoTarjetas {
-    text-align: left;
+    text-align: center;
     display: block;
     width: 90%;
     font-size: 14px;
@@ -671,15 +684,33 @@
     padding-left: 18px;
     padding-top: 4px;
   }
+  .tituloSeccionProductoDelMes {
+    display: flex;
+    margin: auto;
+    padding: 6px;
+    color: #0F0F10;
+    text-align: center;
+    font-family: poppins;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .subtituloProductoDelMes {
+    display: flex;
+    margin: auto;
+    padding: 6px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #F6929E;
+    font-weight: 600;
+  }
   .botonComprar, .botonComprarP, .botonIndex {
+    position: relative;
+    left: 80px;
     width: 280px;
     height: 45px;
     text-align: center;
     font-size: 1rem;
-    bottom: 30px;
-    left: 90px;
     border-radius: 18px;
-    margin-top: 60px;
   }
 }
 /*Inicia la maquetación del main pagina nosotros*/
@@ -750,6 +781,13 @@
   height: 178px;
 }
 
+.parrafoHistoria span {
+  text-align: left;
+  color: #48BDD6;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
 .imgHover {
   width: 60vh;
   transition: all 2s;
@@ -803,7 +841,7 @@
   .col-img {
     background-position: center;
     background-size: cover;
-    background-image: url("../assets/img/ingredientesyutenciliospasteleros.jpg");
+    background-image: url("../assets/img/ingredientesyutenciliospastelerosresponsive.jpg");
   }
   .subtitulo {
     position: relative;
@@ -855,7 +893,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     min-height: 100%;
     background: #F1B8BF;
     padding: 1rem 1rem 1rem 1rem;
@@ -866,7 +904,7 @@
   .col-img {
     background-position: center;
     background-size: cover;
-    background-image: url("../assets/img/ingredientesyutenciliospasteleros.jpg");
+    background-image: url("../assets/img/ingredientesyutenciliospastelerosresponsive.jpg");
   }
   .subtitulo {
     display: flex;
@@ -1047,6 +1085,7 @@
 .subtituloTarjetas {
   text-align: center;
   font-size: 1.2rem;
+  font-weight: 600;
   color: #1B1B1C;
   padding: 10px;
   padding-left: 18px;
@@ -1089,243 +1128,198 @@
 
 /*css maquetación responsive pantalla nuestros productos tablet y celular pantalla grande*/
 @media screen and (max-width: 768px) {
+  .tituloN {
+    padding: 5px;
+    margin-top: 3px;
+    font-size: 2rem;
+  }
   .subtituloBanner {
     display: none;
   }
+  .imgTorta {
+    border-radius: 6px;
+    width: 85%;
+    height: 50vh;
+    margin-top: 90px;
+    margin-left: 30px;
+    Display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .columnaTextoP, .columnaTextoE {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    min-height: 100%;
+    background: #E0F3F7;
+    padding: 0.8rem 0.8rem 0.8rem 2rem;
+  }
   .tituloSeccionProductos {
     text-align: center;
-    font-size: 1.8rem;
-    top: 15px;
-    position: relative;
-    margin-left: 50px;
-    bottom: 15px;
-    padding: 15px;
-  }
-  .subtituloProductos {
-    text-align: left;
     font-size: 1.3rem;
+    color: #48BDD6;
     font-weight: 600;
     font-style: italic;
-    position: relative;
-    padding: 15px;
-    top: 10px;
-    right: 600px;
-  }
-  .card-title {
-    text-align: left;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #1B1B1C;
+    display: flex;
+    justify-content: center;
     padding: 10px;
-    padding-bottom: 6px;
+    padding-bottom: 10px;
   }
-  .card-text {
+  .textoP {
     text-align: left;
     display: block;
-    width: 90%;
-    font-size: 0.9rem;
+    width: 80%;
+    font-size: 1rem;
     color: #394149;
     padding: 5px;
-    padding-top: 6px;
-  }
-  .botonTarjeta {
-    color: #FFFFFF;
-    background-color: #48BDD6;
-    border-bottom: #48BDD6;
-    border: #48BDD6;
-    width: 240px;
-    height: 40px;
-    text-align: center;
-    font-size: 1.1rem;
-    border-radius: 18px;
-    margin-top: 5px;
-    margin-left: 150px;
-  }
-  .contenedorTarjetasNuestros {
-    width: 80vw;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     padding-top: 10px;
   }
   .tarjetas {
-    width: 35%;
+    width: 37%;
     height: 410px;
-    margin: 8px;
+    background-color: #E0F3F7;
+    box-shadow: 9px 9px 8px 0px rgba(145, 141, 141, 0.75);
+    -webkit-box-shadow: 9px 9px 8px 0px rgba(145, 141, 141, 0.75);
+    -moz-box-shadow: 9px 9px 8px 0px rgba(145, 141, 141, 0.75);
+    margin: 12px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #1B1B1C;
+    display: inline-block;
+    position: relative;
   }
   .tarjetas img {
     width: 100%;
-    height: 220px;
-    border-radius: 8px 8px 0 0;
+    height: 200px;
+    border-radius: 6px 6px 0 0;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .subtituloTarjetas {
-    text-align: left;
-    font-size: 1rem;
-    padding: 5px;
-    padding-left: 18px;
-    padding-bottom: 5px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1B1B1C;
+    padding: 6px;
   }
   .parrafoTarjetas {
-    text-align: left;
+    text-align: center;
     display: block;
     width: 90%;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #394149;
-    padding: 5px;
-    padding-left: 18px;
-    padding-top: 6px;
-  }
-  .botonTarjetas {
-    color: #FFFFFF;
-    background-color: #48BDD6;
-    border-bottom: #48BDD6;
-    border: #48BDD6;
-    width: 200px;
-    height: 40px;
-    text-align: center;
-    font-size: 1.1rem;
-    border-radius: 18px;
-    margin-left: 10px;
-  }
-  .seccionProductosDos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 1000px;
-    bottom: 20px;
-  }
-  .subtituloProductosDos {
-    text-align: left;
-    font-size: 1.1rem;
-    color: #1B1B1C;
-    font-weight: 600;
-    font-style: italic;
-    position: relative;
-    padding: 10px;
-    top: 70px;
-    right: 490px;
-  }
-  .botonTarjetaDos {
-    color: #FFFFFF;
-    background-color: #48BDD6;
-    border-bottom: #48BDD6;
-    border: #48BDD6;
-    width: 240px;
-    height: 40px;
-    text-align: center;
-    font-size: 1.1rem;
-    border-radius: 18px;
-    margin-left: 150px;
-  }
-  .seccionProductosTres {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 2000px;
-    bottom: 20px;
-  }
-  .subtituloProductosTres {
-    text-align: left;
-    color: #1B1B1C;
-    font-size: 1.3rem;
-    font-weight: 600;
-    font-style: italic;
-    position: relative;
-    padding: 10px;
-    top: 60px;
-    right: 480px;
+    padding: 3px;
+    padding-top: 5px;
   }
 }
 /* CSS media query celular pantalla Nuestros productos*/
 @media screen and (max-width: 576px) {
   .fondoBannerNuestros {
-    height: 70vh;
-    margin-top: 10px;
+    background: #F1B8BF;
+    background-image: none;
+    background-size: contain;
+    margin-top: 3px;
+    height: 90px;
+  }
+  .tituloN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    margin-top: 80px;
+    font-size: 1.8rem;
+  }
+  .subtituloBanner {
+    display: none;
+  }
+  .imgTorta {
+    display: none;
+  }
+  .columnaTextoP, .columnaTextoE {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    min-height: 100%;
+    background: #E0F3F7;
+    padding: 0.6rem 0.6rem 0.6rem 1rem;
   }
   .tituloSeccionProductos {
     text-align: center;
-    font-size: 1.6rem;
-    margin-top: 20px;
-    position: relative;
-    margin-left: 50px;
-    bottom: 10px;
-    padding: 15px;
-  }
-  .botonTarjeta {
-    font-size: 1.1rem;
-    border-radius: 18px;
-    margin-top: 3px;
-    margin-left: 100px;
-  }
-  .contenedorTarjetasNuestros {
-    width: 80vw;
-    margin: 0 auto;
+    font-size: 1.3rem;
+    color: #48BDD6;
+    font-weight: 600;
+    font-style: italic;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    padding-top: 10px;
+    padding: 10px;
+    padding-bottom: 10px;
   }
-  .tarjetas {
-    width: 40%;
-    height: 420px;
-    margin: 6px;
-  }
-  .parrafoTarjetas {
+  .textoP {
     text-align: left;
     display: block;
+    width: 80%;
+    font-size: 1rem;
+    color: #394149;
+    padding: 5px;
+  }
+  .botonComprarP, .botonIndex {
+    left: 5px;
+    border-radius: 18px;
+    margin-top: 24px;
+    padding-top: 10px;
+    width: 250px;
+  }
+  .tarjetas {
+    width: 39%;
+    height: 380px;
+    background-color: #E0F3F7;
+    box-shadow: 9px 9px 8px 0px rgba(145, 141, 141, 0.75);
+    -webkit-box-shadow: 9px 9px 8px 0px rgba(145, 141, 141, 0.75);
+    -moz-box-shadow: 9px 9px 8px 0px rgba(145, 141, 141, 0.75);
+    margin: 8px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #1B1B1C;
+    display: inline-block;
+    position: relative;
+  }
+  .tarjetas img {
+    width: 100%;
+    height: 160px;
+    border-radius: 6px 6px 0 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .subtituloTarjetas {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1B1B1C;
+    padding: 5px;
+  }
+  .parrafoTarjetas {
+    text-align: center;
+    display: block;
+    margin: auto;
     width: 90%;
-    font-size: 0.8rem;
+    font-size: 14px;
     color: #394149;
     padding: 3px;
-    padding-left: 15px;
-    padding-top: 3px;
+    padding-top: 5px;
+    padding-bottom: 12px;
   }
-  .botonTarjetas {
-    color: #FFFFFF;
-    background-color: #48BDD6;
-    border-bottom: #48BDD6;
-    border: #48BDD6;
-    width: 150px;
-    height: 40px;
-    text-align: center;
-    font-size: 1.1rem;
-    border-radius: 18px;
-    margin-left: 15px;
-  }
-  .seccionProductosDos {
+  .contenedorBt {
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 980px;
-    bottom: 20px;
+    margin-top: 8px;
   }
-  .card-text {
-    font-size: 0.9rem;
-    padding: 5px;
-  }
-  .text-mute {
-    padding: 5px;
-  }
-  .botonTarjetaDos {
-    color: #FFFFFF;
-    background-color: #48BDD6;
-    border-bottom: #48BDD6;
-    border: #48BDD6;
-    width: 210px;
-    height: 40px;
-    text-align: center;
-    font-size: 1.1rem;
-    border-radius: 18px;
-    margin-top: 10px;
-    margin-left: 100px;
+  .imgProductTres {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/img/Cupcake red velvetresponsive.jpg");
   }
 }
 /*inicia la maquetación  de la pagina galeria*/
@@ -1357,6 +1351,16 @@
   margin: 16px;
 }
 
+.columnaTextoG {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  height: 50vh;
+  min-height: 90%;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
 .subtitulo {
   text-align: left;
   font-size: 2rem;
@@ -1365,6 +1369,12 @@
 }
 
 .parrafo {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  width: 500px;
+  height: 130px;
+  padding-bottom: 30px;
   text-align: left;
   font-size: 1.1rem;
   color: #394149;
@@ -1393,16 +1403,58 @@
 
 /*css maquetación responsive pantalla galería tablet y celular pantalla grande*/
 @media screen and (max-width: 768px) {
+  .bannerGaleria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-position: center;
+    background-image: linear-gradient(to right top, rgba(247, 208, 213, 0.6431372549), rgba(249, 187, 194, 0.5882352941), rgba(250, 165, 175, 0.4941176471), rgba(250, 142, 156, 0.7176470588), rgba(248, 119, 136, 0.8078431373)), url(../assets/img/pastel\ galeria\ responsive.jpg);
+    width: 100%;
+    height: 70vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 10px;
+  }
   .tituloGaleria {
     font-size: 2rem;
-    top: 120px;
-    left: 500px;
+    top: 20px;
+    left: 320px;
   }
-  .tituloValores {
-    font-size: 1.6rem;
+  .galeria {
+    margin: 10px;
+  }
+  .columnaTextoG {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    height: 50vh;
+    min-height: 90%;
+    padding: 0.9rem 0.9rem 0.9rem 1rem;
+  }
+  .subtitulo {
+    text-align: left;
+    font-size: 1.3rem;
+    color: #1B1B1C;
+    font-weight: 600;
+  }
+  .subtitulo span {
+    font-size: 1.3rem;
   }
   .parrafo {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    width: 360px;
+    height: 150px;
+    padding-bottom: 30px;
+    text-align: left;
     font-size: 1rem;
+    color: #394149;
+  }
+  .video {
+    margin-bottom: 20px;
+    width: 50%;
   }
 }
 /* CSS media query celular pantalla Galería*/
@@ -1411,7 +1463,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-image: linear-gradient(to right top, rgba(247, 208, 213, 0.6431372549), rgba(249, 187, 194, 0.5882352941), rgba(250, 165, 175, 0.4941176471), rgba(250, 142, 156, 0.7176470588), rgba(248, 119, 136, 0.8078431373)), url(../assets/img/pastel\ galeria.jpg);
+    background-image: linear-gradient(to right top, rgba(247, 208, 213, 0.6431372549), rgba(249, 187, 194, 0.5882352941), rgba(250, 165, 175, 0.4941176471), rgba(250, 142, 156, 0.7176470588), rgba(248, 119, 136, 0.8078431373)), url(../assets/img/pastel\ galeria\ responsive.jpg);
     background-position: center;
     bottom: 10px;
   }
@@ -1420,15 +1472,29 @@
     top: 15px;
     left: 20px;
   }
+  .galeria {
+    margin: 8px;
+  }
   .subtitulo {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
     font-size: 1.6rem;
     text-align: center;
   }
   .subtitulo span {
+    display: flex;
+    margin: auto;
     font-size: 1.6rem;
     text-align: center;
   }
   .parrafo {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    margin: auto;
+    width: 80%;
     font-size: 0.9rem;
     text-align: center;
   }
@@ -1443,11 +1509,11 @@
   height: 70vh;
   background-size: contain;
   background-repeat: no-repeat;
-  bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .ubicacion {
-  padding: 20px;
+  padding: 10px;
 }
 
 .columnaTextoUbica {
@@ -1456,14 +1522,28 @@
   align-items: baseline;
   justify-content: center;
   min-height: 100%;
-  padding: 1rem 2rem 1rem 4rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
-.textoAzul {
-  font-size: 1.8rem;
-  color: #48BDD6;
+.subtituloUbica {
+  color: #1B1B1C;
+  margin-bottom: 15px;
+  font-family: poppins;
+  font-size: 2rem;
   font-weight: 600;
-  padding-top: 5px;
+}
+
+.subtituloUbica span {
+  color: #F6929E;
+}
+
+.parrafoUbica {
+  text-align: left;
+  color: #394149;
+  font-size: 1.1rem;
+  width: 500px;
+  height: 80px;
+  padding-bottom: 15px;
 }
 
 .mapa {
@@ -1482,7 +1562,8 @@
   background-image: linear-gradient(to right top, rgba(197, 197, 197, 0.2196078431), rgba(220, 224, 224, 0.3960784314), rgba(232, 236, 236, 0.5411764706), rgba(238, 244, 245, 0.6431372549), rgba(255, 255, 255, 0.5607843137)), url(../assets/img/Cupcake\ red\ velvet.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 20px;
+  margin: 10px;
+  margin-top: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1493,6 +1574,14 @@
   color: #1B1B1C;
   font-weight: 600;
   padding: 5px;
+}
+
+.parrafoForm {
+  text-align: center;
+  color: #394149;
+  font-size: 1.1rem;
+  width: 500px;
+  height: 80px;
 }
 
 .bigicon {
@@ -1528,21 +1617,58 @@
 
 /*css maquetación responsive pantalla contáctanos tablet y celular pantalla grande*/
 @media screen and (max-width: 768px) {
-  .columnaTextoUbica {
+  .bannerContactanos {
     display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: center;
-    min-height: 100%;
-    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right top, rgba(203, 242, 250, 0.2196078431), rgba(170, 225, 238, 0.3960784314), rgba(136, 209, 226, 0.5411764706), rgba(97, 192, 214, 0.9058823529), #2ab0cb), url(../assets/img/pastelerialugarresponsive.jpg);
+    width: 100%;
+    height: 70vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
   }
-  .textoAzul {
-    font-size: 1.6rem;
+  .subtituloUbica {
+    color: #1B1B1C;
+    margin-bottom: 15px;
+    font-family: poppins;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .subtituloUbica span {
+    color: #F6929E;
+  }
+  .parrafoUbica {
+    text-align: left;
+    color: #394149;
+    font-size: 1.1rem;
+    width: 380px;
+    height: 90px;
+    padding-bottom: 15px;
+  }
+  .fa-solid {
+    color: #F6929E;
+    font-size: 1.1rem;
+    padding: 5px;
+    padding-top: 8px;
   }
   .mapa {
     display: flex;
     justify-content: center;
-    padding-left: 30px;
+    padding-left: 20px;
+    width: 350px;
+  }
+  .formulario {
+    background-image: linear-gradient(to right top, rgba(197, 197, 197, 0.2196078431), rgba(220, 224, 224, 0.3960784314), rgba(232, 236, 236, 0.5411764706), rgba(238, 244, 245, 0.6431372549), rgba(255, 255, 255, 0.5607843137)), url(../assets/img/Cupcake\ red\ velvetresponsive.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .fa-solid {
     font-size: 1.1rem;
@@ -1562,7 +1688,74 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
     min-height: 100%;
+    padding: 10px;
+  }
+  .subtituloUbica {
+    color: #1B1B1C;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: poppins;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .subtituloUbica span {
+    color: #F6929E;
+  }
+  .parrafoUbica {
+    text-align: center;
+    color: #394149;
+    font-size: 1rem;
+    width: 380px;
+    height: 90px;
+    padding-bottom: 15px;
+  }
+  .fa-solid {
+    font-size: 1.1rem;
+    padding: 5px;
+  }
+  .mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+    width: 90%;
+  }
+  .text-center {
+    font-size: 1.3rem;
+    color: #1B1B1C;
+    font-weight: 600;
+    padding: 5px;
+  }
+  .parrafoForm {
+    text-align: center;
+    color: #394149;
+    font-size: 1rem;
+    width: 500px;
+    height: 80px;
+  }
+  .bigicon {
+    color: #48BDD6;
+    font-size: 1.4rem;
+    padding: 2px;
+  }
+  .btn {
+    display: block;
+    margin: auto;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #48BDD6;
+    transition: 0.4s ease-in;
+    z-index: 1;
+    border-bottom: #48BDD6;
+    border: #48BDD6;
+    width: 280px;
+    height: 45px;
+    text-align: center;
+    font-size: 1.1rem;
+    border-radius: 18px;
+    margin-top: 10px;
     padding: 10px;
   }
 }
@@ -1620,6 +1813,62 @@
   background-image: url("../assets/img/imagen pastel derramado.jpg");
 }
 
+/*css maquetación responsive pantalla nuestros productos tablet y celular pantalla grande*/
+@media screen and (max-width: 768px) {
+  .tituloError {
+    text-align: left;
+    width: 90%;
+    font-size: 2rem;
+    color: #0F0F10;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    padding-bottom: 3px;
+  }
+  .imgError {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/img/imagen pastel derramadoresponsive.jpg");
+  }
+}
+/* CSS media query celular pantalla Nuestros productos*/
+@media screen and (max-width: 576px) {
+  .tituloError {
+    text-align: left;
+    width: 100%;
+    font-size: 1.3rem;
+    color: #0F0F10;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    padding-bottom: 3px;
+  }
+  .textoE {
+    text-align: justify;
+    display: block;
+    width: 90%;
+    font-size: 1rem;
+    color: #394149;
+    padding: 3px;
+  }
+  .textoE span {
+    text-align: justify;
+    display: block;
+    width: 90%;
+    font-size: 1rem;
+    color: #1B1B1C;
+    font-weight: 600;
+  }
+  .botonIndex {
+    text-align: center;
+    border-radius: 18px;
+    margin-top: 30px;
+    padding-top: 10px;
+    width: 240px;
+  }
+}
 @keyframes float {
   0% {
     transform: translateY(0); /*The starting point of the animation is 0.*/

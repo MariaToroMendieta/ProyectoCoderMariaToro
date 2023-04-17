@@ -24,15 +24,28 @@
   .galeria{
     margin: 16px;
   }
-  
+  .columnaTextoG{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    height: 50vh;
+    min-height: 90%;
+    padding: 1rem 1rem 1rem 2rem;
+}
   .subtitulo{
     text-align:$justify-texto;
     font-size: map-get($map-tfuentes, h2);
     color: $color-subtitulos;
     font-weight: 600;
-   
   }
   .parrafo{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    width: 500px;
+    height: 130px;
+    padding-bottom: 30px;
     text-align: $justify-texto;
     font-size: map-get($map-tfuentes, text-cuerpo);
     color: $color-textos;
@@ -57,18 +70,63 @@
   }
   /*css maquetación responsive pantalla galería tablet y celular pantalla grande*/
 @media screen and (max-width: 768px){
+  .bannerGaleria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-position: center;
+    background-image: linear-gradient(to right top, #f7d0d5a4, #f9bbc296, #faa5af7e, #fa8e9cb7, #f87788ce), url(../assets/img/pastel\ galeria\ responsive.jpg);
+    width: 100%;
+    height: 70vh;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    bottom: 10px; 
+  }
   .tituloGaleria{
       font-size: $fuente-subtitulo;
-      top: 120px;
-      left: 500px;
+      top: 20px;
+      left: 320px;
     }
-    .tituloValores{
-      font-size: 1.6rem;
+    .galeria{
+      margin: 10px;
+    }
+  
+    .columnaTextoG{
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      justify-content: center;
+      height: 50vh;
+      min-height: 90%;
+      padding: 0.9rem 0.9rem 0.9rem 1rem;
+    }
+    .subtitulo{
+      text-align:$justify-texto;
+      font-size: map-get($map-tfuentes, h3);
+      color: $color-subtitulos;
+      font-weight: 600;
+    }
+    .subtitulo span{
+      font-size: map-get($map-tfuentes, h3);
+
     }
     .parrafo{
-      font-size: $fuente-textochico;
+      display: flex;
+      justify-content: start;
+      align-items: flex-start;
+      width: 360px;
+      height: 150px;
+      padding-bottom: 30px;
+      text-align: $justify-texto;
+      font-size: map-get($map-tfuentes, text-chico);
+      color: $color-textos;
     }
-
+  .video{
+    margin-bottom: 20px;
+    width: 50%;
+  }
+ 
+   
 }
 /* CSS media query celular pantalla Galería*/
 @media screen and (max-width: 576px){
@@ -76,7 +134,7 @@
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      background-image: linear-gradient(to right top, #f7d0d5a4, #f9bbc296, #faa5af7e, #fa8e9cb7, #f87788ce), url(../assets/img/pastel\ galeria.jpg);
+      background-image: linear-gradient(to right top, #f7d0d5a4, #f9bbc296, #faa5af7e, #fa8e9cb7, #f87788ce), url(../assets/img/pastel\ galeria\ responsive.jpg);
       background-position: center; 
       bottom: 10px; 
     }
@@ -85,15 +143,30 @@
       top: 15px;
       left: 20px;
     }
+    .galeria{
+      margin: 8px;
+    }
+    
     .subtitulo{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      width: 100%;
       font-size: 1.6rem;
       text-align: $justify-textocenter;
     }
     .subtitulo span{
+      display: flex;
+      margin: auto;
       font-size: 1.6rem;
       text-align: center;
     }
     .parrafo{
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      margin: auto;
+      width: 80%;
       font-size: 0.9rem;
       text-align: $justify-textocenter;
     }

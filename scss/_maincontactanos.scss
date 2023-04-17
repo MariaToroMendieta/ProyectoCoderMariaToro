@@ -8,10 +8,10 @@
     height: 70vh;
     background-size: contain;
     background-repeat: no-repeat; 
-    bottom: 10px; 
+    margin-bottom: 30px; 
   }
   .ubicacion{
-    padding: 20px;
+    padding: 10px;
   }
   .columnaTextoUbica{
     display: flex;
@@ -19,14 +19,26 @@
     align-items: baseline;
     justify-content: center;
     min-height: 100%;
-    padding: 1rem 2rem 1rem 4rem;
+    padding: 1rem 1rem 1rem 1rem;
 }
-.textoAzul{
-        font-size: 1.8rem;
-        color: $color-terciario;
-        font-weight: 600; 
-        padding-top: 5px;
-      }
+.subtituloUbica{
+  color: $color-subtitulos;
+  margin-bottom: 15px;
+  font-family: poppins;
+  font-size: map-get($map-tfuentes, h2);
+  font-weight: 600;
+}
+.subtituloUbica span{
+  color: $color-resaltar;
+}
+.parrafoUbica{
+  text-align: $justify-texto;
+    color: $color-textos;
+    font-size: map-get($map-tfuentes, text-cuerpo);
+    width: 500px;
+    height: 80px; 
+    padding-bottom: 15px;
+}
   .mapa{
     display: flex;
     justify-content: center;
@@ -41,7 +53,8 @@
     background-image: linear-gradient(to right top, #c5c5c538, #dce0e065, #e8ecec8a, #eef4f5a4, #ffffff8f),url(../assets/img/Cupcake\ red\ velvet.jpg);
     background-size: cover;
     background-repeat: no-repeat; 
-    margin: 20px;
+    margin: 10px;
+    margin-top: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,6 +65,13 @@
     color: $color-subtitulos;
     font-weight: 600;
     padding: 5px;
+  }
+  .parrafoForm{
+    text-align: $justify-textocenter;
+    color: $color-textos;
+    font-size: map-get($map-tfuentes, text-cuerpo);
+    width: 500px;
+    height: 80px; 
   }
   .bigicon{
     color:$color-terciario;
@@ -84,21 +104,58 @@
 
 /*css maquetación responsive pantalla contáctanos tablet y celular pantalla grande*/
 @media screen and (max-width: 768px){
-  .columnaTextoUbica{
-      display: flex;
-      flex-direction: column;
-      align-items: baseline;
-      justify-content: center;
-      min-height: 100%;
-      padding: 20px;
+  .bannerContactanos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right top, #cbf2fa38, #aae1ee65, #88d1e28a, #61c0d6e7, #2ab0cb),url(../assets/img/pastelerialugarresponsive.jpg);
+    width: 100%;
+    height: 70vh;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
+    margin-bottom: 30px; 
   }
-  .textoAzul{
-          font-size: 1.6rem;
-        }
+  .subtituloUbica{
+    color: $color-subtitulos;
+    margin-bottom: 15px;
+    font-family: poppins;
+    font-size: map-get($map-tfuentes, h3);
+    font-weight: 600;
+  }
+  .subtituloUbica span{
+    color: $color-resaltar;
+  }
+  .parrafoUbica{
+    text-align: $justify-texto;
+      color: $color-textos;
+      font-size: map-get($map-tfuentes, text-cuerpo);
+      width: 380px;
+      height: 90px; 
+      padding-bottom: 15px;
+  }
+  .fa-solid{
+    color: $color-resaltar;
+    font-size: map-get($map-tfuentes, h4);
+    padding: 5px;
+    padding-top: 8px;
+  }
     .mapa{
       display: flex;
       justify-content: center;
-      padding-left: 30px;
+      padding-left: 20px;
+      width: 350px;
+    }
+    .formulario{
+      background-image: linear-gradient(to right top, #c5c5c538, #dce0e065, #e8ecec8a, #eef4f5a4, #ffffff8f),url(../assets/img/Cupcake\ red\ velvetresponsive.jpg);
+      background-size: cover;
+      background-repeat: no-repeat; 
+      background-position: center;
+      margin: 10px;
+      margin-top: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   .fa-solid{
       font-size: $fuente-texto;
@@ -118,8 +175,75 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      width: 100%;
       min-height: 100%;
       padding: 10px;
   }
+  .subtituloUbica{
+    color: $color-subtitulos;
+    text-align:$justify-textocenter;
+    margin-bottom: 15px;
+    font-family: poppins;
+    font-size: map-get($map-tfuentes, h3);
+    font-weight: 600;
+  }
+  .subtituloUbica span{
+    color: $color-resaltar;
+  }
+  .parrafoUbica{
+    text-align: $justify-textocenter;
+      color: $color-textos;
+      font-size: map-get($map-tfuentes, text-chico);
+      width: 380px;
+      height: 90px; 
+      padding-bottom: 15px;
+  }
+  .fa-solid{
+    font-size: $fuente-texto;
+    padding: 5px;
+}
+.mapa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 80px;
+  width:90%; 
+}
+.text-center{
+  font-size: map-get($map-tfuentes, h3);
+  color: $color-subtitulos;
+  font-weight: 600;
+  padding: 5px;
+}
+.parrafoForm{
+  text-align: $justify-textocenter;
+  color: $color-textos;
+  font-size: map-get($map-tfuentes, text-chico);
+  width: 500px;
+  height: 80px; 
+}
+.bigicon{
+  color:$color-terciario;
+  font-size: 1.4rem;
+  padding: 2px;
+}
+.btn{
+  display: block;
+  margin: auto;
+  color:$color-blanco;
+  text-decoration: none;
+  background-color:$color-terciario;
+  transition: .4s ease-in;
+  z-index: 1;
+  border-bottom: $color-terciario;
+  border: $color-terciario;
+  width: 280px;
+  height: 45px;
+  text-align: $justify-textocenter;
+  font-size: map-get($map-tfuentes, text-cuerpo);
+  border-radius: 18px;
+  margin-top: 10px;
+  padding: 10px;
+}
 
 }

@@ -146,6 +146,7 @@
 .subtituloTarjetas{
     text-align: $justify-textocenter;
     font-size: 1.2rem;
+    font-weight: 600;
     color: $color-subtitulos;
     padding: 10px;
     padding-left: 18px;
@@ -184,247 +185,205 @@
 
 /*css maquetación responsive pantalla nuestros productos tablet y celular pantalla grande*/
 @media screen and (max-width: 768px) {
+    .tituloN{
+        @extend .titulo;
+        padding: 5px;
+        margin-top: 3px;
+        font-size: $fuente-subtitulo;
+      }
     .subtituloBanner{
         display: none;
     }
+    .imgTorta{
+        border-radius: 6px;
+        width: 85%;
+        height: 50vh;
+        margin-top: 90px;
+        margin-left: 30px;
+        Display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    .columnaTextoP{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
+        min-height: 100%;
+        background: $color-secundario;
+        padding: 0.8rem 0.8rem 0.8rem 2rem;
+    }
     .tituloSeccionProductos{
         text-align: $justify-textocenter;
-        font-size: 1.8rem;
-        top: 15px;
-        position: relative;
-        margin-left: 50px;
-        bottom: 15px;
-        padding: 15px;
-        
-    }
-    .subtituloProductos{
-        text-align: $justify-texto;
-        font-size: $fuente-enlaces;
+        font-size: map-get($map-tfuentes, h3);
+        color: $color-terciario;
         font-weight: 600;
         font-style: italic;
-        position: relative;
-        padding: 15px;
-        top: 10px;
-        right: 600px;   
-    }
-   
-    .card-title{
-        text-align:$justify-texto;
-        font-size: $fuente-texto;
-        font-weight: 600;
-        color: $color-subtitulos;
+        display: flex;
+        justify-content: center;
         padding: 10px;
-        padding-bottom: 6px;
+        padding-bottom: 10px;   
     }
-    .card-text{
+    .textoP{
         text-align:$justify-texto;
         display: block;
-        width: 90%;
-        font-size: 0.9rem;
+        width: 80%;
+        font-size: $fuente-textochico;
         color: $color-textos;
         padding: 5px;
-        padding-top: 6px;
-    }
-    .botonTarjeta{
-        color:$color-blanco;
-        background-color:$color-terciario;
-        border-bottom: $color-terciario;
-        border: $color-terciario;
-        width: 240px;
-        height: 40px;
-        text-align: $justify-textocenter;
-        font-size: $fuente-texto;
-        border-radius: 18px;
-        margin-top: 5px;
-        margin-left: 150px;   
-    }
-    .contenedorTarjetasNuestros{
-        width: 80vw;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
         padding-top: 10px;
     }
     .tarjetas{
-        width: 35%;
+        width: 37%;
         height: 410px;
-        margin: 8px;
-        
+        background-color: $color-secundario;
+        box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
+        -webkit-box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
+        -moz-box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
+        margin: 12px;
+        border-radius: 6px;
+        box-shadow: 0 0 10px $color-subtitulos;
+        display: inline-block;
+        position: relative;
     }
     .tarjetas img{
         width: 100%;
-        height: 220px;
-        border-radius: 8px 8px 0 0;
+        height: 200px;
+        border-radius: 6px 6px 0 0;
         object-fit: cover;   
     }
     .subtituloTarjetas{
-        text-align: $justify-texto;
-        font-size: $fuente-textochico;
-        padding: 5px;
-        padding-left: 18px;
-        padding-bottom: 5px;
+        text-align: $justify-textocenter;
+        font-size: $fuente-texto;
+        font-weight: 600;
+        color: $color-subtitulos;
+        padding: 6px;
+       
     }
     .parrafoTarjetas{
-        text-align: $justify-texto;
+        text-align: $justify-textocenter;
         display: block;
         width: 90%;
-        font-size: 0.9rem;
+        font-size: $fuente-textochico;
         color: $color-textos;
-        padding: 5px;
-        padding-left: 18px;
-        padding-top: 6px;
+        padding: 3px;
+        padding-top: 5px;
     }
-    .botonTarjetas{
-        color:$color-blanco;
-        background-color:$color-terciario;
-        border-bottom: $color-terciario;
-        border: $color-terciario;
-        width: 200px;
-        height: 40px;
-        text-align: $justify-textocenter;
-        font-size: $fuente-texto;
-        border-radius: 18px;
-        margin-left: 10px;   
-    }
-    .seccionProductosDos{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        top: 1000px;
-        bottom: 20px;
-    }
-    .subtituloProductosDos{
-        text-align: $justify-texto;
-        font-size: $fuente-texto;
-        color: $color-subtitulos;
-        font-weight: 600;
-        font-style: italic;
-        position: relative;
-        padding: 10px;
-        top: 70px;
-        right: 490px;   
-    }
-    
-    .botonTarjetaDos{
-        color:$color-blanco;
-        background-color:$color-terciario;
-        border-bottom: $color-terciario;
-        border: $color-terciario;
-        width: 240px;
-        height: 40px;
-        text-align: $justify-textocenter;
-        font-size: $fuente-texto;
-        border-radius: 18px;
-        margin-left: 150px;   
-    }
-    .seccionProductosTres{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        top: 2000px;
-        bottom: 20px;
-    }
-    .subtituloProductosTres{
-        text-align: $justify-texto;
-        color: $color-subtitulos;
-        font-size: $fuente-enlaces;
-        font-weight: 600;
-        font-style: italic;
-        position: relative;
-        padding: 10px;
-        top: 60px;
-        right: 480px;   
-    }
+     
+   
 }
 /* CSS media query celular pantalla Nuestros productos*/
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 576px){
     .fondoBannerNuestros{
-        height: 70vh;
-        margin-top: 10px;
+        background:$color-primario;
+        background-image: none;
+        background-size: contain;
+        margin-top: 3px;
+        height: 90px;
+    }
+    .tituloN{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: $justify-textocenter;
+        padding: 5px;
+        margin-top: 80px;
+        font-size: 1.8rem;
+      }
+    .subtituloBanner{
+        display: none;
+    }
+    .imgTorta{
+       display: none;
+    }
+    .columnaTextoP{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
+        min-height: 100%;
+        background: $color-secundario;
+        padding: 0.6rem 0.6rem 0.6rem 1rem;
     }
     .tituloSeccionProductos{
         text-align: $justify-textocenter;
-        font-size: 1.6rem;
-        margin-top: 20px;
-        position: relative;
-        margin-left: 50px;
-        bottom: 10px;
-        padding: 15px;  
-    }
-    .botonTarjeta{
-        font-size: $fuente-texto;
-        border-radius: 18px;
-        margin-top: 3px;
-        margin-left: 100px;   
-    }
-    .contenedorTarjetasNuestros{
-        width: 80vw;
-        margin: 0 auto;
+        font-size: map-get($map-tfuentes, h3);
+        color: $color-terciario;
+        font-weight: 600;
+        font-style: italic;
         display: flex;
-        flex-direction: row;
         justify-content: center;
-        align-items: center;
+        padding: 10px;
+        padding-bottom: 10px;   
+    }
+    .textoP{
+        text-align:$justify-texto;
+        display: block;
+        width: 80%;
+        font-size: $fuente-textochico;
+        color: $color-textos;
+        padding: 5px;
+    }
+    .botonComprarP{
+        @extend.botonComprar;
+        left: 5px;
+        border-radius: 18px;
+        margin-top: 24px;
         padding-top: 10px;
+        width: 250px;
     }
     .tarjetas{
-        width: 40%;
-        height: 420px;
-        margin: 6px;
-        
+        width: 39%;
+        height: 380px;
+        background-color: $color-secundario;
+        box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
+        -webkit-box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
+        -moz-box-shadow: 9px 9px 8px 0px rgba(145,141,141,0.75);
+        margin: 8px;
+        margin-bottom: 12px;
+        border-radius: 6px;
+        box-shadow: 0 0 10px $color-subtitulos;
+        display: inline-block;
+        position: relative;
     }
-    .parrafoTarjetas{
-        text-align: $justify-texto;
-        display: block;
-        width: 90%;
-        font-size: 0.8rem;
-        color: $color-textos;
-        padding: 3px;
-        padding-left: 15px;
-        padding-top: 3px;
+    .tarjetas img{
+        width: 100%;
+        height: 160px;
+        border-radius: 6px 6px 0 0;
+        object-fit: cover;   
     }
-    .botonTarjetas{
-        color:$color-blanco;
-        background-color:$color-terciario;
-        border-bottom: $color-terciario;
-        border: $color-terciario;
-        width: 150px;
-        height: 40px;
+    .subtituloTarjetas{
         text-align: $justify-textocenter;
         font-size: $fuente-texto;
-        border-radius: 18px;
-        margin-left: 15px;   
+        font-weight: 600;
+        color: $color-subtitulos;
+        padding: 5px;
+       
     }
-    .seccionProductosDos{
+    .parrafoTarjetas{
+        text-align: $justify-textocenter;
+        display: block;
+        margin: auto;
+        width: 90%;
+        font-size: 14px;
+        color: $color-textos;
+        padding: 3px;
+        padding-top: 5px;
+        padding-bottom: 12px;
+    }
+    .contenedorBt{
         display: flex;
         justify-content: center;
-        align-items: center;
-        position: relative;
-        top: 980px;
-        bottom: 20px;
-    }
+        margin-top: 8px;
+    } 
+    .imgProductTres{
+        background-position: center;
+        background-size: cover;
+        background-image: url("../assets/img/Cupcake\ red\ velvetresponsive.jpg"); 
     
-    .card-text{
-        font-size: 0.9rem;
-        padding: 5px;
-    }
-    .text-mute{
-        padding: 5px;
-    }
-    .botonTarjetaDos{
-        color:$color-blanco;
-        background-color:$color-terciario;
-        border-bottom: $color-terciario;
-        border: $color-terciario;
-        width: 210px;
-        height: 40px;
-        text-align: center;
-        font-size: $fuente-texto;
-        border-radius: 18px;
-        margin-top: 10px;
-        margin-left: 100px;   
-    }
+    }  
+
 }
+  
+    

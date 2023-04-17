@@ -51,13 +51,13 @@
                 <!--esta es la segunda sección de la pantalla que contiene todos los datos de ubicaión del punto de venta principal-->
                 <div class="ubicacion row featurette">
                     <div class="columnaTextoUbica col-sm-12 col-md-6 col-8">
-                        <h2 class="subtitulo">Dónde estamos ubicados: <span class="textoAzul">Punto de venta principal</span></h2>
-                        <p class="parrafo">Puedes encontrar todos nuestros productos para consumir o llevar en nuestro local principal y en nuestra sede de la castellana.</p>
-                        <i class="fa-solid fa-shop"></i><p>Estamos ubicados en el barrio Chico Navarra, en la calle 90 # 15-63.Nuestro horario de atención es de lunes-Sábado 8:00 a.m.-7:00 p.m.</p>
-                        <i class="fa-solid fa-phone"></i><p class="parrafo"> Telefonos de contácto: (+57) 6012589966-6012589967</p>
+                        <h2 class="subtituloUbica">Dónde estamos ubicados: <span>Punto de venta principal</span></h2>
+                        <p class="parrafoUbica">Puedes encontrar todos nuestros productos para consumir o llevar en nuestro local principal y en nuestra sede de la castellana.</p>
+                        <i class="fa-solid fa-shop"></i><p class="parrafoUbica">Estamos ubicados en el barrio Chico Navarra, en la calle 90 # 15-63.Nuestro horario de atención es de lunes-Sábado 8:00 a.m.-7:00 p.m.</p>
+                        <i class="fa-solid fa-phone"></i><p class="parrafoUbica"> Telefonos de contácto: (+57) 6012589966-6012589967</p>
                     </div>
                     <div class=" col-sm-12 col-md-6">
-                        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.546719415556!2d-74.05597838595614!3d4.674586343186805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9af2cb52d4db%3A0xa4fa4eedbf0fad31!2sCl.%2090%20%2315-63%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1677361173034!5m2!1ses!2sco" width="600" height="450" style="border: radius 6px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.546719415556!2d-74.05597838595614!3d4.674586343186805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9af2cb52d4db%3A0xa4fa4eedbf0fad31!2sCl.%2090%20%2315-63%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1677361173034!5m2!1ses!2sco" width="600" height="400" style="border: radius 6px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>      
                 </div>        
             </section>
@@ -67,20 +67,20 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="well well-sm">
-                                <form class="form-horizontal">
+                                <form action="./error404.html" class="form-horizontal">
                                     <fieldset>
                                         <legend class="text-center">Formulario de contacto</legend>
-                                        <p class="parrafo">Vamos a enviarte información sobre promociones y nuestros productos destacados</p>
+                                        <p class="parrafoForm">Vamos a enviarte información sobre promociones y nuestros productos destacados</p>
                                         <div class="form-group">
                                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                                            <div class="col-md-10">
+                                            <div class="col-md-12">
                                                 <label for="nombre">Nombre:</label>
                                                 <input type="text" class="form-control" placeholder="Escribe tu nombre" required>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                                            <div class="col-md-10">
+                                            <div class="col-md-12">
                                                 <label for="apellidos">Apellidos:</label>
                                                 <input type="text" class="form-control" placeholder="Escribe tus apellidos" required>
                                             </div>
@@ -88,7 +88,7 @@
                 
                                         <div class="form-group">
                                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
-                                            <div class="col-md-10">
+                                            <div class="col-md-12">
                                                 <label for="email">Email:</label>
                                                 <input  type="email"class="form-control" placeholder="Escribe tu Email" required>
                                             </div>
@@ -96,7 +96,7 @@
                 
                                         <div class="form-group">
                                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
-                                            <div class="col-md-10">
+                                            <div class="col-md-12">
                                                 <label for="teléfono">Teléfono:</label>
                                                 <input type="text" class="form-control" placeholder="Escribe tu teléfono de contacto">
                                             </div>
@@ -104,7 +104,7 @@
                 
                                         <div class="form-group">
                                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
-                                            <div class="col-md-10">
+                                            <div class="col-md-12">
                                                 <label for="mensaje">Mensaje:</label>
                                                 <textarea class="form-control" id="message" name="message" placeholder="Escribe tus comentarios aquí y te responderemos lo antes posible." rows="7"></textarea>
                                             </div>

@@ -49,3 +49,62 @@
     background-size: cover;
     background-image: url("../assets/img/imagen\ pastel\ derramado.jpg"); 
 }
+/*css maquetación responsive pantalla nuestros productos tablet y celular pantalla grande*/
+@media screen and (max-width: 768px){
+    .tituloError{
+        text-align: $justify-texto;
+        width: 90%;
+        font-size: map-get($map-tfuentes, h2);
+        color: $color-titulos;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        padding: 8px;
+        padding-bottom: 3px;   
+    }
+    .imgError{
+        background-position: center;
+        background-size: cover;
+        background-image: url("../assets/img/imagen\ pastel\ derramadoresponsive.jpg"); 
+    }
+    
+}
+/* CSS media query celular pantalla Nuestros productos*/
+@media screen and (max-width: 576px){
+    .tituloError{
+        text-align: $justify-texto;
+        width: 100%;
+        font-size: map-get($map-tfuentes, h3);
+        color: $color-titulos;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        padding-bottom: 3px;   
+    }
+    .textoE{
+        text-align:justify;
+        display: block;
+        width: 90%;
+        font-size: $fuente-textochico;
+        color: $color-textos;
+        padding: 3px;
+    }
+    .textoE span{
+        text-align:justify;
+        display: block;
+        width: 90%;
+        font-size: $fuente-textochico;
+        color: $color-subtitulos;
+        font-weight: 600;
+    }
+    .botonIndex{
+        @extend.botonComprarP;
+        text-align: $justify-textocenter;
+        border-radius: 18px;
+        margin-top: 30px;
+        padding-top: 10px;
+        width: 240px;
+    }
+
+}
